@@ -34,8 +34,8 @@ export const Advocacy = () => {
                     <div className="justify-center flex flex-row text-5xl font-bold text-white mt-5 w-full center-text w-full rounded">
                       Light the City Orange
                     </div>
-                    <p className="flex justify-center w-full text-2xl font-semibold text-neutral-900">
-                      In Support of Those Affected by Kidney Cancer
+                    <p className="flex justify-center w-full text-2xl mt-2 font-semibold text-neutral-900">
+                      For Kidney Cancer Awareness Month
                     </p>
                   </div>
                 </div>
@@ -50,11 +50,11 @@ export const Advocacy = () => {
                   </p>
                   <p className="flex mx-auto justify-center w-3/4 sm:text-left lg:text-center font-semibold text-neutral-900">
                     We've asked businesses in our city to display orange lights
-                    in their storefronts, lobbies, and windows.
+                    in their storefronts, lobbies, and windows
                   </p>
                   <p className="flex mx-auto justify-center w-3/4 sm:text-left lg:text-center font-semibold text-neutral-900">
-                    A simple yet powerful gesture that shows solidarity with
-                    kidney cancer patients and their families.{" "}
+                    as a simple yet powerful gesture that shows solidarity with
+                    those affected by kidney cancer.{" "}
                   </p>
                   <p className="flex mx-auto justify-center w-3/4 sm:text-left lg:text-center font-semibold text-neutral-900 text-xl mt-5">
                     #OrangeUp to join the cause
@@ -87,7 +87,7 @@ export const Advocacy = () => {
               </div>
 
               <div className="text-3xl font-bold text-white mt-10 mb-7">
-                Meet a Local Survivor
+                Meet a local survivor
               </div>
 
               {/*Author Bio*/}
@@ -114,14 +114,14 @@ export const Advocacy = () => {
                             <div className="text-sm">
                               <p className="p-1">
                                 {" "}
-                                My name is Katie a stage IV kidney cancer
+                                My name is Katie, I'm a stage IV kidney cancer
                                 survivor and patient advocate. I was diagnosed
-                                with a rare stage IV cancer at 29 years old. Due
-                                to the rarity and extent of my disease (15+
-                                tumors), my options were limited and my
-                                prognosis was bleak. However, due to advocacy
-                                efforts of others I was able to make it to a
-                                life saving surgery about 6 month into my
+                                with a rare stage IV kidney cancer at 29 years
+                                old and due to the rarity and extent of my
+                                disease (15+ tumors) my options were limited and
+                                my prognosis was bleak. However, due to advocacy
+                                efforts of others I was able a very intensive
+                                and life saving surgery about 6 months into my
                                 diagnosis.
                               </p>
 
