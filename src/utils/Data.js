@@ -303,7 +303,7 @@ export const advocacy = [
     title: "Spreading awareness",
     link: "https://twitter.com/kaydaustin/status/1631716918926221312?s=20",
     description:
-      "Spreading awareness helps connect patients to experts and resources for their disease and feel supported by their community. Learn how a kidney cancer awareness campaign in 2021 was the catalyst that changed a local stage IV kidney cancer survivor's life.",
+      "Awareness campaigns are far more than marketing and fluff. Spreading awareness can help connect patients to experts and resources for their disease. It's also a great way for a community, friends and families to show supports for the patient and survivors in their lives. Learn how a kidney cancer awareness campaign in 2021 was the catalyst that changed a local stage IV kidney cancer survivor's life.",
   },
   {
     id: "2",
@@ -311,7 +311,7 @@ export const advocacy = [
     title: "Funding research",
     link: "https://www.kidneycoa.org",
     description:
-      "Awareness campaigns help fund crucial and important research to improve outcomes for patients. For rare cancers, a little bit goes a long way. Just $50k can fund a years worth of research. Chromophobe kidney cancer, currently doesn't have any dedicated treatment options. Funding research helps change this for future patients.",
+      "Awareness campaigns help fund crucial and important research to improve outcomes for patients. For rare cancers, a little bit goes a long way. Just $50,000 can fund a years worth of research. For cancers like Chromophobe Renal Cell Carcinoma (a rare kidney cancer) which currently doesn't have any dedicated treatment options, that funding also provides hope.",
   },
   {
     id: "3",
