@@ -96,9 +96,10 @@ export const youtubeVideos = () => {
   return [
     {
       id: "youtube",
-      title: "YouTube • My Stage IV Kidney Cancer Diagnosis Story",
+      title:
+        "YouTube • The Best and Worst of Healthcare • My Diagnosis Story and How I Learned to Advocate for Myself",
       viewCount: "434,900",
-      link: "https://www.youtube.com/embed/JcLkww0tEIc",
+      link: "https://www.youtube.com/embed/NqeM9VopK1c",
     },
   ];
 };
