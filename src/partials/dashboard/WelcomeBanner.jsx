@@ -1,5 +1,5 @@
 import React from "react";
-import headshot from "../../images/katie-head-shot.png";
+import headshot from "../../images/profile_headshot (1).png";
 
 function WelcomeBanner({ email, type }) {
   return (

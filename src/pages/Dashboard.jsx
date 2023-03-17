@@ -18,6 +18,7 @@ import COA from "../partials/dashboard/COA";
 import { articles, podcasts, socialData } from "../utils/Data";
 import VideoCard from "../partials/dashboard/VideoCard";
 import Videos from "./Videos";
+import Subscribe from "../partials/Subscribe";
 
 export const Dashboard = ({ rates, demographics, type }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -31,6 +32,7 @@ export const Dashboard = ({ rates, demographics, type }) => {
       <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
         {/*  Site header */}
         <Header />
+        <Subscribe />
 
         <main>
           <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">

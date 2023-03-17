@@ -33,6 +33,7 @@ export const COA = ({ type }) => {
                 href="https://kidneycoa.org"
                 target="_blank"
                 className="text-orange-400"
+                rel="noreferrer"
               >
                 <FontAwesomeIcon icon={faSquareArrowUpRight} />
               </a>
@@ -40,14 +41,8 @@ export const COA = ({ type }) => {
           </div>
         </header>
         <div className="flex flex-col lg:flex-row xl:flex-row">
-          <div className="w-40 h-40 rounded-lg w-full mr-5 mb-5 w-full">
-            <img
-              className="h-full w-full"
-              src={COA_LOGO}
-              width="100"
-              height="100"
-              alt="COA"
-            />
+          <div className="w-48 h-48 rounded-lg mr-5 mb-5">
+            <img className="h-full w-full" src={COA_LOGO} alt="COA" />
           </div>
           <div className="flex w-3/4">
             <div className="flex flex-col">
@@ -79,6 +74,7 @@ export const COA = ({ type }) => {
               href="https://kidneycoa.org"
               target="_blank"
               className="text-orange-400"
+              rel="noreferrer"
             >
               <FontAwesomeIcon icon={faSquareArrowUpRight} />
             </a>

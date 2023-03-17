@@ -35,7 +35,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import austin from "../images/austin.jpg";
 import medium from "../images/medium.png";
-import headshot from "../images/katie-head-shot.png";
+import headshot from "../images/profile_headshot (1).png";
 import bookcover3 from "../images/bookcover3.png";
 import VideoCard from "../partials/dashboard/VideoCard";
 import Videos from "./Videos";
@@ -61,13 +61,11 @@ export const Query = ({ rates, demographics, type }) => {
             <div className="w-full">
               <div className="flex justify-center w-full mb-16">
                 <div className="justify-center">
-                  <div className="w-full w-48 h-48 rounded mx-auto ">
+                  <div className="w-48 h-48 rounded mx-auto ">
                     <img
                       className="mx-auto h-full w-full rounded"
                       src={bookcover3}
-                      width="100"
-                      height="100"
-                      alt="headshot"
+                      alt="bookcover"
                     />
                   </div>
                   <div className="justify-center flex flex-row text-5xl font-bold text-slate-800 mt-5 w-full center-text w-full rounded">
@@ -184,12 +182,10 @@ export const Query = ({ rates, demographics, type }) => {
               <div className="flex flex-col col-span-full sm:col-span-12 xl:col-span-12 bg-white shadow-lg rounded-sm border border-slate-200">
                 <div className="p-5">
                   <div className="flex flex-col lg:flex-row xl:flex-row">
-                    <div className="w-44 h-54 rounded-lg w-full mr-5 mb-5 w-full self-center ">
+                    <div className="w-48 h-48 rounded-lg mr-5 mb-5 self-center ">
                       <img
                         className="h-full w-full rounded"
                         src={headshot}
-                        width="100"
-                        height="100"
                         alt="headshot"
                       />
                     </div>
@@ -197,6 +193,7 @@ export const Query = ({ rates, demographics, type }) => {
                       <a
                         href="https://docs.google.com/document/d/1e-EKszKP4nbMNtuQ1PyJ2xKC5ljR2zlSsU8jXF4DO0M/edit"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         <div className="flex flex-col">
                           <div className="text-xs font-semibold text-slate-400 uppercase mb-1">
@@ -279,6 +276,7 @@ export const Query = ({ rates, demographics, type }) => {
                           href="https://medium.com/@katie.coleman.ut/having-cancer-made-me-better-at-my-job-5fef3406b4db"
                           target="_blank"
                           className="text-blue-500"
+                          rel="noreferrer"
                         >
                           <FontAwesomeIcon icon={faSquareArrowUpRight} />
                         </a>
@@ -306,6 +304,7 @@ export const Query = ({ rates, demographics, type }) => {
                       <a
                         href="https://medium.com/@katie.coleman.ut/having-cancer-made-me-better-at-my-job-5fef3406b4db"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         <div className="flex flex-col">
                           <h2 className="text-lg font-semibold text-slate-800 mb-2">
@@ -416,6 +415,7 @@ export const Query = ({ rates, demographics, type }) => {
                         href="https://docs.google.com/document/d/1e-EKszKP4nbMNtuQ1PyJ2xKC5ljR2zlSsU8jXF4DO0M/edit?usp=sharing"
                         target="_blank"
                         className="text-blue-500"
+                        rel="noreferrer"
                       >
                         <FontAwesomeIcon icon={faSquareArrowUpRight} />
                       </a>
@@ -423,7 +423,7 @@ export const Query = ({ rates, demographics, type }) => {
                   </div>
                 </header>
                 <div className="flex flex-col lg:flex-row xl:flex-row">
-                  <div className="w-40 h-40 rounded-lg w-full mr-5 mb-5 w-full">
+                  <div className="w-48 h-48 rounded-lg mr-5 mb-5">
                     <img
                       className="h-full w-full"
                       src={Docs}
@@ -436,6 +436,7 @@ export const Query = ({ rates, demographics, type }) => {
                     <a
                       href="https://docs.google.com/document/d/1lgIVsf36_a33npvomi1URrBW74ruT-9DmFG7vb0ZfFM/edit?usp=sharing"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <div className="flex flex-col">
                         <h2 className="text-lg font-semibold text-slate-800 mb-2">

@@ -8,7 +8,7 @@ import OrangeBackground from "../images/orange_background.png";
 import COA from "../partials/dashboard/COA";
 import { advocacy, advocacy2 } from "../utils/Data";
 
-import headshot from "../images/katie-head-shot.png";
+import headshot from "../images/profile_headshot (1).png";
 import bookcover3 from "../images/bookcover3.png";
 import VideoCard from "../partials/dashboard/VideoCard";
 import Videos from "./Videos";
@@ -95,17 +95,19 @@ export const Advocacy = () => {
                 <div className="flex flex-col col-span-full sm:col-span-12 xl:col-span-12 bg-white shadow-lg rounded-sm border border-slate-200">
                   <div className="p-5">
                     <div className="flex flex-col lg:flex-row xl:flex-row">
-                      <div className="w-44 h-54 rounded-lg w-full mr-5 mb-5 w-full self-center ">
+                      <div className="mr-5 mb-5 rounded self-center">
                         <img
-                          className="h-full w-full rounded"
+                          className="h-48 w-48 rounded"
                           src={headshot}
-                          width="100"
-                          height="100"
                           alt="headshot"
                         />
                       </div>
                       <div className="flex w-full ">
-                        <a href="https://katiekickscancer.com" target="_blank">
+                        <a
+                          href="https://katiekickscancer.com"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           <div className="flex flex-col bm-">
                             <div className=" font-semibold text-slate-700 uppercase mb-1">
                               Local stage IV kidney cancer survivor donates all
