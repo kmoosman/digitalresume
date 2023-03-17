@@ -97,7 +97,7 @@ function Subscribe() {
                             🗓 Quarterly content and events summary
                           </p>
                           <p className="text-sm text-gray-500">
-                            ✉️ No spam, just handful of updates per year
+                            ✉️ No spam, just a handful of updates per year
                           </p>
                         </div>
                       </div>
