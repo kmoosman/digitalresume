@@ -85,7 +85,7 @@ function Subscribe() {
                       <div>
                         <Dialog.Title
                           as="h3"
-                          className="text-base font-semibol  leading-6 text-gray-900"
+                          className="text-base font-semibold  leading-6 text-gray-900"
                         >
                           Stay Updated
                         </Dialog.Title>
