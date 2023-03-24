@@ -22,7 +22,7 @@ export const socialData = (type) => {
     {
       id: "tiktok",
       title: "TikTok",
-      total: "53,800",
+      total: "54,000",
       countType: "followers",
       link: "https://www.tiktok.com/@katiekickscancer",
       blurb:
@@ -35,7 +35,7 @@ export const socialData = (type) => {
     {
       id: "twitter",
       title: "Twitter",
-      total: "8,201",
+      total: "8,251",
       countType: "followers",
       link: "https://twitter.com/kaydaustin",
       blurb:
@@ -46,7 +46,7 @@ export const socialData = (type) => {
     {
       id: "instagram",
       title: "Instagram",
-      total: "1,400",
+      total: "1,430",
       countType: "followers",
       link: "https://www.instagram.com/katiekickscancer/",
       blurb: "Stories posted daily from the day after I was diagnosed.",
@@ -99,7 +99,7 @@ export const youtubeVideos = () => {
       title:
         "YouTube • The Best and Worst of Healthcare • My Diagnosis Story and How I Learned to Advocate for Myself",
       viewCount: "434,900",
-      link: "https://www.youtube.com/embed/NqeM9VopK1c",
+      link: "https://www.youtube.com/embed/JcLkww0tEIc",
     },
   ];
 };
