@@ -15,6 +15,7 @@ import doctorsArt from "../images/doctorsArt.jpeg";
 import BTK from "../images/betweentwokingdoms.jpeg";
 import BREATH from "../images/breath.jpeg";
 import SHOCK from "../images/shock.jpeg";
+import YouJustDontKnow from "../images/YouJustDontKnow.png";
 import { faBullhorn } from "@fortawesome/free-solid-svg-icons";
 
 export const socialData = (type) => {
@@ -250,10 +251,19 @@ export const podcasts = (type) => {
       image: heathlcareUnfiltered,
     },
     {
+      id: "5",
+      name: "You Just Don't Know It Yet",
+      link: "https://open.spotify.com/episode/1BBvJxlC3D48AwFT7EAQMF?si=1dabb5cab19c49b1",
+      description:
+        "Episode 30: Katie Coleman - Stage IV Kidney Cancer Survivor",
+      image: YouJustDontKnow,
+    },
+    {
       id: "4",
-      name: "Coming Soon",
+      name: "Oncology Unscripted",
       link: "",
-      description: "New podcast I'll be co-hosting coming soon, stay tuned!",
+      description:
+        "New podcast I'll be co-hosting coming this week, stay tuned!",
     },
   ];
 };
