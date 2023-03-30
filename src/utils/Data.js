@@ -16,6 +16,7 @@ import BTK from "../images/betweentwokingdoms.jpeg";
 import BREATH from "../images/breath.jpeg";
 import SHOCK from "../images/shock.jpeg";
 import YouJustDontKnow from "../images/YouJustDontKnow.png";
+import OncologyUnscripted from "../images/oncology_unscripted.png";
 import { faBullhorn } from "@fortawesome/free-solid-svg-icons";
 
 export const socialData = (type) => {
@@ -206,6 +207,14 @@ export const podcasts = (type) => {
   return [
     {
       id: "0",
+      name: "Oncology Unscripted",
+      link: "https://podcasts.apple.com/us/podcast/oncology-unscripted/id1679839386",
+      description:
+        "Patient advocates Katie Coleman and Julie Johnson team up with radiation oncologist Dr Matt Spraker for candid conversations around cancer and treatment",
+      image: OncologyUnscripted,
+    },
+    {
+      id: "1",
       name: "The Doctors Art",
       link: "https://www.thedoctorsart.com/episodes/ep27",
       description: `${
@@ -216,7 +225,7 @@ export const podcasts = (type) => {
       image: doctorsArt,
     },
     {
-      id: "1",
+      id: "2",
       name: "The Accelerators",
       link: "https://accelerators.buzzsprout.com/1839275/11948820-the-experts-discuss-patients-mental-health-and-mindfulness",
       description: `${
@@ -228,7 +237,7 @@ export const podcasts = (type) => {
       image: accelerators,
     },
     {
-      id: "2",
+      id: "3",
       name: "The Accelerators",
       link: "https://accelerators.buzzsprout.com/1839275/11447574-on-clinical-trials-the-patient-perspective-with-julie-and-katie",
       description:
@@ -236,7 +245,7 @@ export const podcasts = (type) => {
       image: accelerators,
     },
     {
-      id: "3",
+      id: "4",
       name: "The Accelerators",
       link: "https://accelerators.buzzsprout.com/1839275/11673786-on-clinical-trials-patient-education-with-julie-katie-and-david",
       description:
@@ -244,26 +253,19 @@ export const podcasts = (type) => {
       image: accelerators,
     },
     {
-      id: "4",
+      id: "5",
       name: "HealthCare Unfiltered",
       link: "https://podcasts.apple.com/au/podcast/patient-voice-on-social-media-a-survivor-story/id1534737585?i=1000563486434",
       description: "Patient voice on social media - A survivor story",
       image: heathlcareUnfiltered,
     },
     {
-      id: "5",
+      id: "6",
       name: "You Just Don't Know It Yet",
       link: "https://open.spotify.com/episode/1BBvJxlC3D48AwFT7EAQMF?si=1dabb5cab19c49b1",
       description:
         "Episode 30: Katie Coleman - Stage IV Kidney Cancer Survivor",
       image: YouJustDontKnow,
-    },
-    {
-      id: "4",
-      name: "Oncology Unscripted",
-      link: "",
-      description:
-        "New podcast I'll be co-hosting coming this week, stay tuned!",
     },
   ];
 };
