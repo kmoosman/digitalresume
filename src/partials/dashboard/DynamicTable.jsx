@@ -20,11 +20,11 @@ export const DynamicTable = ({ data, nameAlias, tableTitle, size }) => {
     >
       <header className="px-5 py-4 border-b border-slate-100 flex flex-row justify-between">
         <h2 className="font-semibold text-slate-800">{tableTitle}</h2>
-        {size === "large" ? (
-          <div className=" w-8 font-semibold text-white text-sm text-center px-1.5 bg-blue-500 opacity-80 rounded-full">
+        {/* {size === "large" ? (
+          <div className=" w-8 font-bold text-white text-md text-center px-1.5 text-indigo-700 opacity-80 rounded-full">
             {data.length}
           </div>
-        ) : null}
+        ) : null} */}
       </header>
       <div className="p-3">
         {/* Table */}

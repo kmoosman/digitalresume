@@ -41,7 +41,7 @@ export const Videos = ({ type }) => {
   return (
     <div className="">
       <div className="text-3xl font-bold text-slate-800 mt-10 mb-7">
-        {type === "query" ? "My Story in Videos" : "Videos"}
+        {type === "query" ? "My Story in Videos" : "YouTube"}
       </div>
       {/*youtube video*/}
       <div className="mb-6">
@@ -51,23 +51,12 @@ export const Videos = ({ type }) => {
             link={video.link}
             key={video.id}
             viewCount={video.viewCount}
-            size={"large"}
-          />
-        ))}
-      </div>
-
-      {/*tiktok videos*/}
-      <div className="grid grid-cols-12 gap-6 mb-6 ">
-        {tikTokVideos().map((video) => (
-          <VideoCard
-            title={video.title}
-            link={video.link}
-            key={video.id}
-            viewCount={video.viewCount}
             size={"small"}
           />
         ))}
       </div>
+
+    
     </div>
   );
 };

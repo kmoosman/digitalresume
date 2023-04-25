@@ -414,7 +414,7 @@ export const Query = ({ rates, demographics, type }) => {
                       <a
                         href="https://docs.google.com/document/d/1e-EKszKP4nbMNtuQ1PyJ2xKC5ljR2zlSsU8jXF4DO0M/edit?usp=sharing"
                         target="_blank"
-                        className="text-blue-500"
+                        className="text-indigo-700"
                         rel="noreferrer"
                       >
                         <FontAwesomeIcon icon={faSquareArrowUpRight} />

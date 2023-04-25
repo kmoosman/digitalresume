@@ -41,7 +41,7 @@ export const PodcastCard = ({ title, link, blurb, type, image }) => {
                 </div>
               </div>
             </div>
-            <a href={link} target="_blank" className="text-blue-500">
+            <a href={link} target="_blank" className="text-indigo-700">
               <FontAwesomeIcon icon={faSquareArrowUpRight} />
             </a>
           </header>

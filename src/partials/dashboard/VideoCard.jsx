@@ -23,7 +23,7 @@ export const VideoCard = ({ title, link, blurb, size }) => {
       } bg-white shadow-lg rounded-sm border border-slate-200`}
     >
       <div>
-        <div className="px-5 pt-5">
+        <div className="p-20 pt-10">
           <h2 className="text-2xl font-semibold text-slate-800 mb-2">
             {title}
           </h2>
