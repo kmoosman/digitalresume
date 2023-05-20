@@ -98,16 +98,16 @@ export const youtubeVideos = () => {
   return [
     {
       id: "youtube",
-      title: "ChubbyEmu's Video on My Story",
+      title: "Chubbyemu's Video On My Story",
       viewCount: "668,000",
       link: "https://www.youtube.com/embed/i9fLEvgZzRE",
     },
 
     {
       id: "youtube",
-      title: "My Stage IV Kidney Cancer Diagnosis Story",
+      title: "A Cancer Patient Speaks Candidly With Her Oncologist",
       viewCount: "43,900",
-      link: "https://www.youtube.com/embed/JcLkww0tEIc",
+      link: "https://www.youtube.com/embed/Nddft_nc3Yc",
     },
   ];
 };
