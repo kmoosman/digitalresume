@@ -19,8 +19,9 @@ export const VideoCard = ({ title, link, blurb, size }) => {
       href={link}
       target="_blank"
       className={`flex flex-col col-span-full ${
-        size === "small" ? "sm:col-span-3 xl:col-span-3 " : null
-      } bg-white shadow-lg rounded-sm border border-slate-200`}
+        size === "small" ? "sm:col-span-4 xl:col-span-4 " : size === "medium" ? "sm:col-span-4 xl:col-span-2 " : null
+      }
+      sm:w-full md:col-span-2 bg-white shadow-lg rounded-sm border border-slate-200`}
     >
       <div>
         <div className="p-5 pt-10 sm:pl-3 sm:pr-3 sm:pt-4 sm:pb-0 xl:p-10">

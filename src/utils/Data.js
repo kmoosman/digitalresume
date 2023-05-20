@@ -24,7 +24,7 @@ export const socialData = (type) => {
     {
       id: "tiktok",
       title: "TikTok",
-      total: "54,000",
+      total: "54,300",
       countType: "followers",
       link: "https://www.tiktok.com/@katiekickscancer",
       blurb:
@@ -37,7 +37,7 @@ export const socialData = (type) => {
     {
       id: "twitter",
       title: "Twitter",
-      total: "8,251",
+      total: "9,000",
       countType: "followers",
       link: "https://twitter.com/kaydaustin",
       blurb:
@@ -48,7 +48,7 @@ export const socialData = (type) => {
     {
       id: "instagram",
       title: "Instagram",
-      total: "1,430",
+      total: "1,500",
       countType: "followers",
       link: "https://www.instagram.com/katiekickscancer/",
       blurb: "Stories posted daily from the day after I was diagnosed.",
@@ -56,7 +56,7 @@ export const socialData = (type) => {
     {
       id: "youtube",
       title: "YouTube",
-      total: "1,289",
+      total: "2,100",
       countType: "subscribers",
       link: "https://www.youtube.com/channel/UCcf5yVgHvI8-__g0RHjfrTw",
       blurb:
@@ -98,9 +98,15 @@ export const youtubeVideos = () => {
   return [
     {
       id: "youtube",
-      title:
-        "My Stage IV Kidney Cancer Diagnosis Story",
-      viewCount: "434,900",
+      title: "ChubbyEmu's Video on My Story",
+      viewCount: "668,000",
+      link: "https://www.youtube.com/embed/i9fLEvgZzRE",
+    },
+
+    {
+      id: "youtube",
+      title: "My Stage IV Kidney Cancer Diagnosis Story",
+      viewCount: "43,900",
       link: "https://www.youtube.com/embed/JcLkww0tEIc",
     },
   ];
@@ -223,6 +229,13 @@ export const podcasts = (type) => {
     },
     {
       id: "2",
+      name: "Oncology Unscripted",
+      link: "https://podcasts.apple.com/us/podcast/oncology-terms-doctor-and-staff-roles-and/id1679839386?i=1000613113778",
+      description: "Doctor and staff roles",
+      image: OncologyUnscripted,
+    },
+    {
+      id: "3",
       name: "The Doctors Art",
       link: "https://www.thedoctorsart.com/episodes/ep27",
       description: `${
@@ -233,7 +246,7 @@ export const podcasts = (type) => {
       image: doctorsArt,
     },
     {
-      id: "3",
+      id: "4",
       name: "The Accelerators",
       link: "https://accelerators.buzzsprout.com/1839275/11948820-the-experts-discuss-patients-mental-health-and-mindfulness",
       description: `${
@@ -245,7 +258,7 @@ export const podcasts = (type) => {
       image: accelerators,
     },
     {
-      id: "4",
+      id: "5",
       name: "The Accelerators",
       link: "https://accelerators.buzzsprout.com/1839275/11447574-on-clinical-trials-the-patient-perspective-with-julie-and-katie",
       description:
@@ -253,7 +266,7 @@ export const podcasts = (type) => {
       image: accelerators,
     },
     {
-      id: "5",
+      id: "6",
       name: "The Accelerators",
       link: "https://accelerators.buzzsprout.com/1839275/11673786-on-clinical-trials-patient-education-with-julie-katie-and-david",
       description:
@@ -261,14 +274,14 @@ export const podcasts = (type) => {
       image: accelerators,
     },
     {
-      id: "6",
+      id: "7",
       name: "HealthCare Unfiltered",
       link: "https://podcasts.apple.com/au/podcast/patient-voice-on-social-media-a-survivor-story/id1534737585?i=1000563486434",
       description: "Patient voice on social media - A survivor story",
       image: heathlcareUnfiltered,
     },
     {
-      id: "7",
+      id: "8",
       name: "You Just Don't Know It Yet",
       link: "https://open.spotify.com/episode/1BBvJxlC3D48AwFT7EAQMF?si=1dabb5cab19c49b1",
       description:

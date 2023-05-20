@@ -78,7 +78,7 @@ export const Rates = () => {
                       icon={iconStyling["YouTube"]}
                       className="text-slate-800 w-5 h-5 ml-2"
                     />
-                    <div className="text-slate-800 ml-5">YouTube</div>
+                    <div className="text-slate-500 ml-5">YouTube</div>
                   </div>
                 </td>
                 <td className="p-2">

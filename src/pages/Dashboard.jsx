@@ -45,7 +45,11 @@ export const Dashboard = ({ rates, demographics, type }) => {
                 {type === "media" ? "Media " : null} Dashboard
               </div>
 
+              <div >
+              <Videos /></div>
+
               {/* Cards */}
+              <div className="ml-5 text-3xl mb-4">Socials</div>
               <div className="grid grid-cols-12 gap-6 mb-6 ">
                 {socialData(type).map((social) => (
                   <DashboardCard
@@ -100,7 +104,7 @@ export const Dashboard = ({ rates, demographics, type }) => {
                 {/*<DashboardCard12 />*/}
               </div>
               <hr className="w-full mt-10" />
-              <Videos />
+              
             </div>
           </main>
         </div>
