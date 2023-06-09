@@ -90,7 +90,7 @@ function WelcomeBanner({ email, type }) {
             Donates all proceeds from social media to research
           </p>
           <p className="text-center italic mt-1 text-sm">
-            Inquiries and collaborations{" "}
+            Inquiries, contact and collaborations{" "}
             <a href="mailto:katiekickscancer@gmail.com">
               katiekickscancer@gmail.com
             </a>

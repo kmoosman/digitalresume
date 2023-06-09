@@ -48,7 +48,7 @@ export const socialData = (type) => {
     {
       id: "instagram",
       title: "Instagram",
-      total: "1,500",
+      total: "1,550",
       countType: "followers",
       link: "https://www.instagram.com/katiekickscancer/",
       blurb: "Stories posted daily from the day after I was diagnosed.",
@@ -282,6 +282,13 @@ export const podcasts = (type) => {
     },
     {
       id: "8",
+      name: "Patient from Hell",
+      link: "https://podcasts.apple.com/us/podcast/episode-28-self-advocacy-in-action-inspiration-from/id1622669098?i=1000614791497",
+      description: "Self advocacy in action",
+      image: OncologyUnscripted,
+    },
+    {
+      id: "9",
       name: "You Just Don't Know It Yet",
       link: "https://open.spotify.com/episode/1BBvJxlC3D48AwFT7EAQMF?si=1dabb5cab19c49b1",
       description:

@@ -99,6 +99,9 @@ function Subscribe() {
                           <p className="text-sm text-gray-500">
                             ✉️ No spam, just a handful of updates per year
                           </p>
+                          {/* <p className="text-xs font-thin text-gray-500">
+                            (click outside window to close w/o subscribing)
+                          </p> */}
                         </div>
                       </div>
                     </div>
