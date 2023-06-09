@@ -46,7 +46,7 @@ export const Dashboard = ({ rates, demographics, type }) => {
               </div>
 
               {/* Cards */}
-              <div className="ml-5 text-3xl mb-4">Socials</div>
+              <div className="ml-5 text-3xl mb-4 font-medium">Socials</div>
               <div className="grid grid-cols-12 gap-6 mb-6 ">
                 {socialData(type).map((social) => (
                   <DashboardCard
