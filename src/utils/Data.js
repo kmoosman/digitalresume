@@ -214,13 +214,20 @@ export const podcasts = (type) => {
     {
       id: "0",
       name: "Oncology Unscripted",
+      link: "https://oncologyunscripted.buzzsprout.com/2162983/13165690-julie-and-katie-go-to-asco",
+      description: "Julie and Katie go to ASCO",
+      image: OncologyUnscripted,
+    },
+    {
+      id: "1",
+      name: "Oncology Unscripted",
       link: "https://podcasts.apple.com/us/podcast/second-opinions/id1679839386?i=1000609418052",
       description:
         "In this episode we discuss the second opinion, seeking an alternate recommendation from a different doctor outside the main team.",
       image: OncologyUnscripted,
     },
     {
-      id: "1",
+      id: "2",
       name: "Oncology Unscripted",
       link: "https://podcasts.apple.com/us/podcast/oncology-unscripted/id1679839386",
       description:
@@ -228,14 +235,14 @@ export const podcasts = (type) => {
       image: OncologyUnscripted,
     },
     {
-      id: "2",
+      id: "3",
       name: "Oncology Unscripted",
       link: "https://podcasts.apple.com/us/podcast/oncology-terms-doctor-and-staff-roles-and/id1679839386?i=1000613113778",
       description: "Doctor and staff roles",
       image: OncologyUnscripted,
     },
     {
-      id: "3",
+      id: "4",
       name: "The Doctors Art",
       link: "https://www.thedoctorsart.com/episodes/ep27",
       description: `${
@@ -246,7 +253,7 @@ export const podcasts = (type) => {
       image: doctorsArt,
     },
     {
-      id: "4",
+      id: "5",
       name: "The Accelerators",
       link: "https://accelerators.buzzsprout.com/1839275/11948820-the-experts-discuss-patients-mental-health-and-mindfulness",
       description: `${
@@ -258,7 +265,7 @@ export const podcasts = (type) => {
       image: accelerators,
     },
     {
-      id: "5",
+      id: "6",
       name: "The Accelerators",
       link: "https://accelerators.buzzsprout.com/1839275/11447574-on-clinical-trials-the-patient-perspective-with-julie-and-katie",
       description:
@@ -266,7 +273,7 @@ export const podcasts = (type) => {
       image: accelerators,
     },
     {
-      id: "6",
+      id: "7",
       name: "The Accelerators",
       link: "https://accelerators.buzzsprout.com/1839275/11673786-on-clinical-trials-patient-education-with-julie-katie-and-david",
       description:
@@ -274,21 +281,21 @@ export const podcasts = (type) => {
       image: accelerators,
     },
     {
-      id: "7",
+      id: "8",
       name: "HealthCare Unfiltered",
       link: "https://podcasts.apple.com/au/podcast/patient-voice-on-social-media-a-survivor-story/id1534737585?i=1000563486434",
       description: "Patient voice on social media - A survivor story",
       image: heathlcareUnfiltered,
     },
     {
-      id: "8",
+      id: "9",
       name: "Patient from Hell",
       link: "https://podcasts.apple.com/us/podcast/episode-28-self-advocacy-in-action-inspiration-from/id1622669098?i=1000614791497",
       description: "Self advocacy in action",
       image: OncologyUnscripted,
     },
     {
-      id: "9",
+      id: "10",
       name: "You Just Don't Know It Yet",
       link: "https://open.spotify.com/episode/1BBvJxlC3D48AwFT7EAQMF?si=1dabb5cab19c49b1",
       description:
