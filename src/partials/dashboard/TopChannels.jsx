@@ -54,14 +54,14 @@ export const TopChannels = ({size}) => {
                       icon={iconStyling["Twitter"]}
                       className="text-slate-800 w-5 h-5 ml-2"
                     />
-                    <div className="text-slate-800 ml-5">Twitter</div>
+                    <div className="text-slate-800 ml-5">Twitter(28 days)</div>
                   </div>
                 </td>
                 <td className="p-2">
-                  <div className="text-center">2.2K</div>
+                  <div className="text-center">302,408K</div>
                 </td>
                 <td className="p-2">
-                  <div className="text-center">2M</div>
+                  <div className="text-center">11M</div>
                 </td>
               </tr>
               {/* Row */}
@@ -76,10 +76,10 @@ export const TopChannels = ({size}) => {
                   </div>
                 </td>
                 <td className="p-2">
-                  <div className="text-center">1.2K</div>
+                  <div className="text-center">1.6K</div>
                 </td>
                 <td className="p-2">
-                  <div className="text-center ">3.4K</div>
+                  <div className="text-center ">16.9K</div>
                 </td>
               </tr>
               {/* Row */}
@@ -97,7 +97,7 @@ export const TopChannels = ({size}) => {
                   <div className="text-center">5K</div>
                 </td>
                 <td className="p-2">
-                  <div className="text-center">37K</div>
+                  <div className="text-center">1.5M*</div>
                 </td>
               </tr>
             </tbody>

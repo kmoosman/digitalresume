@@ -37,7 +37,7 @@ export const socialData = (type) => {
     {
       id: "twitter",
       title: "Twitter",
-      total: "9,000",
+      total: "12,100",
       countType: "followers",
       link: "https://twitter.com/kaydaustin",
       blurb:
@@ -48,7 +48,7 @@ export const socialData = (type) => {
     {
       id: "instagram",
       title: "Instagram",
-      total: "1,550",
+      total: "1,610",
       countType: "followers",
       link: "https://www.instagram.com/katiekickscancer/",
       blurb: "Stories posted daily from the day after I was diagnosed.",
@@ -56,7 +56,7 @@ export const socialData = (type) => {
     {
       id: "youtube",
       title: "YouTube",
-      total: "2,100",
+      total: "3,150",
       countType: "subscribers",
       link: "https://www.youtube.com/channel/UCcf5yVgHvI8-__g0RHjfrTw",
       blurb:
@@ -98,15 +98,15 @@ export const youtubeVideos = () => {
   return [
     {
       id: "youtube",
-      title: "Chubbyemu's Video On My Story",
-      viewCount: "668,000",
+      title: "Chubbyemu's Video On My Story (1.5M Views)",
+      viewCount: "1.5M",
       link: "https://www.youtube.com/embed/i9fLEvgZzRE",
     },
 
     {
       id: "youtube",
       title: "A Cancer Patient Speaks Candidly With Her Oncologist",
-      viewCount: "43,900",
+      viewCount: "19,000",
       link: "https://www.youtube.com/embed/Nddft_nc3Yc",
     },
   ];

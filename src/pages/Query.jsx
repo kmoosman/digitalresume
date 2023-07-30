@@ -69,10 +69,13 @@ export const Query = ({ rates, demographics, type }) => {
                     />
                   </div>
                   <div className="justify-center flex flex-row text-5xl font-bold text-slate-800 mt-5 w-full center-text w-full rounded">
-                    Life Refocused
+                    Life Refocused 
                   </div>
                   <p className="flex justify-center w-full text-2xl font-semibold">
                     Memoir of a life shaped by cancer
+                  </p>
+                  <p className="flex justify-center w-full text-md font-base">
+                    (104,323 words)
                   </p>
                   {/*<div className="w-full w-40 h-40 mx-auto ">*/}
                   {/*  <img*/}
@@ -94,41 +97,18 @@ export const Query = ({ rates, demographics, type }) => {
                 </div>
                 <div className="text-sm p-4 flex flex-col col-span-full sm:col-span-12 xl:col-span-12 bg-white shadow-lg rounded-sm border border-slate-200">
                   <p className="block p-1">
-                    I never saw myself standing where I am now but I'm proof
-                    that{" "}
-                    <b>
-                      "strength isn't the absence of fear but instead a product
-                      of persevering through it"
-                    </b>{" "}
-                    and I hope to bring this perspective to readers through my
-                    book.
-                  </p>
-                  <p className="block p-1">
-                    {" "}
-                    In "Life Refocused," I share my personal journey of being
-                    diagnosed with an extremely rare (single digits, worldwide,
-                    in history) Stage IV cancer on New Year's Eve 2020, as a 29
-                    year old newly wed. I take readers through the shock and
-                    disbelief I struggled to overcome after years of being told
-                    by doctors that I was "too young for cancer" and the
-                    difficult decisions I had to make, such as forgoing my
-                    honeymoon and moving across the country in search of
-                    experts.{" "}
-                  </p>
-
-                  <p className="block p-1">
-                    {" "}
-                    The type of tumor I had is typically supposed to be benign,
-                    it never spreads. Except in my case of course, in which case
-                    the tumor on my right kidney, that was larger than a
-                    softball, spread to my liver with over 15 tumors throughout.
-                    Giving me a Stage IV cancer diagnosis that would render me
-                    inoperable. I take readers through what it was like to go
-                    from being inoperable with an advanced cancer and a bleak
-                    prognosis to no active cancer through a series of
-                    serendipitous events that would teach me many life lessons
-                    along the way, that anyone looking to make the most of life
-                    can learn from.
+                New Year's Eve, 2020 was supposed to be a turning point to better days. 
+                Instead, Katie, a 29-year-old newlywed, found herself in the ER processing the earth-shattering news of a stage IV cancer diagnosis. 
+                One that'd come after years of being assured she was "too young for cancer". 
+                Over the next two years, this shy, timid, and frightened young woman would be 
+                forced to face her own mortality and learn to advocate for herself. The ultra 
+                rare cancer they'd find in her kidney and over 15 tumors in her liver, 
+                would render her inoperable and without much hope. 
+                But with the help of social media and a few serendipitous events, 
+                she'd find herself at the top institutions pleading her case for a 
+                radical and high-risk surgery that would change her life forever. 
+                A journey that would highlight the absolutely best and worst in 
+                healthcare and uncover the silver linings and beauty of humanity filling the space in between.
                   </p>
                 </div>
               </div>
@@ -156,7 +136,8 @@ export const Query = ({ rates, demographics, type }) => {
                     <li className="p-1">
                       <b>Health and wellness readers:</b> My book will appeal to
                       readers who are interested in health, wellness, and
-                      overcoming adversity.
+                      overcoming adversity. I have a large following of medical 
+                      professionals on Twitter supporting and who are interested in my case.
                     </li>
                     <li className="p-1">
                       <b>Social media followers:</b> I have a following on
@@ -199,52 +180,35 @@ export const Query = ({ rates, demographics, type }) => {
                           <div className="text-xs font-semibold text-slate-400 uppercase mb-1">
                             Katie Coleman •Stage IV Cancer Survivor • Software
                             Engineer • Content Creator • Writer (Memoir) •
-                            Non-Profit Founder
+                            Non-Profit Founder •
+                            Podcaster
                           </div>
                           <div className="text-sm">
                             <p className="p-1">
                               {" "}
-                              My name is Katie and I am a cancer survivor and
-                              patient advocate. I was diagnosed with a rare
-                              stage IV cancer at 29-years old and just two
-                              months after getting married, but I have not let
-                              cancer define me. Instead, I have used my personal
-                              experience to become a visible patient advocate
-                              for kidney cancer. My story has been featured in
-                              national news articles such as NBC, Today and
-                              Yahoo and it was highlighted on the national CBS
-                              Evening News as well. I'm an introvert by nature
-                              so sharing my life publicly has been a big change
-                              but the experience of sharing my story has been
-                              incredibly rewarding as I've been able to connect
-                              with other patients and survivors and the process
-                              has helped has helped me grow in ways I never
-                              thought possible.
+                              A little about me – I'm a software engineer, non-profit founder,
+                                podcaster, wife, dog/cat mom, and cancer survivor LIVING in Austin,
+                                Texas. 
+                                I've been sharing and documenting my diagnosis for the past 2.5 years
+                                on social media in hopes others who found themselves in my shoes one day,
+                                they may feel a little less alone. Those efforts have led to a platform of over 70,000
+                                followers across channels that I continue to share with daily. 
                             </p>
 
                             <p className="p-1">
-                              In addition to my advocacy work, I am a software
-                              engineer and I have even found a new job during my
-                              treatment. I was transparent about my diagnosis
-                              through the interview process which gained a lot
-                              of attention but helped provide me with insight on
-                              how navigate the difficult task. I am also the
-                              founder of a non-profit organization and I am
-                              currently starting a new podcast with another
-                              patient and doctor where we'll talk openly about
-                              navigating life and treatment with cancer and
-                              provide a platform for other patients to share
-                              their experiences.
-                            </p>
-
-                            <p className="p-1">
-                              My personal experience, professional background,
-                              and dedication to advocacy make me the perfect
-                              author for this memoir. I hope to inspire others
-                              to find purpose in life and to never give up hope.
-                              I am donating the proceeds of this book for
-                              research and am excited to share my story with the
-                              world.
+                            I realize just how truly fortunate I am to still be here
+                            and I use that time to give back to others in any way I can.
+                            Which is what I spend most of my time doing these days. 
+                            Since my diagnosis, I've founded a non-profit, started a podcast,
+                            built a strong following in the medical community, been featured by 
+                            national outlets including NBC, Today and the CBS National Evening 
+                            News and I regularly use my voice and platform to give back. 
+                            The virality of several of my posts (last viral post seen by 11 million)
+                            has led to a beautiful community of support, that's enabled me to donate everything 
+                            I make from social media to research. They've also supported me in building an 
+                            email list awaiting my book's release over the past few months that 
+                            approaching around 500. Which I couldn't be more grateful for since 
+                            I plan to donate all proceeds from my portion of the publication as well.
                             </p>
                           </div>
                         </div>
@@ -398,7 +362,7 @@ export const Query = ({ rates, demographics, type }) => {
               <COA type="query" />
             </div>
 
-            <hr className="w-full mt-6" />
+            {/* <hr className="w-full mt-6" />
             <div className="text-3xl font-bold text-slate-800 mt-12 mb-7">
               Sample - Life Refocused
             </div>
@@ -406,7 +370,7 @@ export const Query = ({ rates, demographics, type }) => {
               <div className="px-5 pt-5">
                 <header className="flex xl:float-right lg:float-right mb-2">
                   {/* Icon */}
-                  <div className="">
+                  {/* <div className="">
                     <div className="flex items-start ">
                       <div className="text-3xl font-bold text-slate-800 mr-2">
                         {type === "query" ? "" : "Donate"}
@@ -469,7 +433,7 @@ export const Query = ({ rates, demographics, type }) => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div>  */}
 
             <hr className="w-full mt-12" />
             <Videos type={"query"} />
@@ -489,32 +453,17 @@ export const StandOut = () => {
       <div className="text-sm p-4 flex flex-col col-span-full sm:col-span-12 xl:col-span-12 bg-white shadow-lg rounded-sm border border-slate-200">
         <ul className="list-disc text-sm ml-4 p-4">
           <li className="p-1">
-            Having an extremely rare cancer (single digit case reports,
-            worldwide, in history)
+            Overcoming the odds, with a dramatic shift in prognosis (from terminal to no evidence of disease)
           </li>
           <li className="p-1">
-            Being diagnosed just two months after getting married, at 29 years
-            old
+            The 1.5 years it took me to be diagnosis after having symptoms brushed off as anxiety
           </li>
-          <li className="p-1">
-            The dramatic shift in prognosis (from terminal to no evidence of
-            disease) I had after perservering through many obstacles and
-            learning to advocate for myself
-          </li>
-          <li className="p-1">
-            I donate everything I make from social media to research and will be
-            donating everything from this book as well
-          </li>
+          
           <li className="p-1">Battling cancer through a pandemic</li>
           <li className="p-1">
-            Perspective from someone who has been afraid of everything my entire
-            life, I don't paint myself as a "strong" fighter. I share the
-            realness of my story as the poster child for "if you can't beat
+            Perspective from someone who has been afraid of everything their entire
+            life. A journey from the perspectice of, "if you can't beat
             fear, do it scared"
-          </li>
-          <li className="p-1">
-            Offering a new definition of strength: "strength isn't the absense
-            of fear but instead a product of perservering through it"
           </li>
           <li className="p-1">
             Overcoming medical complications, a blood shortage and almost losing
@@ -522,16 +471,12 @@ export const StandOut = () => {
             "catastrophic bleed"
           </li>
           <li className="p-1">
+            I donate everything I make from social media to research and will be
+            donating everything from this book as well
+          </li>
+          <li className="p-1">
             The dedication of my life after surgery to giving back and helping
             others. Changing careers and building an app for patients
-          </li>
-          <li className="p-1">
-            Sharing a evolutionary journey from being too scared to talk to
-            strangers to sharing my life as an open book online with millions
-          </li>
-          <li className="p-1">
-            Focus on gratitude and tangible advice on what helped me reframe my
-            thinking and how I learned to live in the moment
           </li>
         </ul>
       </div>
