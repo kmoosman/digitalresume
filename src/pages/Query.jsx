@@ -171,11 +171,6 @@ export const Query = ({ rates, demographics, type }) => {
                       />
                     </div>
                     <div className="flex w-full">
-                      <a
-                        href="https://docs.google.com/document/d/1e-EKszKP4nbMNtuQ1PyJ2xKC5ljR2zlSsU8jXF4DO0M/edit"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
                         <div className="flex flex-col">
                           <div className="text-xs font-semibold text-slate-400 uppercase mb-1">
                             Katie Coleman •Stage IV Cancer Survivor • Software
@@ -212,7 +207,7 @@ export const Query = ({ rates, demographics, type }) => {
                             </p>
                           </div>
                         </div>
-                      </a>
+                    
                     </div>
                   </div>
                 </div>
