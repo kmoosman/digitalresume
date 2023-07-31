@@ -124,7 +124,7 @@ export const Query = ({ rates, demographics, type }) => {
                   <ul className="list-disc text-sm ml-4 p-4">
                     <li className="p-1">
                       <b>Cancer survivors and their families:</b> My story is
-                      relatable and inspiring for those who have gone through a
+                      relatable for those who have gone through a
                       similar experience.{" "}
                     </li>
                     <li className="p-1">
@@ -137,7 +137,7 @@ export const Query = ({ rates, demographics, type }) => {
                       <b>Health and wellness readers:</b> My book will appeal to
                       readers who are interested in health, wellness, and
                       overcoming adversity. I have a large following of medical 
-                      professionals on Twitter supporting and who are interested in my case.
+                      professionals on Twitter who generously support and are interested in the cause.
                     </li>
                     <li className="p-1">
                       <b>Social media followers:</b> I have a following on
