@@ -198,7 +198,7 @@ export const Query = ({ rates, demographics, type }) => {
                             built a strong following in the medical community, been featured by 
                             national outlets including NBC, Today and the CBS National Evening 
                             News and I regularly use my voice and platform to give back. 
-                            The virality of several of my posts (last viral post seen by 11 million)
+                            Due to the reach of my story (last viral post seen by 11 million)
                             has led to a beautiful community of support, that's enabled me to donate everything 
                             I make from social media to research. They've also supported me in building an 
                             email list awaiting my book's release over the past few months that 
