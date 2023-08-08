@@ -30,7 +30,12 @@ import PodcastCard from "../partials/dashboard/PodcastCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBook,
+  faBookBookmark,
+  faBookJournalWhills,
+  faBookMedical,
   faBookOpen,
+  faBookmark,
+  faContactBook,
   faSquareArrowUpRight,
 } from "@fortawesome/free-solid-svg-icons";
 import austin from "../images/austin.jpg";
@@ -61,13 +66,10 @@ export const Query = ({ rates, demographics, type }) => {
             <div className="w-full">
               <div className="flex justify-center w-full mb-16">
                 <div className="justify-center">
-                  <div className="w-48 h-48 rounded mx-auto ">
-                    <img
-                      className="mx-auto h-full w-full rounded"
-                      src={bookcover3}
-                      alt="bookcover"
-                    />
-                  </div>
+                <div className="w-48 h-48 rounded-full flex items-center justify-center mx-auto bg-indigo-300 p-2 shadow-md  shadow-slate-700">
+                      <FontAwesomeIcon icon={faBookOpen} className="w-32 h-32 text-gray-200"/>
+                </div>
+
                   <div className="justify-center flex flex-row text-5xl font-bold text-slate-800 mt-5 w-full center-text w-full rounded">
                     Life Refocused 
                   </div>
