@@ -203,9 +203,7 @@ export const Query = ({ rates, demographics, type }) => {
                             Due to the reach of my story (last viral post seen by 11 million)
                             has led to a beautiful community of support, that's enabled me to donate everything 
                             I make from social media to research. They've also supported me in building an 
-                            email list awaiting my book's release over the past few months that 
-                            approaching around 500. Which I couldn't be more grateful for since 
-                            I plan to donate all proceeds from my portion of the publication as well.
+                            email list awaiting my book's release over 500. 
                             </p>
                           </div>
                         </div>
