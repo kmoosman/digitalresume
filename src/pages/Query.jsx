@@ -109,7 +109,7 @@ export const Query = ({ rates, demographics, type }) => {
                 But with the help of social media and a few serendipitous events, 
                 she'd find herself at the top institutions pleading her case for a 
                 radical and high-risk surgery that would change her life forever. 
-                A journey that would highlight the absolutely best and worst in 
+                A journey that would highlight the absolute best and worst in 
                 healthcare and uncover the silver linings and beauty of humanity filling the space in between.
                   </p>
                 </div>
