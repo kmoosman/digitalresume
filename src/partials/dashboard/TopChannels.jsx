@@ -60,7 +60,7 @@ export const TopChannels = ({size}) => {
                       icon={iconStyling["Twitter"]}
                       className="text-slate-800 w-5 h-5 ml-2"
                     />
-                    <div className="text-slate-800 ml-5">Twitter(28 days)</div>
+                    <div className="text-slate-800 ml-5">Twitter</div>
                   </div>
                 </td>
                 <td className="p-2">
