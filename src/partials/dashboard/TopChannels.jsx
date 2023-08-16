@@ -24,6 +24,9 @@ export const TopChannels = ({size}) => {
                 <th className="p-2">
                   <div className="font-semibold text-center">Top Post</div>
                 </th>
+                <th className="p-2">
+                  <div className="font-semibold text-center">Engagement Rate</div>
+                </th>
               </tr>
             </thead>
             {/* Table body */}
@@ -45,6 +48,9 @@ export const TopChannels = ({size}) => {
                 <td className="p-2">
                   <div className="text-center">1.5M</div>
                 </td>
+                <td className="p-2">
+                  <div className="text-center">2.7%</div>
+                </td>
               </tr>
               {/* Row */}
               <tr>
@@ -62,6 +68,9 @@ export const TopChannels = ({size}) => {
                 </td>
                 <td className="p-2">
                   <div className="text-center">11M</div>
+                </td>
+                <td className="p-2">
+                  <div className="text-center">3.9%</div>
                 </td>
               </tr>
               {/* Row */}
@@ -81,6 +90,9 @@ export const TopChannels = ({size}) => {
                 <td className="p-2">
                   <div className="text-center ">16.9K</div>
                 </td>
+                <td className="p-2">
+                  <div className="text-center">6.4%</div>
+                </td>
               </tr>
               {/* Row */}
               <tr>
@@ -99,11 +111,15 @@ export const TopChannels = ({size}) => {
                 <td className="p-2">
                   <div className="text-center">1.5M*</div>
                 </td>
+                <td className="p-2">
+                  <div className="text-center">25-35%*</div>
+                </td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
+      <div className="text-left text-xs pl-4">*View Duration</div>
     </div>
   );
 };
