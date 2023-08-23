@@ -10,6 +10,9 @@ import Customers from "../partials/dashboard/Customers";
 import DashboardCard12 from "../partials/dashboard/DashboardCard12";
 import Banner from "../partials/Banner";
 import { Rates } from "../partials/dashboard/Rates";
+import {
+  faBullhorn,
+} from "@fortawesome/free-solid-svg-icons";
 
 import Docs from "../images/docs.png";
 
@@ -90,10 +93,25 @@ export const Query = ({ rates, demographics, type }) => {
                   {/*</div>*/}
                 </div>
               </div>
+              <a href={'https://youtu.be/wPZhLBkHhwY'} target="_blank" >
+              <div className="font-md text-slate-800 mt-2 mb-7 p-4 bg-blue-100 rounded flex flex-row justify-between">   
+                <div>
+                <div className="font-semibold flex flex-row"> <FontAwesomeIcon icon={faBullhorn}  className="pt-1" /> <div className="pl-2">A sample chapter of my memoir has been released, listen here.</div>
+                </div>
+                <div className="text-xs font-md pl-6">My portion of the proceeds from this book will be donated to research.
+                </div>
+                </div>
+                
+                  <div className="h-full self-center p-2 text-indigo-800">
+                    <FontAwesomeIcon icon={faSquareArrowUpRight} />
+                    </div>
+              </div>
+              </a>
               <hr />
-
+             
               {/*About the book*/}
               <div>
+                
                 <div className="text-3xl font-bold text-slate-800 mt-5 mb-4">
                   Summary
                 </div>
