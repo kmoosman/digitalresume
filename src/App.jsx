@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
+import { useRouter } from 'next/router';
 
 import "./css/style.css";
-
+import ReactGA from 'react-ga';
 import "./charts/ChartjsConfig";
 
 // Import pages
@@ -12,9 +13,18 @@ import Podcasts from "./pages/Podcasts";
 import Query from "./pages/Query";
 import Advocacy from "./pages/Advocacy";
 import Privacy from "./pages/Privacy";
+import CookieConsent from "react-cookie-consent";
+
+// Initialize Google Analytics
+ReactGA.initialize('G-R6CNTSBPN0');
 
 function App() {
+
   const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.pageview(location.pathname + location.search);
+  }, [location]);
 
   useEffect(() => {
     document.querySelector("html").style.scrollBehavior = "auto";
@@ -68,6 +78,17 @@ function App() {
         <Route exact path="/advocacy" element={<Advocacy />} />
         <Route exact path="/privacy" element={<Privacy />} />
       </Routes>
+      <CookieConsent
+        location="bottom"
+        buttonText="I Understand"
+        cookieName="KatieKicksCancerCookieConsent"
+        style={{ background: "#181818",  fontSize: "13px" }}
+        buttonStyle={{ color: "white", backgroundColor: "#5552C7", fontSize: "10px", rounded: "true", borderRadius: "5px", padding: "10px 20px"  }}
+        expires={150} // The cookie will expire after 150 days
+      >
+        This site uses cookies and Google Analytics to track our website traffic.{" "}
+    
+      </CookieConsent>
     </>
   );
 }

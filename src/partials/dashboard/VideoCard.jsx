@@ -34,6 +34,13 @@ export const VideoCard = ({ title, link, blurb, size }) => {
               src={link}
               className="w-full h-[400px] rounded-lg"
               allow="encrypted-media;"
+              onClick={() => {
+                ReactGA.event({
+                  category: 'Video View',
+                  action: 'Viewed Video',
+                  label: `Viewed video for ${link}}`
+                });
+              }}
             ></iframe>
           </div>
           {/*</div>*/}

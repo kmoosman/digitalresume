@@ -34,6 +34,13 @@ export const COA = ({ type }) => {
                 target="_blank"
                 className="text-orange-400"
                 rel="noreferrer"
+                onClick={() => {
+                  ReactGA.event({
+                    category: 'External Links',
+                    action: 'Clicked Nonprofit',
+                    label: `Clicked on COA link}`
+                  });
+                }}
               >
                 <FontAwesomeIcon icon={faSquareArrowUpRight} />
               </a>

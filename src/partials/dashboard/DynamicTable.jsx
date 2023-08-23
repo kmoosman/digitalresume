@@ -80,6 +80,13 @@ export const DynamicTable = ({ data, nameAlias, tableTitle, size }) => {
                           className="font-medium text-xs text-blue-500 hover:text-blue-600"
                           href={data.link}
                           target="_blank"
+                          onClick={() => {
+                            ReactGA.event({
+                              category: 'External Links',
+                              action: 'Clicked Table Link',
+                              label: `Clicked table link for ${data.link}}`
+                            });
+                          }}
                         >
                           {data.description ? data.description : "View"}
                           <span className="hidden sm:inline"> -&gt;</span>

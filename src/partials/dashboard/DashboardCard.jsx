@@ -29,6 +29,13 @@ export const DashboardCard = ({
       href={link}
       target="_blank"
       className="flex flex-col col-span-full sm:col-span-3 xl:col-span-3 bg-white shadow-lg rounded-sm border border-slate-200"
+      onClick={() => {
+        ReactGA.event({
+          category: 'External Links',
+          action: 'Clicked Social Media Link',
+          label: `Clicked social ${type} link: ${link}}`
+        });
+      }}
     >
       <div>
         <div className="px-5 pt-5">

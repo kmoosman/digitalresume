@@ -13,6 +13,7 @@ import { Rates } from "../partials/dashboard/Rates";
 import {
   faBullhorn,
 } from "@fortawesome/free-solid-svg-icons";
+import ReactGA from 'react-ga';
 
 import Docs from "../images/docs.png";
 
@@ -93,7 +94,15 @@ export const Query = ({ rates, demographics, type }) => {
                   {/*</div>*/}
                 </div>
               </div>
-              <a href={'https://youtu.be/wPZhLBkHhwY'} target="_blank" >
+              <a href={'https://youtu.be/wPZhLBkHhwY'} 
+              target="_blank"   
+              onClick={() => {
+                ReactGA.event({
+                  category: 'External Links',
+                  action: 'Clicked Sample Chapter Link',
+                  label: 'Life Refocused - https://youtu.be/wPZhLBkHhwY'
+                });
+              }}>
               <div className="font-md text-slate-800 mt-2 mb-7 p-4 bg-blue-100 rounded flex flex-row justify-between">   
                 <div>
                 <div className="font-semibold flex flex-row"> <FontAwesomeIcon icon={faBullhorn}  className="pt-1" /> <div className="pl-2">A sample chapter of my memoir has been released, listen here.</div>
@@ -221,7 +230,7 @@ export const Query = ({ rates, demographics, type }) => {
                             Due to the reach of my story (last viral post seen by 11 million)
                             has led to a beautiful community of support, that's enabled me to donate everything 
                             I make from social media to research. They've also supported me in building an 
-                            email list awaiting my book's release over 500. 
+                            email list awaiting my book's release with over 600 subscribers. 
                             </p>
                           </div>
                         </div>
@@ -254,6 +263,13 @@ export const Query = ({ rates, demographics, type }) => {
                           target="_blank"
                           className="text-blue-500"
                           rel="noreferrer"
+                          onClick={() => {
+                            ReactGA.event({
+                              category: 'External Links',
+                              action: 'Clicked Blog Article',
+                              label: `Clicked blog`
+                            });
+                          }}
                         >
                           <FontAwesomeIcon icon={faSquareArrowUpRight} />
                         </a>
@@ -282,6 +298,13 @@ export const Query = ({ rates, demographics, type }) => {
                         href="https://medium.com/@katie.coleman.ut/having-cancer-made-me-better-at-my-job-5fef3406b4db"
                         target="_blank"
                         rel="noreferrer"
+                        onClick={() => {
+                          ReactGA.event({
+                            category: 'External Links',
+                            action: 'Clicked Blog Article',
+                            label: `Clicked blog`
+                          });
+                        }}
                       >
                         <div className="flex flex-col">
                           <h2 className="text-lg font-semibold text-slate-800 mb-2">

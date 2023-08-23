@@ -27,6 +27,13 @@ export const ComparablesCard = ({
       href={link}
       target="_blank"
       className="flex flex-col col-span-full sm:col-span-4 xl:col-span-4 bg-white shadow-lg rounded-sm border border-slate-200"
+      onClick={() => {
+        ReactGA.event({
+          category: 'External Links',
+          action: 'Viewed comparables',
+          label: `Clicked comparables for ${title}}`
+        });
+      }}
     >
       <div>
         <div className="px-5 pt-5">

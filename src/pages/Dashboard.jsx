@@ -15,6 +15,7 @@ import {
   faBullhorn,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ReactGA from 'react-ga';
 
 import PhotoTitleLinkTable, {
   DynamicTable,
@@ -50,7 +51,15 @@ export const Dashboard = ({ rates, demographics, type }) => {
               <div className="text-3xl font-bold text-slate-800 mt-12 mb-7">
                 {type === "media" ? "Media " : null} Dashboard
               </div>
-              <a href={'https://youtu.be/wPZhLBkHhwY'} target="_blank" >
+              <a href={'https://youtu.be/wPZhLBkHhwY'} 
+              target="_blank"  
+              onClick={() => {
+                ReactGA.event({
+                  category: 'External Links',
+                  action: 'Clicked Sample Chapter Link',
+                  label: 'Life Refocused - https://youtu.be/wPZhLBkHhwY'
+                });
+              }} >
               <div className="font-md text-slate-800 mt-2 mb-7 p-4 bg-blue-100 rounded flex flex-row justify-between">   
                 <div>
                 <div className="font-semibold flex flex-row"> <FontAwesomeIcon icon={faBullhorn}  className="pt-1" /> <div className="pl-2">A sample chapter of my memoir has been released, listen here.</div>
