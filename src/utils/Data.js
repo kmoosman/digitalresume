@@ -18,7 +18,6 @@ import SHOCK from "../images/shock.jpeg";
 import YouJustDontKnow from "../images/YouJustDontKnow.png";
 import OncologyUnscripted from "../images/oncology_unscripted.png";
 import PatientFromHell from "../images/PatientFromHell.png";
-import { faBullhorn } from "@fortawesome/free-solid-svg-icons";
 
 export const socialData = (type) => {
   return [

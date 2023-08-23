@@ -10,6 +10,7 @@ import {
   faCoffee,
   faSquareArrowUpRight,
 } from "@fortawesome/free-solid-svg-icons";
+import ReactGA from 'react-ga';
 
 export const PodcastCard = ({ title, link, blurb, type, image }) => {
   library.add(fab);
@@ -19,6 +20,13 @@ export const PodcastCard = ({ title, link, blurb, type, image }) => {
       href={link}
       target="_blank"
       className="flex flex-col col-span-full sm:col-span-4 xl:col-span-4 bg-white shadow-lg rounded-sm border border-slate-200"
+      onClick={() => {
+        ReactGA.event({
+          category: 'External Links',
+          action: 'Clicked Podcast Link',
+          label: `Clicked podcast ${title}}`
+        });
+      }}
     >
       <div>
         <div className="px-5 pt-5">

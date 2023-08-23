@@ -3,6 +3,7 @@ import KCA from "../../images/kca.png";
 import Fairmont from "../../images/fairmont.png";
 import Insighters from "../../images/insighters.png";
 import LaRoche from "../../images/laroche.jpeg";
+import ReactGA from 'react-ga';
 
 export const DynamicTable = ({ data, nameAlias, tableTitle, size }) => {
   const cssSize = () => {

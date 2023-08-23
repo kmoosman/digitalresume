@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import { useRouter } from 'next/router';
 
 import "./css/style.css";
 import ReactGA from 'react-ga';

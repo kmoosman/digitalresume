@@ -10,6 +10,7 @@ import {
   faCoffee,
   faSquareArrowUpRight,
 } from "@fortawesome/free-solid-svg-icons";
+import ReactGA from 'react-ga';
 
 export const ComparablesCard = ({
   title,

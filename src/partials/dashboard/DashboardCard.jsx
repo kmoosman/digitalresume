@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import LineChart from "../../charts/LineChart01";
 import Icon from "../../images/icon-01.svg";
 import EditMenu from "../EditMenu";
+import ReactGA from 'react-ga';
 
 // Import utilities
 import { tailwindConfig, hexToRGB, iconStyling } from "../../utils/Utils";
