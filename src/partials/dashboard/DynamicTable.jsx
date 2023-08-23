@@ -53,7 +53,7 @@ export const DynamicTable = ({ data, nameAlias, tableTitle, size }) => {
             </thead>
             {/* Table body */}
             <tbody className="text-sm divide-y divide-slate-100">
-              {data.map((data) => {
+              {data.sort((a, b) => b.id - a.id).map((data) => {
                 return (
                   <tr key={data.id}>
                     <td className="p-2 md:whitespace-nowrap">

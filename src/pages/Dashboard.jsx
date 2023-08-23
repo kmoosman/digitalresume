@@ -10,6 +10,11 @@ import Customers from "../partials/dashboard/Customers";
 import DashboardCard12 from "../partials/dashboard/DashboardCard12";
 import Banner from "../partials/Banner";
 import { Rates } from "../partials/dashboard/Rates";
+import {
+  faSquareArrowUpRight,
+  faBullhorn,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import PhotoTitleLinkTable, {
   DynamicTable,
@@ -38,13 +43,29 @@ export const Dashboard = ({ rates, demographics, type }) => {
 
           <main>
             <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">
+              
               {/* Welcome banner */}
               <WelcomeBanner type={type} />
 
               <div className="text-3xl font-bold text-slate-800 mt-12 mb-7">
                 {type === "media" ? "Media " : null} Dashboard
               </div>
-
+              
+              <div className="font-md text-slate-800 mt-2 mb-7 p-4 bg-blue-100 rounded flex flex-row justify-between">   
+                <div>
+                <div className="font-semibold flex flex-row"> <FontAwesomeIcon icon={faBullhorn}  className="pt-1" /> <div className="pl-2">A sample chapter of my memoir has been released, listen here.</div>
+                </div>
+                <div className="text-xs font-md pl-6">My portion of the proceeds from this book will be donated to research.
+                </div>
+                </div>
+                <a href={'https://youtu.be/wPZhLBkHhwY'} target="_blank" className="text-indigo-800 flex flex-row ">
+                  <div className="h-full self-center p-2">
+                    <FontAwesomeIcon icon={faSquareArrowUpRight} />
+                  </div>
+            </a>
+                {/* <div className="mr-6 h-full self-center text-indigo-900 font-bold">Listen Here  </div> */}
+                
+              </div>
               {/* Cards */}
               <div className="ml-5 text-3xl mb-4 font-medium">Socials</div>
               <div className="grid grid-cols-12 gap-6 mb-6 ">

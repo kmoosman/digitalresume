@@ -17,6 +17,7 @@ import BREATH from "../images/breath.jpeg";
 import SHOCK from "../images/shock.jpeg";
 import YouJustDontKnow from "../images/YouJustDontKnow.png";
 import OncologyUnscripted from "../images/oncology_unscripted.png";
+import PatientFromHell from "../images/PatientFromHell.png";
 import { faBullhorn } from "@fortawesome/free-solid-svg-icons";
 
 export const socialData = (type) => {
@@ -24,7 +25,7 @@ export const socialData = (type) => {
     {
       id: "tiktok",
       title: "TikTok",
-      total: "54,300",
+      total: "54,400",
       countType: "followers",
       link: "https://www.tiktok.com/@katiekickscancer",
       blurb:
@@ -98,6 +99,18 @@ export const youtubeVideos = () => {
   return [
     {
       id: "youtube",
+      title: "Life Refocused - Memoir: Chapter 1",
+      viewCount: "150",
+      link: "https://www.youtube.com/embed/wPZhLBkHhwY",
+    },
+    {
+      id: "youtube",
+      title: "What an Open Nephrectomy and Liver Resction Was Like",
+      viewCount: "6,500",
+      link: "https://www.youtube.com/embed/ZW2-ciZbXtM",
+    },
+    {
+      id: "youtube",
       title: "Chubbyemu's Video On My Story (1.5M Views)",
       viewCount: "1.5M",
       link: "https://www.youtube.com/embed/i9fLEvgZzRE",
@@ -114,7 +127,7 @@ export const youtubeVideos = () => {
 
 export const articles = [
   {
-    id: "0",
+    id: "11",
     image: CBS,
     name: "CBS Evening News (National)",
     link: "https://twitter.com/cbseveningnews/status/1551702913566871553?lang=en",
@@ -122,7 +135,7 @@ export const articles = [
       "Aired on CBS Evening News on July 26, 2022. Clip about sharing my diagnosis with a potential employer.",
   },
   {
-    id: "1",
+    id: "10",
     image: NBC,
     name: "NBC News Article (National)",
     link: "https://www.nbcnews.com/health/health-news/stage-4-kidney-cancer-diagnosis-didnt-stop-young-woman-getting-great-n-rcna31523",
@@ -130,7 +143,7 @@ export const articles = [
       "She's 31 and has stage 4 kidney cancer. How she still got a great new job.",
   },
   {
-    id: "2",
+    id: "9",
     image: TODAY,
     name: "Today (Online)",
     link: "https://www.today.com/health/health/kidney-cancer-diagnosis-rcna28501",
@@ -138,7 +151,7 @@ export const articles = [
       "Doctors told woman, 29, she was too young for cancer. Then came the 'terrifying diagnosis'",
   },
   {
-    id: "3",
+    id: "8",
     image: INSIDE,
     name: "Inside 1st Article",
     link: "https://www.insider.com/doctors-dismissed-29-year-old-anxiety-stage-4-kidney-cancer-2022-5",
@@ -146,7 +159,7 @@ export const articles = [
       "Doctors told a 29-year-old she had anxiety and that she was 'too young for cancer.' She had stage 4 kidney cancer.",
   },
   {
-    id: "4",
+    id: "7",
     image: INSIDE,
     name: "Inside 2nd Article",
     link: "https://www.insider.com/women-with-cancer-dismissed-by-doctors-for-being-too-young-2022-12",
@@ -154,7 +167,7 @@ export const articles = [
       "3 women with cancer who were dismissed by doctors for being 'too young'",
   },
   {
-    id: "5",
+    id: "6",
     image: INSIDE_EDITION,
     name: "Insider Edition",
     link: "https://www.insideedition.com/woman-diagnosed-with-kidney-cancer-after-doctors-dismissed-her-symptoms-as-anxiety-74966",
@@ -162,7 +175,7 @@ export const articles = [
       "Doctors told a 29-year-old she had anxiety and that she was 'too young for cancer.' She had stage 4 kidney cancer.",
   },
   {
-    id: "6",
+    id: "5",
     image: YAHOO,
     name: "Yahoo News",
     link: "https://www.yahoo.com/now/doctors-told-woman-29-she-161802957.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAG38qkw2fNYic3YIcExxJusccNZWjZZdihbIYLGxfX5t69GIPTNmYaiDSRiOWW-0zaenQnS0aRo1w2XN-6ctqwoADo_oGQRSGgoeoh4ijdV3sKEzoy0lk3WgoYxYQpjdb3LR-cuESzd75uIaQDjsdL9k4H4ya9k3v3qseDaWDL2_",
@@ -170,7 +183,7 @@ export const articles = [
       "Doctors told woman, 29, she was too young for cancer. Then came the 'terrifying diagnosis'",
   },
   {
-    id: "7",
+    id: "4",
     image: KAISER,
     name: "Kaiser Health News",
     link: "https://khn.org/news/article/shes-31-has-stage-4-kidney-cancer-and-talked-openly-about-it-in-a-job-interview/",
@@ -178,7 +191,7 @@ export const articles = [
       "She’s 31, Has Stage 4 Kidney Cancer — And Talked Openly About It in a Job Interview.",
   },
   {
-    id: "8",
+    id: "3",
     image: NIH,
     name: "NIH / National Institutes of Health",
     link: "https://ccr.cancer.gov/news/article/all-about-the-drive-a-rare-kidney-cancer-meets-its-match-at-nih",
@@ -186,7 +199,7 @@ export const articles = [
       "All about the drive: A rare kidney cancer meets its match at NIH",
   },
   {
-    id: "9",
+    id: "2",
     image: MSN,
     name: "MSN News",
     link: "https://www.msn.com/en-us/health/medical/doctors-told-a-29-year-old-she-had-anxiety-and-that-she-was-too-young-for-cancer-she-had-stage-4-kidney-cancer/ar-AAXorMZ",
@@ -194,7 +207,7 @@ export const articles = [
       "Doctors told a 29-year-old she had anxiety and that she was 'too young for cancer.' She had stage 4 kidney cancer.",
   },
   {
-    id: "10",
+    id: "1",
     image: SEVEN_NEWS,
     name: "7 News (Australia)",
     link: "https://7news.com.au/lifestyle/health-wellbeing/texas-woman-katie-coleman-cancer-patient-and-advocate-lands-dream-job-c-7058198",
@@ -202,7 +215,7 @@ export const articles = [
       "Texas woman Katie Coleman, cancer patient and advocate, lands dream job",
   },
   {
-    id: "11",
+    id: "0",
     image: KCCURE,
     name: "KCCURE",
     link: "https://kccure.org/2021/03/voice-of-kidney-cancer-katie-coleman/",
@@ -213,44 +226,6 @@ export const podcasts = (type) => {
   return [
     {
       id: "0",
-      name: "Oncology Unscripted",
-      link: "https://oncologyunscripted.buzzsprout.com/2162983/13386216-the-insider-s-guide-to-radiation-therapy-radiation-101-part-1",
-      description:
-        "The Insider's Guide to Radiation Therapy: Radiation 101, Part 1",
-      image: OncologyUnscripted,
-    },
-    {
-      id: "1",
-      name: "Oncology Unscripted",
-      link: "https://oncologyunscripted.buzzsprout.com/2162983/13165690-julie-and-katie-go-to-asco",
-      description: "Julie and Katie go to ASCO",
-      image: OncologyUnscripted,
-    },
-    {
-      id: "2",
-      name: "Oncology Unscripted",
-      link: "https://podcasts.apple.com/us/podcast/second-opinions/id1679839386?i=1000609418052",
-      description:
-        "In this episode we discuss the second opinion, seeking an alternate recommendation from a different doctor outside the main team.",
-      image: OncologyUnscripted,
-    },
-    {
-      id: "3",
-      name: "Oncology Unscripted",
-      link: "https://podcasts.apple.com/us/podcast/oncology-unscripted/id1679839386",
-      description:
-        "Patient advocates Katie Coleman and Julie Johnson team up with radiation oncologist Dr Matt Spraker for candid conversations around cancer and treatment",
-      image: OncologyUnscripted,
-    },
-    {
-      id: "4",
-      name: "Oncology Unscripted",
-      link: "https://podcasts.apple.com/us/podcast/oncology-terms-doctor-and-staff-roles-and/id1679839386?i=1000613113778",
-      description: "Doctor and staff roles",
-      image: OncologyUnscripted,
-    },
-    {
-      id: "5",
       name: "The Doctors Art",
       link: "https://www.thedoctorsart.com/episodes/ep27",
       description: `${
@@ -261,7 +236,7 @@ export const podcasts = (type) => {
       image: doctorsArt,
     },
     {
-      id: "6",
+      id: "1",
       name: "The Accelerators",
       link: "https://accelerators.buzzsprout.com/1839275/11948820-the-experts-discuss-patients-mental-health-and-mindfulness",
       description: `${
@@ -272,7 +247,7 @@ export const podcasts = (type) => {
       image: accelerators,
     },
     {
-      id: "7",
+      id: "2",
       name: "The Accelerators",
       link: "https://accelerators.buzzsprout.com/1839275/11447574-on-clinical-trials-the-patient-perspective-with-julie-and-katie",
       description:
@@ -280,7 +255,7 @@ export const podcasts = (type) => {
       image: accelerators,
     },
     {
-      id: "8",
+      id: "3",
       name: "The Accelerators",
       link: "https://accelerators.buzzsprout.com/1839275/11673786-on-clinical-trials-patient-education-with-julie-katie-and-david",
       description:
@@ -288,26 +263,72 @@ export const podcasts = (type) => {
       image: accelerators,
     },
     {
-      id: "9",
+      id: "4",
       name: "HealthCare Unfiltered",
       link: "https://podcasts.apple.com/au/podcast/patient-voice-on-social-media-a-survivor-story/id1534737585?i=1000563486434",
       description: "Patient voice on social media - A survivor story",
       image: heathlcareUnfiltered,
     },
     {
-      id: "10",
+      id: "5",
       name: "Patient from Hell",
       link: "https://podcasts.apple.com/us/podcast/episode-28-self-advocacy-in-action-inspiration-from/id1622669098?i=1000614791497",
       description: "Self advocacy in action",
-      image: OncologyUnscripted,
+      image: PatientFromHell,
     },
     {
-      id: "11",
+      id: "6",
       name: "You Just Don't Know It Yet",
       link: "https://open.spotify.com/episode/1BBvJxlC3D48AwFT7EAQMF?si=1dabb5cab19c49b1",
       description:
         "Episode 30: Katie Coleman - Stage IV Kidney Cancer Survivor",
       image: YouJustDontKnow,
+    },
+    {
+      id: "7",
+      name: "Oncology Unscripted",
+      link: "https://podcasts.apple.com/us/podcast/second-opinions/id1679839386?i=1000609418052",
+      description:
+        "In this episode we discuss the second opinion, seeking an alternate recommendation from a different doctor outside the main team.",
+      image: OncologyUnscripted,
+    },
+    {
+      id: "8",
+      name: "Oncology Unscripted",
+      link: "https://podcasts.apple.com/us/podcast/oncology-terms-doctor-and-staff-roles-and/id1679839386?i=1000613113778",
+      description: "Doctor and staff roles",
+      image: OncologyUnscripted,
+    },
+    {
+      id: "9",
+      name: "Oncology Unscripted",
+      link: "https://podcasts.apple.com/us/podcast/oncology-unscripted/id1679839386",
+      description:
+        "Patient advocates Katie Coleman and Julie Johnson team up with radiation oncologist Dr Matt Spraker for candid conversations around cancer and treatment",
+      image: OncologyUnscripted,
+    },
+    {
+      id: "10",
+      name: "Oncology Unscripted",
+      link: "https://oncologyunscripted.buzzsprout.com/2162983/13165690-julie-and-katie-go-to-asco",
+      description: "Julie and Katie go to ASCO",
+      image: OncologyUnscripted,
+    },
+    {
+      id: "11",
+      name: "Oncology Unscripted",
+      link: "https://oncologyunscripted.buzzsprout.com/2162983/13386216-the-insider-s-guide-to-radiation-therapy-radiation-101-part-1",
+      description:
+        "The Insider's Guide to Radiation Therapy: Radiation 101, Part 1",
+      image: OncologyUnscripted,
+    },
+    {
+      id: "12",
+      name: "Oncology Unscripted",
+      link: "https://open.spotify.com/episode/1BBvJxlC3D48AwFT7EAQMF?si=1dabb5cab19c49b1",
+      description:
+        "The Insider's Guide to Radiation Therapy: Radiation 101, Part 2",
+      image: OncologyUnscripted,
     },
   ];
 };

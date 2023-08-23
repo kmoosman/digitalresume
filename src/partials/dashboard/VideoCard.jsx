@@ -19,7 +19,7 @@ export const VideoCard = ({ title, link, blurb, size }) => {
       href={link}
       target="_blank"
       className={`flex flex-col col-span-full ${
-        size === "small" ? "sm:col-span-4 xl:col-span-4 " : size === "medium" ? "sm:col-span-4 xl:col-span-2 " : null
+        size === "small" ? "sm:col-span-4 xl:col-span-4 " : size === "medium" ? "sm:col-span-4 xl:col-span-2" : null
       }
       sm:w-full md:col-span-2 bg-white shadow-lg rounded-sm border border-slate-200`}
     >
@@ -32,7 +32,7 @@ export const VideoCard = ({ title, link, blurb, size }) => {
           <div className="w-full">
             <iframe
               src={link}
-              className="w-full h-[550px] rounded-lg"
+              className="w-full h-[400px] rounded-lg"
               allow="encrypted-media;"
             ></iframe>
           </div>

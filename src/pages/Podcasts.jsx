@@ -48,7 +48,7 @@ export const Podcasts = ({ type }) => {
             </div>
 
             <div className="grid grid-cols-12 gap-6 mb-6 ">
-              {podcasts(type).map((podcast) => (
+              {podcasts(type).sort((a, b) => b.id - a.id).map((podcast) => (
                 <PodcastCard
                   title={podcast.name}
                   blurb={podcast.description}
