@@ -50,7 +50,7 @@ export const Dashboard = ({ rates, demographics, type }) => {
               <div className="text-3xl font-bold text-slate-800 mt-12 mb-7">
                 {type === "media" ? "Media " : null} Dashboard
               </div>
-              
+              <a href={'https://youtu.be/wPZhLBkHhwY'} target="_blank" >
               <div className="font-md text-slate-800 mt-2 mb-7 p-4 bg-blue-100 rounded flex flex-row justify-between">   
                 <div>
                 <div className="font-semibold flex flex-row"> <FontAwesomeIcon icon={faBullhorn}  className="pt-1" /> <div className="pl-2">A sample chapter of my memoir has been released, listen here.</div>
@@ -58,14 +58,12 @@ export const Dashboard = ({ rates, demographics, type }) => {
                 <div className="text-xs font-md pl-6">My portion of the proceeds from this book will be donated to research.
                 </div>
                 </div>
-                <a href={'https://youtu.be/wPZhLBkHhwY'} target="_blank" className="text-indigo-800 flex flex-row ">
-                  <div className="h-full self-center p-2">
-                    <FontAwesomeIcon icon={faSquareArrowUpRight} />
-                  </div>
-            </a>
-                {/* <div className="mr-6 h-full self-center text-indigo-900 font-bold">Listen Here  </div> */}
                 
+                  <div className="h-full self-center p-2 text-indigo-800">
+                    <FontAwesomeIcon icon={faSquareArrowUpRight} />
+                    </div>
               </div>
+              </a>
               {/* Cards */}
               <div className="ml-5 text-3xl mb-4 font-medium">Socials</div>
               <div className="grid grid-cols-12 gap-6 mb-6 ">
