@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 
 import "./css/style.css";
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga4";
 import "./charts/ChartjsConfig";
 
 // Import pages
@@ -14,15 +14,15 @@ import Advocacy from "./pages/Advocacy";
 import Privacy from "./pages/Privacy";
 import CookieConsent from "react-cookie-consent";
 
-// Initialize Google Analytics
-ReactGA.initialize('G-R6CNTSBPN0');
 
 function App() {
 
   const location = useLocation();
 
   useEffect(() => {
-    ReactGA.pageview(location.pathname + location.search);
+    // Send pageview with a custom path
+    ReactGA.initialize('G-R6CNTSBPN0');
+    ReactGA.send({ hitType: "pageview", page: location.pathname, title: location.pathname });
   }, [location]);
 
   useEffect(() => {

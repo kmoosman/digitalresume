@@ -4,7 +4,7 @@ import LineChart from "../../charts/LineChart01";
 import Icon from "../../images/icon-01.svg";
 import EditMenu from "../EditMenu";
 import COA_LOGO from "../../images/Orange_COA.png";
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga4";
 
 // Import utilities
 import { tailwindConfig, hexToRGB, iconStyling } from "../../utils/Utils";

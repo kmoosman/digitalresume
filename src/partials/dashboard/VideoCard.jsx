@@ -10,7 +10,7 @@ import {
   faCoffee,
   faSquareArrowUpRight,
 } from "@fortawesome/free-solid-svg-icons";
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga4";
 
 export const VideoCard = ({ title, link, blurb, size }) => {
   library.add(fab);

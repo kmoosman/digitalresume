@@ -10,7 +10,7 @@ import {
   faCoffee,
   faSquareArrowUpRight,
 } from "@fortawesome/free-solid-svg-icons";
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga4";
 
 export const ComparablesCard = ({
   title,
@@ -31,8 +31,8 @@ export const ComparablesCard = ({
       onClick={() => {
         ReactGA.event({
           category: 'External Links',
-          action: 'Viewed comparables',
-          label: `Clicked comparables for ${title}}`
+          action: `Viewed comparables ${title}`,
+          label: `Comparables for ${title} clicked}`
         });
       }}
     >

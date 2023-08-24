@@ -13,7 +13,7 @@ import { Rates } from "../partials/dashboard/Rates";
 import {
   faBullhorn,
 } from "@fortawesome/free-solid-svg-icons";
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga4";
 
 import Docs from "../images/docs.png";
 

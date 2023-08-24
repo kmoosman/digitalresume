@@ -15,7 +15,7 @@ import {
   faBullhorn,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga4";
 
 import PhotoTitleLinkTable, {
   DynamicTable,

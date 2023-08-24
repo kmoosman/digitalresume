@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import LineChart from "../../charts/LineChart01";
 import Icon from "../../images/icon-01.svg";
 import EditMenu from "../EditMenu";
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga4";
 
 // Import utilities
 import { tailwindConfig, hexToRGB, iconStyling } from "../../utils/Utils";
@@ -33,8 +33,8 @@ export const DashboardCard = ({
       onClick={() => {
         ReactGA.event({
           category: 'External Links',
-          action: 'Clicked Social Media Link',
-          label: `Clicked social ${type} link: ${link}}`
+          action: `${title} Clicked`,
+          label: `Clicked social ${title}}`
         });
       }}
     >

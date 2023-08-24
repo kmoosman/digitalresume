@@ -324,7 +324,7 @@ export const podcasts = (type) => {
     {
       id: "12",
       name: "Oncology Unscripted",
-      link: "https://open.spotify.com/episode/1BBvJxlC3D48AwFT7EAQMF?si=1dabb5cab19c49b1",
+      link: "https://oncologyunscripted.buzzsprout.com/2162983/13419590-the-insider-s-guide-to-radiation-therapy-radiation-101-part-2",
       description:
         "The Insider's Guide to Radiation Therapy: Radiation 101, Part 2",
       image: OncologyUnscripted,
