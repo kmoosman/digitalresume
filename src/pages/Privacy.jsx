@@ -16,7 +16,7 @@ export const Privacy = () => {
         1. Information We Collect
       </h3>
       <p className="mt-4 max-w-2xl text-md text-gray-500">
-        Email addresses: We may collect your email address ONLY when you provide it
+        Email addresses: We may collect your email address only when you provide it
         to us, for example, when you sign up for the newsletter. We will not
         share your email address with third parties. We may use your email
         address to communicate with you about our products, services, or
