@@ -85,7 +85,7 @@ function App() {
         buttonStyle={{ color: "white", backgroundColor: "#5552C7", fontSize: "10px", rounded: "true", borderRadius: "5px", padding: "10px 20px"  }}
         expires={150} // The cookie will expire after 150 days
       >
-        This site uses cookies. Check out our <a href="/privacy" style={{ color: "gray",  fontSize: "13px" }} className="text-blue" target="_blank">Privacy Policy</a> for details.{" "}
+        This site uses cookies. <a href="/privacy" style={{ color: "gray",  fontSize: "13px" }} className="text-blue" target="_blank">Privacy Policy</a> for details.{" "}
     
       </CookieConsent>
     </>

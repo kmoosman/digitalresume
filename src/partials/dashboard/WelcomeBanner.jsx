@@ -94,6 +94,11 @@ function WelcomeBanner({ email, type }) {
             <a href="mailto:katiekickscancer@gmail.com">
               katiekickscancer@gmail.com
             </a>
+            <p>
+            <a href="/" className="text-indigo-500">
+              Subscribe for book release updates
+            </a>
+            </p>
           </p>
 
           {/*<p className="text-sm italic">*/}
