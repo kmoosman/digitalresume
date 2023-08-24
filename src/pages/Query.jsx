@@ -99,7 +99,7 @@ export const Query = ({ rates, demographics, type }) => {
               onClick={() => {
                 ReactGA.event({
                   category: 'External Links',
-                  action: 'Clicked Sample Chapter Link',
+                  action: 'Sample Chapter Link Clicked',
                   label: 'Life Refocused - https://youtu.be/wPZhLBkHhwY'
                 });
               }}>
@@ -266,7 +266,7 @@ export const Query = ({ rates, demographics, type }) => {
                           onClick={() => {
                             ReactGA.event({
                               category: 'External Links',
-                              action: 'Clicked Blog Article',
+                              action: 'Blog Article Clicked',
                               label: `Clicked blog`
                             });
                           }}
@@ -301,7 +301,7 @@ export const Query = ({ rates, demographics, type }) => {
                         onClick={() => {
                           ReactGA.event({
                             category: 'External Links',
-                            action: 'Clicked Blog Article',
+                            action: 'Blog Article Clicked',
                             label: `Clicked blog`
                           });
                         }}

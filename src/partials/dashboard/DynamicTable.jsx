@@ -84,8 +84,8 @@ export const DynamicTable = ({ data, nameAlias, tableTitle, size }) => {
                           onClick={() => {
                             ReactGA.event({
                               category: 'External Links',
-                              action: 'Clicked Table Link',
-                              label: `Clicked table link for ${data.link}}`
+                              action: 'Table Link Clicked',
+                              label: `Table link for ${data.link}}`
                             });
                           }}
                         >
