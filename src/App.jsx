@@ -77,7 +77,7 @@ function App() {
         <Route exact path="/advocacy" element={<Advocacy />} />
         <Route exact path="/privacy" element={<Privacy />} />
       </Routes>
-      <CookieConsent
+      {/* <CookieConsent
         location="bottom"
         buttonText="I Understand"
         cookieName="KatieKicksCancerCookieConsent"
@@ -87,7 +87,7 @@ function App() {
       >
         This site uses cookies. <a href="/privacy" style={{ color: "gray",  fontSize: "13px" }} className="text-blue" target="_blank">Privacy Policy</a> for details.{" "}
     
-      </CookieConsent>
+      </CookieConsent> */}
     </>
   );
 }
