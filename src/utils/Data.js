@@ -110,8 +110,8 @@ export const youtubeVideos = () => {
     },
     {
       id: "youtube",
-      title: "Chubbyemu's Video On My Story (1.5M Views)",
-      viewCount: "1.5M",
+      title: "Chubbyemu's Video On My Story (1.8M Views)",
+      viewCount: "1.8M",
       link: "https://www.youtube.com/embed/i9fLEvgZzRE",
     },
 
