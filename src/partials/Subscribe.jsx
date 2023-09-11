@@ -93,9 +93,7 @@ function Subscribe() {
                           <p className="text-sm text-gray-500">
                             📚 Book release
                           </p>
-                          <p className="text-sm text-gray-500">
-                            🗓 Quarterly content and events summary
-                          </p>
+                          
                           <p className="text-sm text-gray-500">
                             ✉️ No spam, just a handful of updates per year
                           </p>
