@@ -1,4 +1,5 @@
 import CBS from "../images/cbs.png";
+import CURE from "../images/cure.png";
 import NBC from "../images/nbc.png";
 import TODAY from "../images/Today_logo.svg.png";
 import INSIDE from "../images/insider.png";
@@ -125,6 +126,13 @@ export const youtubeVideos = () => {
 };
 
 export const articles = [
+  {
+    id: "12",
+    image: CURE,
+    name: "CURE",
+    link: "https://www.curetoday.com/view/can-we-talk-artificial-intelligence-in-the-world-of-cancer-care",
+    description: "Article discussing the use of AI in cancer care.",
+  },
   {
     id: "11",
     image: CBS,

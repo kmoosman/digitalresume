@@ -60,7 +60,7 @@ export const DynamicTable = ({ data, nameAlias, tableTitle, size }) => {
                     <td className="p-2 md:whitespace-nowrap">
                       <div className="flex items-center">
                         {data.image ? (
-                          <div className="w-5 h-5 shrink-0 mr-4 sm:mr-3 ">
+                          <div className="w-6 h-5 shrink-0 mr-4 sm:mr-3 ">
                             <img
                               className="h-full w-full"
                               src={data.image}
