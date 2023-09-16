@@ -337,6 +337,13 @@ export const podcasts = (type) => {
         "The Insider's Guide to Radiation Therapy: Radiation 101, Part 2",
       image: OncologyUnscripted,
     },
+    {
+      id: "13",
+      name: "Oncology Unscripted",
+      link: "https://oncologyunscripted.buzzsprout.com/2162983/13598072-the-insider-s-guide-to-radiation-therapy-sbrt",
+      description: "The Insider's Guide to Radiation Therapy: SBRT",
+      image: OncologyUnscripted,
+    },
   ];
 };
 
