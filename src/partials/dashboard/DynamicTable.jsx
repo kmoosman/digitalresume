@@ -29,7 +29,7 @@ export const DynamicTable = ({ data, nameAlias, tableTitle, size }) => {
       </header>
       <div className="p-3">
         {/* Table */}
-        <div className="overflow-x-auto">
+        <div className="overflow-x-auto max-h-[400px]">
           <table className="table-auto w-full">
             {/* Table header */}
             <thead className="text-xs font-semibold uppercase text-slate-400 bg-slate-50">

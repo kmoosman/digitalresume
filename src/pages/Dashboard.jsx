@@ -26,6 +26,7 @@ import VideoCard from "../partials/dashboard/VideoCard";
 import Videos from "./Videos";
 import Subscribe from "../partials/Subscribe";
 import { NavLink } from "react-router-dom";
+import PreOrder from "../partials/Pre-Order";
 
 export const Dashboard = ({ rates, demographics, type }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -40,7 +41,7 @@ export const Dashboard = ({ rates, demographics, type }) => {
         <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden w-full">
           {/*  Site header */}
           <Header />
-          <Subscribe />
+          <PreOrder />
 
           <main>
             <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">
@@ -57,15 +58,31 @@ export const Dashboard = ({ rates, demographics, type }) => {
                 ReactGA.event({
                   category: 'External Links',
                   action: 'Clicked Sample Chapter Link',
-                  label: 'Life Refocused - https://youtu.be/wPZhLBkHhwY'
+                  label: 'Too Young for Cancer - https://youtu.be/wPZhLBkHhwY'
                 });
               }} >
+              <div className="font-md text-slate-800 mt-2 mb-7 p-4 bg-yellow-100 rounded flex flex-row justify-between">   
+                <div>
+                <div className="font-semibold flex flex-row"> <FontAwesomeIcon icon={faBullhorn}  className="pt-1" /> <div className="pl-2">Pre-orders now available for my memoir, Too Young For Cancer!! 📚</div>
+                </div>
+                <div className="text-xs font-md pl-6">My portion of the proceeds from this book are donated to research, including speaking engagements and other related efforts. 
+                </div>
+                <div className="text-xs font-md pl-6">Pre-orders typically count towards the first week of sales, and can help the book be successful and reach the people who need it most. </div>
+                <div className="text-xs font-md pl-6">So pre-orders make a big impact and mean the world to me, let's make an impact- together!</div>
+                </div>
+                
+                  <div className="h-full self-center p-2 text-indigo-800">
+                    <FontAwesomeIcon icon={faSquareArrowUpRight} />
+                    </div>
+              </div>
+              {/* Work */}
               <div className="font-md text-slate-800 mt-2 mb-7 p-4 bg-blue-100 rounded flex flex-row justify-between">   
                 <div>
-                <div className="font-semibold flex flex-row"> <FontAwesomeIcon icon={faBullhorn}  className="pt-1" /> <div className="pl-2">A sample chapter of my memoir has been released, listen here.</div>
+                <div className="font-semibold flex flex-row"> <FontAwesomeIcon icon={faBullhorn}  className="pt-1" /> <div className="pl-2">Race Cancer Research Foundation / Tumor Tissue Donation</div>
                 </div>
-                <div className="text-xs font-md pl-6">My portion of the proceeds from this book will be donated to research.
+                <div className="text-xs font-md pl-6">After my prognosis changed, I promised myself I'd use the time I was given to make things better for others who may come behind me some day. This since has led me to me joining the <a href="https://rarecancer.org/initiatives" className="text-indigo-600">Rare Cancer Research Foundation.</a>
                 </div>
+                <div className="text-xs font-md pl-6">You can hear more about the initiatives we're working on including tissue donation for rare cancers <a href="https://youtu.be/K97HebR7JPI" className="text-indigo-600" >here.</a> </div>
                 </div>
                 
                   <div className="h-full self-center p-2 text-indigo-800">

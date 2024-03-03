@@ -19,6 +19,14 @@ import SHOCK from "../images/shock.jpeg";
 import YouJustDontKnow from "../images/YouJustDontKnow.png";
 import OncologyUnscripted from "../images/oncology_unscripted.png";
 import PatientFromHell from "../images/PatientFromHell.png";
+import PENGUIN from "../images/penguin.png";
+import TARGET from "../images/target.png";
+import BARNES from "../images/barnes.png";
+import WALMART from "../images/walmart.png";
+import AMAZON from "../images/amazon.png";
+import PATIENTS from "../images/patients.png";
+import KATIECOURIC from "../images/kcm.jpeg";
+import COMMON from "../images/common.png";
 
 export const socialData = (type) => {
   return [
@@ -99,7 +107,13 @@ export const youtubeVideos = () => {
   return [
     {
       id: "youtube",
-      title: "Life Refocused - Memoir: Chapter 1",
+      title: "My Story And What Brought Me to the Rare Cancer Research Foundation",
+      viewCount: "150",
+      link: "https://www.youtube.com/embed/K97HebR7JPI",
+    },
+    {
+      id: "youtube",
+      title: "Too Young For Cancer - Memoir: Chapter 1",
       viewCount: "150",
       link: "https://www.youtube.com/embed/wPZhLBkHhwY",
     },
@@ -111,17 +125,16 @@ export const youtubeVideos = () => {
     },
     {
       id: "youtube",
-      title: "Chubbyemu's Video On My Story (1.8M Views)",
-      viewCount: "1.8M",
-      link: "https://www.youtube.com/embed/i9fLEvgZzRE",
-    },
-
-    {
-      id: "youtube",
       title: "A Cancer Patient Speaks Candidly With Her Oncologist",
       viewCount: "19,000",
       link: "https://www.youtube.com/embed/Nddft_nc3Yc",
     },
+    {
+      id: "youtube",
+      title: "Chubbyemu's Video On My Story (2.4M Views)",
+      viewCount: "2.4M",
+      link: "https://www.youtube.com/embed/i9fLEvgZzRE",
+    }
   ];
 };
 
@@ -228,6 +241,20 @@ export const articles = [
     link: "https://kccure.org/2021/03/voice-of-kidney-cancer-katie-coleman/",
     description: "Voice of Kidney Cancer – Katie Coleman",
   },
+  {
+    id: "14",
+    image: KATIECOURIC,
+    name: "Katie Couric Media",
+    link: "https://katiecouric.com/health/cancer/rare-kidney-cancer/",
+    description: "She Actually Had One of the Rarest Cancers",
+  },
+  {
+    id: "13",
+    image: COMMON,
+    name: "Common Wealth Club California",
+    link: "https://www.commonwealthclub.org/events/archive/video/innovative-patient-centered-care-cancer",
+    description: "Innovative, Patient-Centered Care for Cancer",
+  },
 ];
 export const podcasts = (type) => {
   return [
@@ -293,59 +320,131 @@ export const podcasts = (type) => {
     },
     {
       id: "7",
-      name: "Oncology Unscripted",
-      link: "https://podcasts.apple.com/us/podcast/second-opinions/id1679839386?i=1000609418052",
-      description:
-        "In this episode we discuss the second opinion, seeking an alternate recommendation from a different doctor outside the main team.",
+      name: "Second Opinions",
+      link: "https://oncologyunscripted.buzzsprout.com/2162983/12671236-second-opinions",
+      description: "Oncology Unscripted",
       image: OncologyUnscripted,
     },
     {
       id: "8",
-      name: "Oncology Unscripted",
-      link: "https://podcasts.apple.com/us/podcast/oncology-terms-doctor-and-staff-roles-and/id1679839386?i=1000613113778",
-      description: "Doctor and staff roles",
+      name: "Oncology Terms: Doctor and Staff Roles and Medical Education",
+      link: "https://oncologyunscripted.buzzsprout.com/2162983/12842441-oncology-terms-doctor-and-staff-roles-and-medical-education",
+      description: "Oncology Unscripted",
       image: OncologyUnscripted,
     },
     {
       id: "9",
-      name: "Oncology Unscripted",
-      link: "https://podcasts.apple.com/us/podcast/oncology-unscripted/id1679839386",
-      description:
-        "Patient advocates Katie Coleman and Julie Johnson team up with radiation oncologist Dr Matt Spraker for candid conversations around cancer and treatment",
+      name: "Matt Versus ChatGPT",
+      link: "https://oncologyunscripted.buzzsprout.com/2162983/13077172-matt-versus-chatgpt",
+      description: "Oncology Unscripted",
       image: OncologyUnscripted,
     },
     {
       id: "10",
-      name: "Oncology Unscripted",
+      name: "Julie and Katie go to ASCO",
       link: "https://oncologyunscripted.buzzsprout.com/2162983/13165690-julie-and-katie-go-to-asco",
-      description: "Julie and Katie go to ASCO",
+      description: "Oncology Unscripted",
       image: OncologyUnscripted,
     },
     {
       id: "11",
-      name: "Oncology Unscripted",
+      name: "The Insider's Guide to Radiation Therapy: Radiation 101, Part 1",
       link: "https://oncologyunscripted.buzzsprout.com/2162983/13386216-the-insider-s-guide-to-radiation-therapy-radiation-101-part-1",
-      description:
-        "The Insider's Guide to Radiation Therapy: Radiation 101, Part 1",
+      description: "Oncology Unscripted",
       image: OncologyUnscripted,
     },
     {
       id: "12",
-      name: "Oncology Unscripted",
+      name: "The Insider's Guide to Radiation Therapy: Radiation 101, Part 2",
       link: "https://oncologyunscripted.buzzsprout.com/2162983/13419590-the-insider-s-guide-to-radiation-therapy-radiation-101-part-2",
-      description:
-        "The Insider's Guide to Radiation Therapy: Radiation 101, Part 2",
+      description: "Oncology Unscripted",
       image: OncologyUnscripted,
     },
     {
       id: "13",
-      name: "Oncology Unscripted",
+      name: "The Insider's Guide to Radiation Therapy: SBRT",
       link: "https://oncologyunscripted.buzzsprout.com/2162983/13598072-the-insider-s-guide-to-radiation-therapy-sbrt",
-      description: "The Insider's Guide to Radiation Therapy: SBRT",
+      description: "Oncology Unscripted",
       image: OncologyUnscripted,
+    },
+    {
+      id: "14",
+      name: "The Insider's Guide to Radiation Therapy: Proton Therapy",
+      link: "https://oncologyunscripted.buzzsprout.com/2162983/13744725-the-insider-s-guide-to-radiation-therapy-proton-therapy",
+      description: "Oncology Unscripted",
+      image: OncologyUnscripted,
+    },
+    {
+      id: "15",
+      name: "Immunotherapy: In Conversation with Dr. Breelyn Wilky, MD",
+      link: "https://oncologyunscripted.buzzsprout.com/2162983/13995528-immunotherapy-in-conversation-with-dr-breelyn-wilky-md",
+      description: "Oncology Unscripted",
+      image: OncologyUnscripted,
+    },
+    {
+      id: "16",
+      name: "How To Pick Your Doctor",
+      link: "https://oncologyunscripted.buzzsprout.com/2162983/14436126-how-to-pick-your-doctor",
+      description: "Oncology Unscripted",
+      image: OncologyUnscripted,
+    },
+    {
+      id: "16",
+      name: "VHHA’s Patients Come First",
+      link: "https://podcasts.apple.com/us/podcast/patients-come-first-podcast-katie-coleman/id1478156124?i=1000630082015",
+      description: "Patients Come First Podcast - Katie Coleman",
+      image: PATIENTS,
+    },
+    {
+      id: "17",
+      name: "Patient from Hell - Facing Your Mortality",
+      link: "https://mantacares.com/pages/facing-your-mortality",
+      description: "Manta Cares",
+      image: PatientFromHell,
     },
   ];
 };
+
+export const purchaseMemoir = [
+  {
+    id: "0",
+    name: "Amazon",
+    link: "https://www.amazon.com/Too-Young-Cancer-Diagnosis-Fighting-ebook/dp/B0CW1HKPWJ/ref=sr_1_1?crid=C1QQ3FZLJOZ2&dib=eyJ2IjoiMSJ9.86WEKCmVExWphXE6fnD2hA.C6tU4YMPD58Hyq95PwDK8iSixRxUMOgjL0tnheXL238&dib_tag=se&keywords=9781639109449&qid=1709230552&sprefix=9781639109449%2Caps%2C68&sr=8-1",
+    description:
+      "Pre-ordering from Amazon can help the book get on Amazon bestseller lists.",
+    image: AMAZON,
+  },
+  {
+    id: "1",
+    name: "Penguin Random House",
+    link: "https://www.penguinrandomhouse.com/books/759664/too-young-for-cancer-by-katie-coleman/",
+    description:
+      "On Penguin Random House, you can find a list of other retailers to pre-order from as well.",
+    image: PENGUIN,
+  },
+  {
+    id: "2",
+    name: "Barne's and Noble",
+    link: "https://www.barnesandnoble.com/w/too-young-for-cancer-katie-coleman/1144947840;jsessionid=67C463F7B33D131B3D92A58D1DE5DE1C.prodny_store01-atgap16?ean=9781639109449&st=AFF&2sid=Random%20House%20Inc_8373827_NA&sourceId=AFFRandom%20House%20Inc",
+    description: "Pre-orders available through Barnes and Noble.",
+    image: BARNES,
+  },
+  {
+    id: "3",
+    name: "Target",
+    link: "https://www.target.com/s?searchTerm=9781639109449&clkid=6fd780c7Nd90211eea9625323f60aad12&cpng=PTID1&lnm=81938&afid=Penguin%20Random%20House&ref=tgt_adv_xasd0002",
+    description: "Pre-orders available through Target.",
+    image: TARGET,
+  },
+  // {
+  //   id: "4",
+  //   name: "Walmart",
+  //   link: "https://www.target.com/s?searchTerm=9781639109449&clkid=6fd780c7Nd90211eea9625323f60aad12&cpng=PTID1&lnm=81938&afid=Penguin%20Random%20House&ref=tgt_adv_xasd0002",
+  //   description:
+  //     "Pre-orders available through Walmart.",
+  //   image: TARGET,
+  // },
+];
 
 export const comparables = [
   {

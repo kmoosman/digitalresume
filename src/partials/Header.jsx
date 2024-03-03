@@ -15,6 +15,7 @@ function Header({}) {
     "/",
     "/podcasts",
     "/news",
+    "/memoir",
     "/query-123120/",
     "/query-123120",
     "/query-123120/news",
@@ -68,7 +69,7 @@ function Header({}) {
     "/advocacy",
   ];
 
-  const standardRoutes = ["/", "/podcasts", "/podcasts/", "/news/", "/news"];
+  const standardRoutes = ["/", "/podcasts", "/podcasts/", "/news/", "/news", "/memoir", "/memoir/"];
   const hideNavigation = routes.includes(pathname) ? "hidden" : null;
   const hideMedia = mediaRoutes.includes(pathname) ? "hidden" : null;
   const hideQuery = queryRoutes.includes(pathname) ? "hidden" : null;
@@ -139,6 +140,17 @@ function Header({}) {
               <div>News</div>
             </NavLink>
 
+            <NavLink
+              to="/memoir"
+              className={`${
+                pathname === "/memoir" || pathname === "/memoir/"
+                  ? "text-blue-700"
+                  : null
+              } ${hideMedia} ${hideQuery} ml-4 text-slate-500 hover:text-slate-600`}
+            >
+              <div>Memoir</div>
+            </NavLink>
+
             {/*Query specific pages*/}
 
             <NavLink
@@ -176,6 +188,22 @@ function Header({}) {
               } ml-4  hover:text-blue-500`}
             >
               <div>Podcasts</div>
+            </NavLink>
+
+            <NavLink
+              to="/query-123120"
+              className={`${
+                pathname === "/query-123120/" ||
+                pathname === "/query-123120" ||
+                pathname === "/query-123120/news" ||
+                pathname === "/query-123120/podcasts"
+                  ? null
+                  : "hidden"
+              }  ${
+                pathname === "/query-123120" ? "text-blue-700" : null
+              } ml-4 text-slate-500 hover:text-blue-500`}
+            >
+              <div>Memoir</div>
             </NavLink>
 
             <NavLink

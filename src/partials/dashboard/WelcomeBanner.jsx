@@ -84,7 +84,7 @@ function WelcomeBanner({ email, type }) {
             Katie Coleman
           </h1>
           <p className="text-center italic mt-1">
-            {`Stage IV Kidney Cancer Survivor • Patient Advocate • Writer (Memoir)`}
+            {`Stage IV Kidney Cancer Survivor • Patient Advocate • Author (Memoir)`}
           </p>
           <p className="text-center italic mt-1">
             Donates all proceeds from social media to research
@@ -94,9 +94,15 @@ function WelcomeBanner({ email, type }) {
             <a href="mailto:katiekickscancer@gmail.com">
               katiekickscancer@gmail.com
             </a>
+            <p className="text-center italic mt-1 text-sm">
+            <button href="/" className="bg-blue-600 text-white text-lg mt-2 mb-2 font-semibold rounded p-2">
+              PRE-ORDER: TOO YOUNG FOR CANCER (Memoir) 📚
+            </button>
+            </p>
             <p>
+           
             <a href="/" className="text-indigo-500">
-              Subscribe for book release updates
+              Subscribe to newsletter / book release updates
             </a>
             </p>
           </p>

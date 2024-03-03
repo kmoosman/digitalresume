@@ -13,6 +13,7 @@ import Query from "./pages/Query";
 import Advocacy from "./pages/Advocacy";
 import Privacy from "./pages/Privacy";
 import CookieConsent from "react-cookie-consent";
+import Memoir from "./pages/Memoir";
 
 
 function App() {
@@ -63,6 +64,7 @@ function App() {
         />
         <Route exact path="/podcasts" element={<Podcasts type="podcasts" />} />
         <Route exact path="/news" element={<News type="news" />} />
+        <Route exact path="/memoir" element={<Memoir type="memior" />} />
         <Route exact path="/query-123120/news" element={<News type="news" />} />
         <Route
           exact

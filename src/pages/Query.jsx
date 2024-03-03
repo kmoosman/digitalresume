@@ -100,7 +100,7 @@ export const Query = ({ rates, demographics, type }) => {
                 ReactGA.event({
                   category: 'External Links',
                   action: 'Sample Chapter Link Clicked',
-                  label: 'Life Refocused - https://youtu.be/wPZhLBkHhwY'
+                  label: 'Too Young for Cancer - https://youtu.be/wPZhLBkHhwY'
                 });
               }}>
               <div className="font-md text-slate-800 mt-2 mb-7 p-4 bg-blue-100 rounded flex flex-row justify-between">   
@@ -203,7 +203,7 @@ export const Query = ({ rates, demographics, type }) => {
                         <div className="flex flex-col">
                           <div className="text-xs font-semibold text-slate-400 uppercase mb-1">
                             Katie Coleman •Stage IV Cancer Survivor • Software
-                            Engineer • Content Creator • Writer (Memoir) •
+                            Engineer • Content Creator • Author (Memoir) •
                             Non-Profit Founder •
                             Podcaster
                           </div>
