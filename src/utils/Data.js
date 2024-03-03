@@ -500,7 +500,7 @@ export const advocacy = [
     title: "Funding research",
     link: "https://www.kidneycoa.org",
     description:
-      "Awareness campaigns help fund crucial and important research to improve outcomes for patients. For rare cancers, a little bit goes a long way. Just $50,000 can fund a years worth of research. For cancers like Chromophobe Renal Cell Carcinoma (a rare kidney cancer) which currently doesn't have any dedicated treatment options, that funding also provides hope.",
+      "Awareness campaigns help fund crucial and important research to improve outcomes for patients. For rare cancers, a little bit goes a long way. Just $50,000 can fund a years worth of research. For cancers like Chromophobe Renal Cell Carcinoma (a rare kidney cancer) which currently doesn't have any dedicated treatment options, that funding also provides hope. In 2024 we have co-funded a research grant with the KCA for $75,000 to fund research for this rare cancer and are working on funding to sustain this effort next year.",
   },
   {
     id: "3",

@@ -14,6 +14,7 @@ import VideoCard from "../partials/dashboard/VideoCard";
 import Videos from "./Videos";
 import AdvocacyCard from "../partials/dashboard/AdvocacyCard";
 import { iconStyling } from "../utils/Utils";
+import Challenge from "../partials/dashboard/Challenge";
 
 export const Advocacy = () => {
   return (
@@ -32,7 +33,7 @@ export const Advocacy = () => {
                 <div className="flex justify-center w-full mb-10">
                   <div className="justify-center">
                     <div className="justify-center flex flex-row text-5xl font-bold text-white mt-5 w-full center-text w-full rounded">
-                      Light the City Orange
+                      OrangeUp
                     </div>
                     <p className="flex justify-center w-full text-2xl mt-2 font-semibold text-neutral-900">
                       For Kidney Cancer Awareness Month
@@ -45,7 +46,7 @@ export const Advocacy = () => {
                     by kidney cancer.
                   </p>
                   <p className="flex mx-auto justify-center sm:text-left lg:text-center w-3/4 font-semibold text-neutral-900">
-                    This year around 81,800 individuals in the US alone will be
+                    This year around 82,000 individuals in the US alone will be
                     diagnosed with this disease.
                   </p>
                   <p className="flex mx-auto justify-center w-3/4 sm:text-left lg:text-center font-semibold text-neutral-900">
@@ -84,6 +85,10 @@ export const Advocacy = () => {
               </div>
               <div className="grid grid-cols-12 gap-6 mt-10">
                 <COA type="query" />
+              </div>
+
+              <div className="grid grid-cols-12 gap-6 mt-10">
+                <Challenge />
               </div>
 
               <div className="text-3xl font-bold text-white mt-10 mb-7">
@@ -141,12 +146,28 @@ export const Advocacy = () => {
                                 and donate all proceeds from social media to
                                 research.
                               </p>
-                              <button
-                                type="button"
+                              <p className="p-1">
+                                I have a memoir coming out in Nov 2024 and all proceeds will be donated to research as well, which can be pre-ordered <a href="https://www.amazon.com/Too-Young-Cancer-Diagnosis-Fighting-ebook/dp/B0CW1HKPWJ/ref=sr_1_1?crid=C1QQ3FZLJOZ2&dib=eyJ2IjoiMSJ9.86WEKCmVExWphXE6fnD2hA.C6tU4YMPD58Hyq95PwDK8iSixRxUMOgjL0tnheXL238&dib_tag=se&keywords=9781639109449&qid=1709230552&sprefix=9781639109449%2Caps%2C68&sr=8-1" target="_blank" className="text-indigo-600"> here.</a>
+                                </p>
+                                <div className="grid grid-cols-1 lg:w-full mt-2 gap-5">
+                                <div className="">
+                                <a
+
+                                  href="https://www.amazon.com/Too-Young-Cancer-Diagnosis-Fighting-ebook/dp/B0CW1HKPWJ/ref=sr_1_1?crid=C1QQ3FZLJOZ2&dib=eyJ2IjoiMSJ9.86WEKCmVExWphXE6fnD2hA.C6tU4YMPD58Hyq95PwDK8iSixRxUMOgjL0tnheXL238&dib_tag=se&keywords=9781639109449&qid=1709230552&sprefix=9781639109449%2Caps%2C68&sr=8-1"
+                                className="mt-4 mb-2 text-white bg-orange-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800"
+                              >
+                                Pre-Order Too Young For Cancer
+                              </a>
+                              </div>
+                              <div>
+                              <a
+                                href="https://katiekickscancer.com"
                                 className="mt-2 mb-2 text-white bg-orange-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800"
                               >
                                 Socials / More Info
-                              </button>
+                              </a>
+                              </div>
+                              </div>
                             </div>
                           </div>
                         </a>
