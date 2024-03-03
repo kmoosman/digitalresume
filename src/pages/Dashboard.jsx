@@ -63,7 +63,7 @@ export const Dashboard = ({ rates, demographics, type }) => {
               }} >
               <div className="font-md text-slate-800 mt-2 mb-7 p-4 bg-yellow-100 rounded flex flex-row justify-between">   
                 <div>
-                <div className="font-semibold flex flex-row"> <FontAwesomeIcon icon={faBullhorn}  className="pt-1" /> <div className="pl-2">Pre-orders now available for my memoir, Too Young For Cancer!! 📚</div>
+                <div className="font-semibold flex flex-row"> <FontAwesomeIcon icon={faBullhorn}  className="pt-1" /> <div className="pl-2">Pre-orders now available for my memoir, Too Young For Cancer 📚</div>
                 </div>
                 <div className="text-xs font-md pl-6">My portion of the proceeds from this book are donated to research, including speaking engagements and other related efforts. 
                 </div>
