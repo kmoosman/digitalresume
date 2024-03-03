@@ -80,7 +80,7 @@ export const Dashboard = ({ rates, demographics, type }) => {
                 <div>
                 <div className="font-semibold flex flex-row"> <FontAwesomeIcon icon={faBullhorn}  className="pt-1" /> <div className="pl-2">Race Cancer Research Foundation / Tumor Tissue Donation</div>
                 </div>
-                <div className="text-xs font-md pl-6">After my prognosis changed, I promised myself I'd use the time I was given to make things better for others who may come behind me some day. This since has led me to me joining the <a href="https://rarecancer.org/initiatives" className="text-indigo-600">Rare Cancer Research Foundation.</a>
+                <div className="text-xs font-md pl-6">After my prognosis changed, I promised myself I'd use the time I was given to make things better for others who may come behind me some day. This since has led me to joining the <a href="https://rarecancer.org/initiatives" className="text-indigo-600">Rare Cancer Research Foundation.</a>
                 </div>
                 <div className="text-xs font-md pl-6">You can hear more about the initiatives we're working on including tissue donation for rare cancers <a href="https://youtu.be/K97HebR7JPI" className="text-indigo-600" >here.</a> </div>
                 </div>
