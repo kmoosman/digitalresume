@@ -5,7 +5,7 @@ import Icon from "../../images/icon-01.svg";
 import EditMenu from "../EditMenu";
 import COA_LOGO from "../../images/Orange_COA.png";
 import ReactGA from "react-ga4";
-import challenge from "../../images/82K.png";
+import challenge from "../../images/challenge.png";
 
 // Import utilities
 import { tailwindConfig, hexToRGB, iconStyling } from "../../utils/Utils";
