@@ -31,7 +31,7 @@ export const Advocacy = () => {
                       #OrangeUp
                     </div>
                     <div className="flex justify-center w-full mt-5 text-center lg:text-2xl font-semibold text-orange-400">
-                      For Kidney Cancer Awareness Month
+                    Kidney Cancer Awareness Month
                     </div>
                     <div className="flex mx-auto justify-center mt-2 text-center sm:text-left lg:text-center font-semibold text-slate-800  mb-10">
                       #OrangeUp and help us #HuntForACure! </div>
