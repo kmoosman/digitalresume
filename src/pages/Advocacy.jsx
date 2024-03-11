@@ -1,9 +1,5 @@
 import React, { useState } from "react";
 
-import Sidebar from "../partials/Sidebar";
-import Header from "../partials/Header";
-
-import OrangeBackground from "../images/orange_background.png";
 
 import COA from "../partials/dashboard/COA";
 import { advocacy, advocacy2 } from "../utils/Data";
@@ -29,29 +25,45 @@ export const Advocacy = () => {
           <main>
             <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">
               <div className="w-full">
-                <div className="flex justify-center w-full mb-10">
+                <div className="flex justify-center w-full ">
                   <div className="justify-center">
-                    <div className="justify-center flex flex-row lg:text-6xl text-3xl font-bold text-orange-400 lg:mt-20 center-text w-full rounded">
+                    <div className="justify-center shadow-md border bg-white mb-0 sm:mb-5 sm:mt-10 flex flex-row lg:text-6xl text-3xl font-bold text-orange-400 lg:p-8 center-text w-full p-4 rounded">
                       #OrangeUp
                     </div>
-                    <p className="flex justify-center w-full text-center lg:text-2xl mt-2 font-semibold text-orange-400">
+                    <div className="flex justify-center w-full mt-5 text-center lg:text-2xl font-semibold text-orange-400">
                       For Kidney Cancer Awareness Month
-                    </p>
+                    </div>
+                    <div className="flex mx-auto justify-center mt-2 text-center sm:text-left lg:text-center font-semibold text-slate-800  mb-10">
+                      #OrangeUp and help us #HuntForACure! </div>
                   </div>
                 </div>
-                <div className="mb-10">
-                  <p className="flex mx-auto justify-center lg:w-1/2 mt-10 sm:text-left lg:text-center font-semibold text-slate-800 ">
-                    Join us as we #OrangeUp in support of those who are affected by kidney cancer while we shop local businesses, advocate for rare kidney cancers, and donate to research.
-                  </p>
-                  <p className="flex mx-auto justify-center lg:w-3/4 sm:text-left lg:text-center text-sm font-semibold text-orange-400 lg:text-xl lg:mt-5">
-                    COA will be hosting an egg hunt where you can find prizes in eggs hidden inside local businesses who have donated. 
-                  </p>
-                  <p className="flex mx-auto justify-center lg:w-3/4 sm:text-left text-sm lg:text-center font-semibold lg:text-orange-400  text-slate-800 lg:text-xl lg:mt-5">
-We'll have orange balloons outside the stores participating on March 30th. </p>
-                </div>
-                <p className="flex mx-auto justify-center lg:w-1/2  sm:text-left lg:text-center font-semibold text-slate-800  text-l mt-[-40px] mb-10">
-So keep your eyes peeled, #OrangeUp in your favorite orange attire and let's shop! </p>
+                
+        
                 <hr />
+              </div>
+
+              <div className="w-full">
+                <div className="text-3xl font-bold text-orange-400 md:mt-12 mt-5 mb-3">
+                  Event Details
+                </div>
+                
+                <div className="mb-10">
+                 <div className="flex flex-row gap-2">
+                  <p className="font-bold text-base">Date:</p>
+                  <p className="text-base">March 30th, 2024</p>
+                 </div>
+                 <div className="flex flex-col gap-2">
+                  <p className="text-base">COA, the Chromophobe and Oncocytic Tumor Alliance will be hosting an egg hunt where you can find prizes in eggs hidden inside local businesses while you #OrangeUp in your favorite orange attire, shop local and help us #HuntForACure for chromophobe kidney cancer. Particpating local businesses will have balloons displayed outside so you know where to search and shop. COA is nonprofit founded by a local resident after being diagnosed with a rare stage IV kidney cancer. More on her story, the mission and cause behind COA can be found below.</p>
+                  
+                 </div>
+                  <div className="flex flex-col">
+                  <p className="flex text-left lg:w-full sm:text-left font-semibold text-slate-800 ">
+                  
+                  </p>
+                  </div>
+              
+                </div>
+                
               </div>
 
               <div>
