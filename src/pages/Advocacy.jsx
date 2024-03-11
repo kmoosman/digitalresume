@@ -78,7 +78,7 @@ So keep your eyes peeled, #OrangeUp in your favorite orange attire and let's sho
               </div>
 
               <div className="grid grid-cols-12 gap-6 mt-10">
-                <Challenge />
+                {/* <Challenge /> */}
               </div>
 
               <div className="text-3xl font-bold text-orange-400 mt-10 mb-7">
