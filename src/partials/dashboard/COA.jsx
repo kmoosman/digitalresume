@@ -56,7 +56,7 @@ export const COA = ({ type }) => {
           <div className="flex lg:w-3/4 w-full">
             <div className="flex flex-col">
               <h2 className="text-lg font-semibold text-slate-800 mb-2">
-                Non-Profit
+                Non-Profit 
               </h2>
               <div className="text-xs font-semibold text-slate-400 uppercase mb-1">
                 Chromophobe and Oncocytic Tumor Alliance
