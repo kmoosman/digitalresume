@@ -15,6 +15,7 @@ import colors from "tailwindcss/colors";
 import {
   faCoffee,
   faSquareArrowUpRight,
+  faVideo,
 } from "@fortawesome/free-solid-svg-icons";
 
 export const COA = ({ type }) => {
@@ -71,6 +72,14 @@ export const COA = ({ type }) => {
                   education and awareness, and to fund research to further these
                   efforts.
                 </p>
+              </div>
+              <div className="flex flex-row gap-2">
+                <div className="self-center bg-orange-300 p-2 rounded">
+                   <FontAwesomeIcon icon={faVideo} className="text-white" />
+              </div>
+                <a className="text-orange-400 underline self-center text-sm" href="https://www.tiktok.com/@katiekickscancer/video/7344262029500321067?is_from_webapp=1&sender_device=pc&web_id=7341956517037278766" target="_blank" >
+                  Checkout a recap of what we've accomplished with your help and what funds donated in 2023 are being used for.
+                </a>
               </div>
             </div>
           </div>

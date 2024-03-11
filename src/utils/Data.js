@@ -27,6 +27,7 @@ import AMAZON from "../images/amazon.png";
 import PATIENTS from "../images/patients.png";
 import KATIECOURIC from "../images/kcm.jpeg";
 import COMMON from "../images/common.png";
+import KCA from "../images/kca.png";
 
 export const socialData = (type) => {
   return [
@@ -107,7 +108,8 @@ export const youtubeVideos = () => {
   return [
     {
       id: "youtube",
-      title: "My Story And What Brought Me to the Rare Cancer Research Foundation",
+      title:
+        "My Story And What Brought Me to the Rare Cancer Research Foundation",
       viewCount: "150",
       link: "https://www.youtube.com/embed/K97HebR7JPI",
     },
@@ -134,7 +136,7 @@ export const youtubeVideos = () => {
       title: "Chubbyemu's Video On My Story (2.4M Views)",
       viewCount: "2.4M",
       link: "https://www.youtube.com/embed/i9fLEvgZzRE",
-    }
+    },
   ];
 };
 
@@ -254,6 +256,29 @@ export const articles = [
     name: "Common Wealth Club California",
     link: "https://www.commonwealthclub.org/events/archive/video/innovative-patient-centered-care-cancer",
     description: "Innovative, Patient-Centered Care for Cancer",
+  },
+  {
+    id: "16",
+    image: KCA,
+    name: "Accelerating chromophobe research promises a brighter future for this rare kidney cancer",
+    link: "https://www.kidneycancer.org/stories/chrcc-coleman/",
+    description: "Guest post about Chromophobe Renal Cell Carcinoma",
+  },
+  {
+    id: "17",
+    image: KCA,
+    name: "KCA Affiliate Program",
+    link: "https://www.kidneycancer.org/affiliate-launch/",
+    description:
+      "Announcement of the KCA Affiliate Program and COA as one of the first affiliates.",
+  },
+  {
+    id: "18",
+    image: KCA,
+    name: "The Kidney Cancer Association and COA co-sponsor chromophobe RCC-specific grant",
+    link: "https://www.kidneycancer.org/kca-coa-chrcc-grant/",
+    description:
+      "Announcment of first grant for Chromophobe RCC co-sponsored by KCA and COA.",
   },
 ];
 export const podcasts = (type) => {
@@ -490,7 +515,7 @@ export const advocacy = [
     id: "1",
     icon: "awareness",
     title: "Spreading awareness",
-    link: "https://twitter.com/kaydaustin/status/1631716918926221312?s=20",
+    link: "https://kidneycoa.org/",
     description:
       "Awareness campaigns are far more than marketing and fluff. Spreading awareness can help connect patients to experts and resources for their disease. It's also a great way for a community, friends and families to show supports for the patient and survivors in their lives. Learn how a kidney cancer awareness campaign in 2021 was the catalyst that changed a local stage IV kidney cancer survivor's life.",
   },
@@ -498,7 +523,7 @@ export const advocacy = [
     id: "2",
     icon: "funding",
     title: "Funding research",
-    link: "https://www.kidneycoa.org",
+    link: "https://www.kidneycancer.org/kca-coa-chrcc-grant/",
     description:
       "Awareness campaigns help fund crucial and important research to improve outcomes for patients. For rare cancers, a little bit goes a long way. Just $50,000 can fund a years worth of research. For cancers like Chromophobe Renal Cell Carcinoma (a rare kidney cancer) which currently doesn't have any dedicated treatment options, that funding also provides hope. In 2024 we have co-funded a research grant with the KCA for $75,000 to fund research for this rare cancer and are working on funding to sustain this effort next year.",
   },
@@ -506,7 +531,7 @@ export const advocacy = [
     id: "3",
     icon: "outcomes",
     title: "Better outcomes",
-    link: "https://www.kidneycancer.org/kidney-cancer-awareness-month/",
+    link: "https://www.medresourceconnect.com/chromophobe",
     description:
       "For patients with rare diseases and cancers, finding experts can be a crucial part of their care. Advocacy campaigns help these patients connect with and find experts for their disease which can lead to better outcomes.",
   },
@@ -519,7 +544,7 @@ export const advocacy2 = [
     title: "Spreading awareness",
     link: "https://www.instagram.com/katiekickscancer/?hl=en",
     description:
-      "Take a photo with the orange lights or of you wearing orange and tag a kidney cancer survivor you love and support or tag @katiekickscancer to show your support for cause using the hashtag #OrangeUp. Don't forget to tag the business whose lights you saw as well.",
+      "Wear orange on March 30th and share a photo using the hashtag #OrangeUp and tag @katiekickscancer (if you'd like it amplified) to show your support. If you find an egg, take a photo of you and the egg and tag the business you found it in along with the #OrangeUp hashtag.",
   },
   {
     id: "2",

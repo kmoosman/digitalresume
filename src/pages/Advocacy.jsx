@@ -21,51 +21,41 @@ export const Advocacy = () => {
     <div className="h-screen relative">
       <div
         className="absolute inset-0 flex h-screen overflow-hidden"
-        style={{ backgroundImage: `url(${OrangeBackground})` }}
+        
       >
         <div
-          className="relative flex flex-col flex-1 overflow-y-auto bg-orange-500 bg-opacity-50 overflow-x-hidden opacity-100"
-          style={{ backdropFilter: "blur(5px)" }}
+          className="relative flex flex-col flex-1 overflow-y-auto bg-slate-100 b overflow-x-hidden"
         >
           <main>
             <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">
               <div className="w-full">
                 <div className="flex justify-center w-full mb-10">
                   <div className="justify-center">
-                    <div className="justify-center flex flex-row text-5xl font-bold text-white mt-5 w-full center-text w-full rounded">
-                      OrangeUp
+                    <div className="justify-center flex flex-row lg:text-6xl text-3xl font-bold text-orange-400 lg:mt-20 center-text w-full rounded">
+                      #OrangeUp
                     </div>
-                    <p className="flex justify-center w-full text-2xl mt-2 font-semibold text-neutral-900">
+                    <p className="flex justify-center w-full text-center lg:text-2xl mt-2 font-semibold text-orange-400">
                       For Kidney Cancer Awareness Month
                     </p>
                   </div>
                 </div>
                 <div className="mb-10">
-                  <p className="flex mx-auto justify-center sm:text-left lg:text-center  w-3/4 font-semibold text-neutral-900">
-                    Join us as we #OrangeUp in support of those who are affected
-                    by kidney cancer.
+                  <p className="flex mx-auto justify-center lg:w-1/2 mt-10 sm:text-left lg:text-center font-semibold text-slate-800 ">
+                    Join us as we #OrangeUp in support of those who are affected by kidney cancer while we shop local businesses, advocate for rare kidney cancers, and donate to research.
                   </p>
-                  <p className="flex mx-auto justify-center sm:text-left lg:text-center w-3/4 font-semibold text-neutral-900">
-                    This year around 82,000 individuals in the US alone will be
-                    diagnosed with this disease.
+                  <p className="flex mx-auto justify-center lg:w-3/4 sm:text-left lg:text-center text-sm font-semibold text-orange-400 lg:text-xl lg:mt-5">
+                    COA will be hosting an egg hunt where you can find prizes in eggs hidden inside local businesses who have donated. 
                   </p>
-                  <p className="flex mx-auto justify-center w-3/4 sm:text-left lg:text-center font-semibold text-neutral-900">
-                    We've asked businesses in our city to display orange lights
-                    in their storefronts, lobbies, and windows
-                  </p>
-                  <p className="flex mx-auto justify-center w-3/4 sm:text-left lg:text-center font-semibold text-neutral-900">
-                    as a simple yet powerful gesture that shows solidarity with
-                    those affected by kidney cancer.{" "}
-                  </p>
-                  <p className="flex mx-auto justify-center w-3/4 sm:text-left lg:text-center font-semibold text-neutral-900 text-xl mt-5">
-                    #OrangeUp to join the cause
-                  </p>
+                  <p className="flex mx-auto justify-center lg:w-3/4 sm:text-left text-sm lg:text-center font-semibold lg:text-orange-400  text-slate-800 lg:text-xl lg:mt-5">
+We'll have orange balloons outside the stores participating on March 30th. </p>
                 </div>
+                <p className="flex mx-auto justify-center lg:w-1/2  sm:text-left lg:text-center font-semibold text-slate-800  text-l mt-[-40px] mb-10">
+So keep your eyes peeled, #OrangeUp in your favorite orange attire and let's shop! </p>
                 <hr />
               </div>
 
               <div>
-                <div className="text-3xl font-bold text-white mt-12 mb-7">
+                <div className="text-3xl font-bold text-orange-400 md:mt-12 mt-5 mb-7">
                   How do advocacy campaigns make an impact?
                 </div>
                 <div className="grid grid-cols-12 gap-6 mb-6 ">
@@ -80,7 +70,7 @@ export const Advocacy = () => {
                   ))}
                 </div>
               </div>
-              <div className="text-3xl font-bold text-white mt-10 mb-7">
+              <div className="text-3xl font-bold text-orange-400 mt-10 mb-7">
                 Donate
               </div>
               <div className="grid grid-cols-12 gap-6 mt-10">
@@ -91,7 +81,7 @@ export const Advocacy = () => {
                 <Challenge />
               </div>
 
-              <div className="text-3xl font-bold text-white mt-10 mb-7">
+              <div className="text-3xl font-bold text-orange-400 mt-10 mb-7">
                 Meet a local survivor
               </div>
 
@@ -154,7 +144,7 @@ export const Advocacy = () => {
                                 <a
 
                                   href="https://www.amazon.com/Too-Young-Cancer-Diagnosis-Fighting-ebook/dp/B0CW1HKPWJ/ref=sr_1_1?crid=C1QQ3FZLJOZ2&dib=eyJ2IjoiMSJ9.86WEKCmVExWphXE6fnD2hA.C6tU4YMPD58Hyq95PwDK8iSixRxUMOgjL0tnheXL238&dib_tag=se&keywords=9781639109449&qid=1709230552&sprefix=9781639109449%2Caps%2C68&sr=8-1"
-                                className="mt-4 mb-2 text-white bg-orange-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800"
+                                className="mt-4 mb-2 text-white bg-orange-500 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-orange-400 dark:hover:bg-orange-600 dark:focus:ring-orange-600"
                               >
                                 Pre-Order Too Young For Cancer
                               </a>
@@ -162,7 +152,7 @@ export const Advocacy = () => {
                               <div>
                               <a
                                 href="https://katiekickscancer.com"
-                                className="mt-2 mb-2 text-white bg-orange-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800"
+                                className="mt-2 mb-2 text-white bg-orange-500 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-orange-400 dark:hover:bg-orange-600 dark:focus:ring-orange-600"
                               >
                                 Socials / More Info
                               </a>
@@ -178,7 +168,7 @@ export const Advocacy = () => {
               </div>
 
               <div>
-                <div className="text-3xl font-bold text-white mt-12 mb-7">
+                <div className="text-3xl font-bold text-orange-400 mt-12 mb-7">
                   How can you help?
                 </div>
                 <div className="grid grid-cols-12 gap-6 mb-6 ">
