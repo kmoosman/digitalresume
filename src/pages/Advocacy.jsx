@@ -14,7 +14,7 @@ import VideoCard from "../partials/dashboard/VideoCard";
 import Videos from "./Videos";
 import AdvocacyCard from "../partials/dashboard/AdvocacyCard";
 import { iconStyling } from "../utils/Utils";
-import Challenge from "../partials/dashboard/Challenge";
+import Challenge from "../images/challenge.png";
 
 export const Advocacy = () => {
   return (
