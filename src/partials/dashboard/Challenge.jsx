@@ -5,7 +5,7 @@ import Icon from "../../images/icon-01.svg";
 import EditMenu from "../EditMenu";
 import COA_LOGO from "../../images/Orange_COA.png";
 import ReactGA from "react-ga4";
-import challenge from "../../images/challenge.png";
+import challenge from "../../images/challenge.png"
 
 // Import utilities
 import { tailwindConfig, hexToRGB, iconStyling } from "../../utils/Utils";
@@ -23,7 +23,7 @@ export const Challenge = ({ type }) => {
 
   return (
     <div className="flex flex-col col-span-full sm:col-span-12 xl:col-span-12 bg-white shadow-lg rounded-sm border border-slate-200">
-      <div className="px-5 pt-5">
+      <div className="px-5 pt-5 ">
         <header className="flex xl:float-right lg:float-right mb-2">
           {/* Icon */}
           <div className="hidden  sm:block">
@@ -50,10 +50,10 @@ export const Challenge = ({ type }) => {
           </div>
         </header>
         <div className="flex flex-col lg:flex-row xl:flex-row">
-          <div className="w-48 h-48 rounded-lg mr-5 mb-5">
+          <div className="w-48 h-48 rounded-lg lg:mr-5 mb-5 ml-14 sm:ml-0">
             <img className="h-full w-full" src={challenge} alt="82K Challenge" />
           </div>
-          <div className="flex w-3/4">
+          <div className="flex w-full lg:w-3/4">
             <div className="flex flex-col">
               <h2 className="text-lg font-semibold text-slate-800 mb-2">
                 Team Chromophobe

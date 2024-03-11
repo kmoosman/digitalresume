@@ -50,10 +50,10 @@ export const COA = ({ type }) => {
           </div>
         </header>
         <div className="flex flex-col lg:flex-row xl:flex-row">
-          <div className="w-48 h-48 rounded-lg mr-5 mb-5">
+          <div className="w-48 h-48 rounded-lg mr-5 mb-5 sm:ml-0 ml-14">
             <img className="h-full w-full" src={COA_LOGO} alt="COA" />
           </div>
-          <div className="flex w-3/4">
+          <div className="flex lg:w-3/4 w-full">
             <div className="flex flex-col">
               <h2 className="text-lg font-semibold text-slate-800 mb-2">
                 Non-Profit
