@@ -75,10 +75,20 @@ export const Dashboard = ({ rates, demographics, type }) => {
                     <FontAwesomeIcon icon={faSquareArrowUpRight} />
                     </div>
               </div>
+              </a>
               {/* Work */}
+              <a href={'https://www.commonwealthclub.org/events/archive/video/innovative-patient-centered-care-cancer'} 
+              target="_blank"  
+              onClick={() => {
+                ReactGA.event({
+                  category: 'External Links',
+                  action: 'Clicked Rare Cancer Research Foundation Link',
+                  label: 'Rare Cancer Research Foundation - https://www.commonwealthclub.org/events/archive/video/innovative-patient-centered-care-cancer'
+                });
+              }} >
               <div className="font-md text-slate-800 mt-2 mb-7 p-4 bg-blue-100 rounded flex flex-row justify-between">   
                 <div>
-                <div className="font-semibold flex flex-row"> <FontAwesomeIcon icon={faBullhorn}  className="pt-1" /> <div className="pl-2">Race Cancer Research Foundation / Tumor Tissue Donation</div>
+                <div className="font-semibold flex flex-row"> <FontAwesomeIcon icon={faBullhorn}  className="pt-1" /> <div className="pl-2">Rare Cancer Research Foundation / Tumor Tissue Donation</div>
                 </div>
                 <div className="text-xs font-md pl-6">After my prognosis changed, I promised myself I'd use the time I was given to make things better for others who may come behind me some day. This since has led me to joining the <a href="https://rarecancer.org/initiatives" className="text-indigo-600">Rare Cancer Research Foundation.</a>
                 </div>
@@ -90,6 +100,7 @@ export const Dashboard = ({ rates, demographics, type }) => {
                     </div>
               </div>
               </a>
+             
               {/* Cards */}
               <div className="ml-5 text-3xl mb-4 font-medium">Socials</div>
               <div className="grid grid-cols-12 gap-6 mb-6 ">
