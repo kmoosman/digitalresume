@@ -433,6 +433,13 @@ export const podcasts = (type) => {
 export const purchaseMemoir = [
   {
     id: "0",
+    name: "Barne's and Noble",
+    link: "https://www.barnesandnoble.com/w/too-young-for-cancer-katie-coleman/1144947840;jsessionid=67C463F7B33D131B3D92A58D1DE5DE1C.prodny_store01-atgap16?ean=9781639109449&st=AFF&2sid=Random%20House%20Inc_8373827_NA&sourceId=AFFRandom%20House%20Inc",
+    description: "Pre-orders available through Barnes and Noble.",
+    image: BARNES,
+  },
+  {
+    id: "3",
     name: "Amazon",
     link: "https://www.amazon.com/Too-Young-Cancer-Diagnosis-Fighting-ebook/dp/B0CW1HKPWJ/ref=sr_1_1?crid=C1QQ3FZLJOZ2&dib=eyJ2IjoiMSJ9.86WEKCmVExWphXE6fnD2hA.C6tU4YMPD58Hyq95PwDK8iSixRxUMOgjL0tnheXL238&dib_tag=se&keywords=9781639109449&qid=1709230552&sprefix=9781639109449%2Caps%2C68&sr=8-1",
     description:
@@ -447,13 +454,7 @@ export const purchaseMemoir = [
       "On Penguin Random House, you can find a list of other retailers to pre-order from as well.",
     image: PENGUIN,
   },
-  {
-    id: "2",
-    name: "Barne's and Noble",
-    link: "https://www.barnesandnoble.com/w/too-young-for-cancer-katie-coleman/1144947840;jsessionid=67C463F7B33D131B3D92A58D1DE5DE1C.prodny_store01-atgap16?ean=9781639109449&st=AFF&2sid=Random%20House%20Inc_8373827_NA&sourceId=AFFRandom%20House%20Inc",
-    description: "Pre-orders available through Barnes and Noble.",
-    image: BARNES,
-  },
+
   {
     id: "3",
     name: "Target",

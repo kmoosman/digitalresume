@@ -20,7 +20,10 @@ function PreOrder() {
   };
 
   const submitEmail = async () => {
-    window.open("https://www.amazon.com/Too-Young-Cancer-Diagnosis-Fighting-ebook/dp/B0CW1HKPWJ/ref=sr_1_1?crid=C1QQ3FZLJOZ2&dib=eyJ2IjoiMSJ9.86WEKCmVExWphXE6fnD2hA.C6tU4YMPD58Hyq95PwDK8iSixRxUMOgjL0tnheXL238&dib_tag=se&keywords=9781639109449&qid=1709230552&sprefix=9781639109449%2Caps%2C68&sr=8-1", "_blank");
+    window.open(
+      "https://www.barnesandnoble.com/w/too-young-for-cancer-katie-coleman/1144947840;jsessionid=67C463F7B33D131B3D92A58D1DE5DE1C.prodny_store01-atgap16?ean=9781639109449&st=AFF&2sid=Random%20House%20Inc_8373827_NA&sourceId=AFFRandom%20House%20Inc",
+      "_blank"
+    );
     setOpen(false);
   };
 
@@ -72,17 +75,19 @@ function PreOrder() {
                           as="h3"
                           className="text-base font-semibold  leading-6 text-gray-900"
                         >
-                         📚 Pre-Orders Now Available!!
+                          📚 Pre-Orders Now Available!!
                         </Dialog.Title>
                         <div className="mt-2 text-left">
                           <p className="text-sm text-gray-500">
-                            Pre-Orders are now available for my memoir, Too Young For Cancer. 
+                            Pre-Orders are now available for my memoir, Too
+                            Young For Cancer.
                           </p>
                           <p className="text-sm text-gray-500">
-                            I'm donating my portion of the proceeds from it back to research. 
+                            I'm donating my portion of the proceeds from it back
+                            to research.
                           </p>
                           <p className="text-sm text-gray-500">
-                          Let's make an impact, together!
+                            Let's make an impact, together!
                           </p>
                           {/* <p className="text-xs font-thin text-gray-500">
                             (click outside window to close w/o subscribing)
@@ -91,7 +96,6 @@ function PreOrder() {
                       </div>
                     </div>
                     <div className="mt-5 sm:mt-6">
-                
                       <button
                         type="button"
                         className="inline-flex w-full justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
