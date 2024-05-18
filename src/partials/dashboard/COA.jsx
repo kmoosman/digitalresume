@@ -22,13 +22,13 @@ export const COA = ({ type }) => {
   library.add(fab);
 
   return (
-    <div className="flex flex-col col-span-full sm:col-span-12 xl:col-span-12 bg-white shadow-lg rounded-sm border border-slate-200">
-      <div className="px-5 pt-5">
+    <div className="flex flex-col col-span-full ml-2 mr-2 md:ml-10 md:mr-10 sm:col-span-12 xl:col-span-12  bg-center shadow-lg rounded-sm ">
+      <div className="px-5 pt-20 pb-20 ">
         <header className="flex xl:float-right lg:float-right mb-2">
           {/* Icon */}
           <div className="hidden  sm:block">
             <div className="flex items-start ">
-              <div className="text-3xl font-bold text-slate-800 mr-2">
+              {/* <div className="text-3xl font-bold text-slate-800 mr-2">
                 {type === "query" || type === "media" ? "" : "Donate"}
               </div>
               <a
@@ -38,31 +38,31 @@ export const COA = ({ type }) => {
                 rel="noreferrer"
                 onClick={() => {
                   ReactGA.event({
-                    category: 'External Links',
-                    action: 'Clicked Nonprofit',
-                    label: `Clicked on COA link}`
+                    category: "External Links",
+                    action: "Clicked Nonprofit",
+                    label: `Clicked on COA link}`,
                   });
                 }}
               >
                 <FontAwesomeIcon icon={faSquareArrowUpRight} />
-              </a>
+              </a> */}
             </div>
           </div>
         </header>
-        <div className="flex flex-col lg:flex-row xl:flex-row">
-          <div className="w-48 h-48 rounded-lg mr-5 mb-5 sm:ml-0 ml-14">
+        <div className="flex flex-col lg:flex-row xl:flex-row gap-10">
+          <div className="w-52 h-52 rounded-lg mr-5 mb-5 sm:ml-0 ml-14">
             <img className="h-full w-full" src={COA_LOGO} alt="COA" />
           </div>
           <div className="flex lg:w-3/4 w-full">
             <div className="flex flex-col">
-              <h2 className="text-lg font-semibold text-slate-800 mb-2">
-                Non-Profit 
+              <h2 className="text-2xl font-semibold text-slate-800 mb-2">
+                Non-Profit
               </h2>
-              <div className="text-xs font-semibold text-slate-400 uppercase mb-1">
+              <div className="text-lg font-semibold text-slate-400 uppercase mb-1">
                 Chromophobe and Oncocytic Tumor Alliance
               </div>
               <div className="w-full">
-                <p className="text-xs text-slate-600 mb-5">
+                <p className="text-sm text-slate-600 mb-5">
                   The Chromophobe and Oncocytic Tumor Alliance (COA) is a
                   non-profit I founded with a mission to bring together and
                   support a community of patients, organizations and researchers
@@ -75,34 +75,21 @@ export const COA = ({ type }) => {
               </div>
               <div className="flex flex-row gap-2">
                 <div className="self-center bg-orange-300 p-2 rounded">
-                   <FontAwesomeIcon icon={faVideo} className="text-white" />
-              </div>
-                <a className="text-orange-400 underline self-center text-sm" href="https://www.tiktok.com/@katiekickscancer/video/7344262029500321067?is_from_webapp=1&sender_device=pc&web_id=7341956517037278766" target="_blank" >
-                  Checkout a recap of what we've accomplished with your help and what funds donated in 2023 are being used for.
+                  <FontAwesomeIcon icon={faVideo} className="text-white" />
+                </div>
+                <a
+                  className="text-orange-400 underline self-center text-sm"
+                  href="https://www.tiktok.com/@katiekickscancer/video/7344262029500321067?is_from_webapp=1&sender_device=pc&web_id=7341956517037278766"
+                  target="_blank"
+                >
+                  Checkout a recap of what we've accomplished with your help and
+                  what funds donated in 2023 are being used for.
                 </a>
               </div>
             </div>
           </div>
-          <div className="flex items-start lg:hidden xl:hidden md:hidden sm:hidden 2xl:hidden mb-5">
-            <div className="text-3xl font-bold text-slate-800 mr-2">
-              {type === "query" || type === "media" ? "" : "Donate"}
-            </div>
-            <a
-              href="https://kidneycoa.org"
-              target="_blank"
-              className="text-orange-400"
-              rel="noreferrer"
-            >
-              <FontAwesomeIcon icon={faSquareArrowUpRight} />
-            </a>
-          </div>
         </div>
       </div>
-      {/* Chart built with Chart.js 3 */}
-      {/*<div className="grow">*/}
-      {/*  /!* Change the height attribute to adjust the chart height *!/*/}
-      {/*  <LineChart data={chartData} width={389} height={128} />*/}
-      {/*</div>*/}
     </div>
   );
 };

@@ -1,122 +1,74 @@
 import React from "react";
-import headshot from "../../images/profile_headshot (1).png";
+import headshot from "../../images/photo-background-removed.png";
 
 function WelcomeBanner({ email, type }) {
   return (
-    <div className={`relative p-4 sm:p-4 rounded-sm overflow-hidden`}>
-      {/* Background illustration */}
-
+    <div
+      className={`relative rounded-sm overflow-hidden bg-background-image bg-cover bg-center`}
+    >
       <div
         className="absolute right-0 top-0  mr-16 pointer-events-none hidden xl:block"
         aria-hidden="true"
-      >
-        {/*<svg width="319" height="198" xmlnsXlink="http://www.w3.org/1999/xlink">*/}
-        {/*  <defs>*/}
-        {/*    <path id="welcome-a" d="M64 0l64 128-64-20-64 20z" />*/}
-        {/*    <path id="welcome-e" d="M40 0l40 80-40-12.5L0 80z" />*/}
-        {/*    <path id="welcome-g" d="M40 0l40 80-40-12.5L0 80z" />*/}
-        {/*      <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="welcome-b">*/}
-        {/*      <stop stopColor="#A5B4FC" offset="0%" />*/}
-        {/*      <stop stopColor="#818CF8" offset="100%" />*/}
-        {/*    </linearGradient>*/}
-        {/*    <linearGradient*/}
-        {/*      x1="50%"*/}
-        {/*      y1="24.537%"*/}
-        {/*      x2="50%"*/}
-        {/*      y2="100%"*/}
-        {/*      id="welcome-c"*/}
-        {/*    >*/}
-        {/*      <stop stopColor="#4338CA" offset="0%" />*/}
-        {/*      <stop stopColor="#6366F1" stopOpacity="0" offset="100%" />*/}
-        {/*    </linearGradient>*/}
-        {/*  </defs>*/}
-        {/*  <g fill="none" fillRule="evenodd">*/}
-        {/*    <g transform="rotate(64 36.592 105.604)">*/}
-        {/*      <mask id="welcome-d" fill="#fff">*/}
-        {/*        <use xlinkHref="#welcome-a" />*/}
-        {/*      </mask>*/}
-        {/*      <use fill="url(#welcome-b)" xlinkHref="#welcome-a" />*/}
-        {/*      <path*/}
-        {/*        fill="url(#welcome-c)"*/}
-        {/*        mask="url(#welcome-d)"*/}
-        {/*        d="M64-24h80v152H64z"*/}
-        {/*      />*/}
-        {/*    </g>*/}
-        {/*    <g transform="rotate(-51 91.324 -105.372)">*/}
-        {/*      <mask id="welcome-f" fill="#fff">*/}
-        {/*        <use xlinkHref="#welcome-e" />*/}
-        {/*      </mask>*/}
-        {/*      <use fill="url(#welcome-b)" xlinkHref="#welcome-e" />*/}
-        {/*      <path*/}
-        {/*        fill="url(#welcome-c)"*/}
-        {/*        mask="url(#welcome-f)"*/}
-        {/*        d="M40.333-15.147h50v95h-50z"*/}
-        {/*      />*/}
-        {/*    </g>*/}
-        {/*    <g transform="rotate(44 61.546 392.623)">*/}
-        {/*      <mask id="welcome-h" fill="#fff">*/}
-        {/*        <use xlinkHref="#welcome-g" />*/}
-        {/*      </mask>*/}
-        {/*      <use fill="url(#welcome-b)" xlinkHref="#welcome-g" />*/}
-        {/*      <path*/}
-        {/*        fill="url(#welcome-c)"*/}
-        {/*        mask="url(#welcome-h)"*/}
-        {/*        d="M40.333-15.147h50v95h-50z"*/}
-        {/*      />*/}
-        {/*    </g>*/}
-        {/*  </g>*/}
-        {/*</svg>*/}
-      </div>
+      ></div>
 
       {/* Content */}
-      <div className="flex flex-col self-center">
-        <div className="relative z-0">
-          <img
-            className="aspect-square rounded-full w-40 border mx-auto border-2 object-cover "
-            src={headshot}
-            width="60"
-            height="60"
-            alt="User 01"
-          />
-        </div>
-        <div className="h-full self-center mx-auto md:align-left w-full">
-          <h1 className="text-3xl md:text-3xl mt-4 text-slate-800 font-bold mx-auto text-center">
-            Katie Coleman
-          </h1>
-          <p className="text-center italic mt-1">
-            {`Stage IV Kidney Cancer Survivor • Patient Advocate • Author (Memoir)`}
+      <div className="grid grid-cols-3 self-center h-full ">
+        <div className="h-full md:align-left w-full col-span-2 ml-32">
+          <h1 className="text-3xl md:text-3xl mt-4 font-bold mt-20">Hi! 👋</h1>
+          <h1 className="text-3xl md:text-3xl font-bold">I'm Katie Coleman</h1>
+          <p className=" italic mt-1">
+            Strength isn't the absense of fear, it's a product of perservering
+            through it.
           </p>
-          <p className="text-center italic mt-1">
-            Donates all proceeds from social media to research
+
+          <div className="mt-10 w-3/4">
+            <p className="mt-1">
+              I'm a cancer survivor, advocate, podcaster, software developer and
+              author of{" "}
+              <a
+                href="https://www.amazon.com/Too-Young-Cancer-Diagnosis-Fighting-ebook/dp/B0CW1HKPWJ/ref=sr_1_1?crid=C1QQ3FZLJOZ2&dib=eyJ2IjoiMSJ9.86WEKCmVExWphXE6fnD2hA.C6tU4YMPD58Hyq95PwDK8iSixRxUMOgjL0tnheXL238&dib_tag=se&keywords=9781639109449&qid=1709230552&sprefix=9781639109449%2Caps%2C68&sr=8-1"
+                className="text-slate-900"
+              >
+                <span className="font-semibold">TOO YOUNG FOR CANCER</span>
+              </a>{" "}
+              📚
+            </p>
+            <p>
+              {" "}
+              Here to share my story to hopefully make things a little easier
+              for those who may come behind me.
+            </p>
+          </div>
+          <p className=" italic mt-1 md:mt-12 text-sm ">
+            <button
+              onClick={() => {
+                window.open(
+                  "https://www.amazon.com/Too-Young-Cancer-Diagnosis-Fighting-ebook/dp/B0CW1HKPWJ/ref=sr_1_1?crid=C1QQ3FZLJOZ2&dib=eyJ2IjoiMSJ9.86WEKCmVExWphXE6fnD2hA.C6tU4YMPD58Hyq95PwDK8iSixRxUMOgjL0tnheXL238&dib_tag=se&keywords=9781639109449&qid=1709230552&sprefix=9781639109449%2Caps%2C68&sr=8-1",
+                  "_blank"
+                );
+              }}
+              className="bg-slate-800 text-white md:text-lg mt-2 mb-2 font-semibold rounded p-2 text-sm"
+            >
+              PRE-ORDER 📚
+            </button>
           </p>
-          <p className="text-center italic mt-1 text-sm">
+          <p className=" italic mt-1 text-sm">
             Inquiries, contact and collaborations{" "}
             <a href="mailto:katiekickscancer@gmail.com">
               katiekickscancer@gmail.com
             </a>
-            <p className="text-center italic mt-1 text-sm p-3">
-              <button
-                onClick={() => {
-                  window.open(
-                    "https://www.amazon.com/Too-Young-Cancer-Diagnosis-Fighting-ebook/dp/B0CW1HKPWJ/ref=sr_1_1?crid=C1QQ3FZLJOZ2&dib=eyJ2IjoiMSJ9.86WEKCmVExWphXE6fnD2hA.C6tU4YMPD58Hyq95PwDK8iSixRxUMOgjL0tnheXL238&dib_tag=se&keywords=9781639109449&qid=1709230552&sprefix=9781639109449%2Caps%2C68&sr=8-1",
-                    "_blank"
-                  );
-                }}
-                className="bg-blue-600 text-white md:text-lg mt-2 mb-2 font-semibold rounded p-2 text-sm"
-              >
-                PRE-ORDER: TOO YOUNG FOR CANCER (Memoir) 📚
-              </button>
-            </p>
             <p>
               <a href="/" className="text-indigo-500">
                 Subscribe to newsletter / book release updates
               </a>
             </p>
           </p>
-
           {/*<p className="text-sm italic">*/}
           {/*  <a href="mailto:katie.coleman.ut@gmail.com" className="text-blue-700 hover:text-blue-200">Email</a>*/}
           {/*</p>*/}
+        </div>
+        <div className="relative z-0 w-1/2 h-1/2 mr-0 md:mr-52 col-span-1 mx-auto opacity-95">
+          <img className="aspect-fit" src={headshot} alt="User 01" />
         </div>
       </div>
     </div>
