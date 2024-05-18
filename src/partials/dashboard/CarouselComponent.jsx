@@ -4,12 +4,14 @@ import bookCover from "../../images/book-cover.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const CarouselComponent = () => {
+const CarouselComponent = ({ cards, autoscroll = true }) => {
   const settings = {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: autoscroll,
+    autoplaySpeed: 5000,
     responsive: [
       {
         breakpoint: 1024,
@@ -30,26 +32,24 @@ const CarouselComponent = () => {
     ],
   };
 
-  const cards = [
-    { title: "Memoir", description: "Too Young for Cancer" },
-    { title: "Card 2", description: "This is the description for card 2" },
-    { title: "Card 3", description: "This is the description for card 3" },
-    { title: "Card 4", description: "This is the description for card 4" },
-    { title: "Card 5", description: "This is the description for card 5" },
-  ];
-
   return (
     <div className="container mx-auto">
       <Slider {...settings}>
-        {cards.map((card, index) => (
-          <div key={index} className="p-4">
-            <div className="bg-background-image bg-cover bg-center p-6 rounded-lg shadow-lg">
-              <img className="h-40 w-40" src={bookCover} alt="cover" />
-              <h2 className="text-xl font-bold mb-2">{card.title}</h2>
-              <p className="text-gray-700">{card.description}</p>
+        {cards
+          ?.sort((a, b) => b.id - a.id)
+          .map((card, index) => (
+            <div key={index} className="p-4">
+              <div className="bg-background-image bg-cover bg-center p-6 rounded-lg shadow-lg h-80">
+                <img
+                  className=" w-40 mx-auto rounded-lg mb-7"
+                  src={card.image}
+                  alt="cover"
+                />
+                <h2 className="text-xl font-bold mb-2">{card.name}</h2>
+                <p className="text-gray-700">{card.description}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
       </Slider>
     </div>
   );

@@ -28,6 +28,16 @@ import PATIENTS from "../images/patients.png";
 import KATIECOURIC from "../images/kcm.jpeg";
 import COMMON from "../images/common.png";
 import KCA from "../images/kca.png";
+import ONCOLOGIST from "../images/oncologist.png";
+import LIVER from "../images/liver_resection.png";
+import LIFE_REFOCUED from "../images/life_refocused.png";
+import CHUBBY from "../images/chubbyemu.png";
+import BIOPSY from "../images/biopsy.png";
+import COMMON_WEALTH from "../images/common_wealth.png";
+import ABLATION from "../images/ablations.png";
+import BOOK from "../images/book-cover.png";
+import COA_LOGO from "../images/Orange_COA.png";
+import RCRF from "../images/RCRF.png";
 
 export const socialData = (type) => {
   return [
@@ -104,41 +114,66 @@ export const tikTokVideos = () => {
   ];
 };
 
-export const youtubeVideos = () => {
-  return [
-    {
-      id: "youtube",
-      title:
-        "My Story And What Brought Me to the Rare Cancer Research Foundation",
-      viewCount: "150",
-      link: "https://www.youtube.com/embed/K97HebR7JPI",
-    },
-    {
-      id: "youtube",
-      title: "Too Young For Cancer - Memoir: Chapter 1",
-      viewCount: "150",
-      link: "https://www.youtube.com/embed/wPZhLBkHhwY",
-    },
-    {
-      id: "youtube",
-      title: "What an Open Nephrectomy and Liver Resction Was Like",
-      viewCount: "6,500",
-      link: "https://www.youtube.com/embed/ZW2-ciZbXtM",
-    },
-    {
-      id: "youtube",
-      title: "A Cancer Patient Speaks Candidly With Her Oncologist",
-      viewCount: "19,000",
-      link: "https://www.youtube.com/embed/Nddft_nc3Yc",
-    },
-    {
-      id: "youtube",
-      title: "Chubbyemu's Video On My Story (2.4M Views)",
-      viewCount: "2.4M",
-      link: "https://www.youtube.com/embed/i9fLEvgZzRE",
-    },
-  ];
-};
+export const youtubeVideos = [
+  {
+    id: 1,
+    description:
+      "Tumor Tissue Donation and What Brought Me to the Rare Cancer Research Foundation",
+    name: "CommonWealth Club California",
+    viewCount: "150",
+    image: COMMON_WEALTH,
+    link: "https://www.youtube.com/embed/K97HebR7JPI",
+  },
+  {
+    id: 2,
+    description: "Read of Chapter 1 of my memoir, Too Young For Cancer.",
+    name: "Memoir: Chapter 1",
+    image: BOOK,
+    viewCount: "150",
+    link: "https://www.youtube.com/embed/wPZhLBkHhwY",
+  },
+  {
+    id: 3,
+    description: "What an Open Nephrectomy and Liver Resection Was Like",
+    name: "Open Nephrectomy and Liver Resection",
+    image: LIVER,
+    viewCount: "6,500",
+    link: "https://www.youtube.com/embed/ZW2-ciZbXtM",
+  },
+  {
+    id: 4,
+    description:
+      "Walk through of my case with my oncologist, touching and highlighting on common questions I had early in my diagnosis.",
+    name: "Speaking Candidly With My Oncologist",
+    image: ONCOLOGIST,
+    viewCount: "19,000",
+    link: "https://www.youtube.com/embed/Nddft_nc3Yc",
+  },
+  {
+    id: 5,
+    description:
+      "YouTuber Chubbyemu made a video on my story, with over 2.5M views it can be found here.",
+    name: "Chubbyemu's Video On My Story",
+    image: CHUBBY,
+    viewCount: "2.4M",
+    link: "https://www.youtube.com/embed/i9fLEvgZzRE",
+  },
+  {
+    id: 6,
+    name: "What a Kidney and Liver Biopsy Were Like?",
+    description:
+      "Walk through of my biopsy procedure, including a complication that arose.",
+    image: BIOPSY,
+    link: "https://youtu.be/Iue_GsVen0U",
+  },
+  {
+    id: 7,
+    name: "What a Liver Ablation Was Like?",
+    description: "Walk through of what my microwave liver ablations were like.",
+    image: ABLATION,
+    link: "https://youtu.be/q6ewbtK_gMA",
+  },
+];
 
 export const articles = [
   {
@@ -281,154 +316,190 @@ export const articles = [
       "Announcment of first grant for Chromophobe RCC co-sponsored by KCA and COA.",
   },
 ];
-export const podcasts = (type) => {
-  return [
-    {
-      id: "0",
-      name: "The Doctors Art",
-      link: "https://www.thedoctorsart.com/episodes/ep27",
-      description: `${
-        type === "media"
-          ? `#3 in most popular medical podcast. Ep. 27: Facing the Rarest of Cancers`
-          : `Ep. 27: Facing the Rarest of Cancers`
-      }`,
-      image: doctorsArt,
-    },
-    {
-      id: "1",
-      name: "The Accelerators",
-      link: "https://accelerators.buzzsprout.com/1839275/11948820-the-experts-discuss-patients-mental-health-and-mindfulness",
-      description: `${
-        type === "media"
-          ? `Ranked in top 25% of all podcasts. Experts discuss mental health.`
-          : `The Experts Discuss Patients’ Mental Health and Mindfulness`
-      }`,
-      image: accelerators,
-    },
-    {
-      id: "2",
-      name: "The Accelerators",
-      link: "https://accelerators.buzzsprout.com/1839275/11447574-on-clinical-trials-the-patient-perspective-with-julie-and-katie",
-      description:
-        "On Clinical Trials: The Patient Perspective With Julie and Katie",
-      image: accelerators,
-    },
-    {
-      id: "3",
-      name: "The Accelerators",
-      link: "https://accelerators.buzzsprout.com/1839275/11673786-on-clinical-trials-patient-education-with-julie-katie-and-david",
-      description:
-        "On Clinical Trials: Patient Education With Julie, Katie, and David",
-      image: accelerators,
-    },
-    {
-      id: "4",
-      name: "HealthCare Unfiltered",
-      link: "https://podcasts.apple.com/au/podcast/patient-voice-on-social-media-a-survivor-story/id1534737585?i=1000563486434",
-      description: "Patient voice on social media - A survivor story",
-      image: heathlcareUnfiltered,
-    },
-    {
-      id: "5",
-      name: "Patient from Hell",
-      link: "https://podcasts.apple.com/us/podcast/episode-28-self-advocacy-in-action-inspiration-from/id1622669098?i=1000614791497",
-      description: "Self advocacy in action",
-      image: PatientFromHell,
-    },
-    {
-      id: "6",
-      name: "You Just Don't Know It Yet",
-      link: "https://open.spotify.com/episode/1BBvJxlC3D48AwFT7EAQMF?si=1dabb5cab19c49b1",
-      description:
-        "Episode 30: Katie Coleman - Stage IV Kidney Cancer Survivor",
-      image: YouJustDontKnow,
-    },
-    {
-      id: "7",
-      name: "Second Opinions",
-      link: "https://oncologyunscripted.buzzsprout.com/2162983/12671236-second-opinions",
-      description: "Oncology Unscripted",
-      image: OncologyUnscripted,
-    },
-    {
-      id: "8",
-      name: "Oncology Terms: Doctor and Staff Roles and Medical Education",
-      link: "https://oncologyunscripted.buzzsprout.com/2162983/12842441-oncology-terms-doctor-and-staff-roles-and-medical-education",
-      description: "Oncology Unscripted",
-      image: OncologyUnscripted,
-    },
-    {
-      id: "9",
-      name: "Matt Versus ChatGPT",
-      link: "https://oncologyunscripted.buzzsprout.com/2162983/13077172-matt-versus-chatgpt",
-      description: "Oncology Unscripted",
-      image: OncologyUnscripted,
-    },
-    {
-      id: "10",
-      name: "Julie and Katie go to ASCO",
-      link: "https://oncologyunscripted.buzzsprout.com/2162983/13165690-julie-and-katie-go-to-asco",
-      description: "Oncology Unscripted",
-      image: OncologyUnscripted,
-    },
-    {
-      id: "11",
-      name: "The Insider's Guide to Radiation Therapy: Radiation 101, Part 1",
-      link: "https://oncologyunscripted.buzzsprout.com/2162983/13386216-the-insider-s-guide-to-radiation-therapy-radiation-101-part-1",
-      description: "Oncology Unscripted",
-      image: OncologyUnscripted,
-    },
-    {
-      id: "12",
-      name: "The Insider's Guide to Radiation Therapy: Radiation 101, Part 2",
-      link: "https://oncologyunscripted.buzzsprout.com/2162983/13419590-the-insider-s-guide-to-radiation-therapy-radiation-101-part-2",
-      description: "Oncology Unscripted",
-      image: OncologyUnscripted,
-    },
-    {
-      id: "13",
-      name: "The Insider's Guide to Radiation Therapy: SBRT",
-      link: "https://oncologyunscripted.buzzsprout.com/2162983/13598072-the-insider-s-guide-to-radiation-therapy-sbrt",
-      description: "Oncology Unscripted",
-      image: OncologyUnscripted,
-    },
-    {
-      id: "14",
-      name: "The Insider's Guide to Radiation Therapy: Proton Therapy",
-      link: "https://oncologyunscripted.buzzsprout.com/2162983/13744725-the-insider-s-guide-to-radiation-therapy-proton-therapy",
-      description: "Oncology Unscripted",
-      image: OncologyUnscripted,
-    },
-    {
-      id: "15",
-      name: "Immunotherapy: In Conversation with Dr. Breelyn Wilky, MD",
-      link: "https://oncologyunscripted.buzzsprout.com/2162983/13995528-immunotherapy-in-conversation-with-dr-breelyn-wilky-md",
-      description: "Oncology Unscripted",
-      image: OncologyUnscripted,
-    },
-    {
-      id: "16",
-      name: "How To Pick Your Doctor",
-      link: "https://oncologyunscripted.buzzsprout.com/2162983/14436126-how-to-pick-your-doctor",
-      description: "Oncology Unscripted",
-      image: OncologyUnscripted,
-    },
-    {
-      id: "16",
-      name: "VHHA’s Patients Come First",
-      link: "https://podcasts.apple.com/us/podcast/patients-come-first-podcast-katie-coleman/id1478156124?i=1000630082015",
-      description: "Patients Come First Podcast - Katie Coleman",
-      image: PATIENTS,
-    },
-    {
-      id: "17",
-      name: "Patient from Hell - Facing Your Mortality",
-      link: "https://mantacares.com/pages/facing-your-mortality",
-      description: "Manta Cares",
-      image: PatientFromHell,
-    },
-  ];
-};
+
+export const highlights = [
+  {
+    id: 2,
+    color: "orange-400",
+    category: "Noprofit",
+    title: "Chromophobe and Oncocytic Tumor Alliance",
+    description:
+      "The Chromophobe and Oncocytic Tumor Alliance (COA) is a non-profit I founded with a mission to bring together and support a community of patients, organizations and researchers dedicated to advancing the understanding, research and treatment of Chromophobe Renal Cell Carcinoma and other oncocytic tumors. We aim to foster collaboration, promote education and awareness, and to fund research to further these efforts.",
+    image: COA_LOGO,
+    videoLink:
+      "https://www.tiktok.com/@katiekickscancer/video/7344262029500321067?is_from_webapp=1&sender_device=pc&web_id=7341956517037278766",
+    linkText:
+      "Checkout a recap of what we've accomplished with your help and what funds donated in 2023 are being used for.",
+    buttonText: "Donate",
+    link: "https://kidneycoa.org/",
+  },
+  {
+    id: 1,
+    color: "slate-700",
+    category: "Memoir",
+    title: "Too Young For Cancer",
+    description:
+      "About Too Young For Cancer: The inspiring story of a stage IV cancer survivor’s journey through a complex and biased medical system to get a diagnosis and the treatment that would save her life, and how she found her life’s purpose through community and advocacy. New Year’s Eve 2020 was supposed to be a turning point to better days for 29-year-old Katie Coleman. Instead, she found herself in the ER processing the earth-shattering news of a stage IV cancer diagnosis, one that had come after years of being assured she was “too young for cancer” and a repeated misdiagnosis of anxiety. Too Young for Cancer tells the story of Katie’s journey from diagnosis with an ultra-rare cancer through treatment, recovery and a life-altering shift in perspective. Too Young for Cancer highlights the absolute best and worst in healthcare and uncovers the silver linings and beauty of humanity filling the space in between.",
+    image: BOOK,
+    videoLink: "https://youtu.be/wPZhLBkHhwY?si=gLmwE2NAlkv5RcUV",
+    linkText:
+      "First chapter sample. I donate my portion of the proceeds from sales back to support cancer research. Let's make an impact, together!",
+    buttonText: "Pre-Order",
+    link: "https://www.amazon.com/Too-Young-Cancer-Diagnosis-Fighting-ebook/dp/B0CW1HKPWJ/ref=sr_1_1?crid=C1QQ3FZLJOZ2&dib=eyJ2IjoiMSJ9.86WEKCmVExWphXE6fnD2hA.C6tU4YMPD58Hyq95PwDK8iSixRxUMOgjL0tnheXL238&dib_tag=se&keywords=9781639109449&qid=1709230552&sprefix=9781639109449%2Caps%2C68&sr=8-1",
+  },
+  {
+    id: 3,
+    color: "slate-700",
+    category: "Work",
+    title: "Rare Cancer Research Foundation",
+    description:
+      "I joined the rare cancer research foundation after my diagnosis because of how closely their mission aligned with my own in advancing reseach and treatments for rare cancers. One of their core inititives is Pattern.org which allows patients to donate their fresh tumor tissue from surgery to research, which is a critical step for development models and treatments for rare cancers. We also are working on a plateform that will allow patients with rare cancers or better organize and share their medical records and even anonomize and donate them to research.",
+    image: RCRF,
+    videoLink: "https://youtu.be/K97HebR7JPI",
+    link: "https://rarecancer.org/",
+    linkText:
+      "CommonWealth Club California - Innovative Patient-Centered Care for Cancer",
+    buttonText: "Visit",
+  },
+];
+
+export const podcasts = [
+  {
+    id: 0,
+    name: "Ep. 27: Facing the Rarest of Cancers",
+    link: "https://www.thedoctorsart.com/episodes/ep27",
+    description: "The Doctors Art",
+    image: doctorsArt,
+  },
+  {
+    id: 1,
+    name: "The Experts Discuss Patients’ Mental Health and Mindfulness",
+    link: "https://accelerators.buzzsprout.com/1839275/11948820-the-experts-discuss-patients-mental-health-and-mindfulness",
+    description: "The Accelerators",
+    image: accelerators,
+  },
+  {
+    id: 2,
+    name: "On Clinical Trials: The Patient Perspective With Julie and Katie",
+    link: "https://accelerators.buzzsprout.com/1839275/11447574-on-clinical-trials-the-patient-perspective-with-julie-and-katie",
+    description: "The Accelerators",
+    image: accelerators,
+  },
+  {
+    id: 3,
+    name: "On Clinical Trials: Patient Education With Julie, Katie, and David",
+    link: "https://accelerators.buzzsprout.com/1839275/11673786-on-clinical-trials-patient-education-with-julie-katie-and-david",
+    description: "The Accelerators",
+    image: accelerators,
+  },
+  {
+    id: 4,
+    name: "Patient voice on social media - A survivor story",
+    link: "https://podcasts.apple.com/au/podcast/patient-voice-on-social-media-a-survivor-story/id1534737585?i=1000563486434",
+    description: "HealthCare Unfiltered",
+    image: heathlcareUnfiltered,
+  },
+  {
+    id: 5,
+    name: "Self advocacy in action",
+    link: "https://podcasts.apple.com/us/podcast/episode-28-self-advocacy-in-action-inspiration-from/id1622669098?i=1000614791497",
+    description: "Patient from Hell",
+    image: PatientFromHell,
+  },
+  {
+    id: 6,
+    name: "Episode 30: Katie Coleman - Stage IV Kidney Cancer Survivor",
+    link: "https://open.spotify.com/episode/1BBvJxlC3D48AwFT7EAQMF?si=1dabb5cab19c49b1",
+    description: "You Just Don't Know It Yet",
+    image: YouJustDontKnow,
+  },
+  {
+    id: 7,
+    name: "Oncology Unscripted",
+    link: "https://oncologyunscripted.buzzsprout.com/2162983/12671236-second-opinions",
+    description: "Second Opinions",
+    image: OncologyUnscripted,
+  },
+  {
+    id: 8,
+    name: "Oncology Unscripted",
+    link: "https://oncologyunscripted.buzzsprout.com/2162983/12842441-oncology-terms-doctor-and-staff-roles-and-medical-education",
+    description: "Oncology Terms: Doctor and Staff Roles and Medical Education",
+    image: OncologyUnscripted,
+  },
+  {
+    id: 9,
+    name: "Oncology Unscripted",
+    link: "https://oncologyunscripted.buzzsprout.com/2162983/13077172-matt-versus-chatgpt",
+    description: "Matt Versus ChatGPT",
+    image: OncologyUnscripted,
+  },
+  {
+    id: 10,
+    name: "Oncology Unscripted",
+    link: "https://oncologyunscripted.buzzsprout.com/2162983/13165690-julie-and-katie-go-to-asco",
+    description: "Julie and Katie go to ASCO",
+    image: OncologyUnscripted,
+  },
+  {
+    id: 11,
+    name: "Oncology Unscripted",
+    link: "https://oncologyunscripted.buzzsprout.com/2162983/13386216-the-insider-s-guide-to-radiation-therapy-radiation-101-part-1",
+    description:
+      "The Insider's Guide to Radiation Therapy: Radiation 101, Part 1",
+    image: OncologyUnscripted,
+  },
+  {
+    id: 12,
+    name: "Oncology Unscripted",
+    link: "https://oncologyunscripted.buzzsprout.com/2162983/13419590-the-insider-s-guide-to-radiation-therapy-radiation-101-part-2",
+    description:
+      "The Insider's Guide to Radiation Therapy: Radiation 101, Part 2",
+    image: OncologyUnscripted,
+  },
+  {
+    id: 13,
+    name: "Oncology Unscripted",
+    link: "https://oncologyunscripted.buzzsprout.com/2162983/13598072-the-insider-s-guide-to-radiation-therapy-sbrt",
+    description: "The Insider's Guide to Radiation Therapy: SBRT",
+    image: OncologyUnscripted,
+  },
+  {
+    id: 14,
+    name: "Oncology Unscripted",
+    link: "https://oncologyunscripted.buzzsprout.com/2162983/13744725-the-insider-s-guide-to-radiation-therapy-proton-therapy",
+    description: "The Insider's Guide to Radiation Therapy: Proton Therapy",
+    image: OncologyUnscripted,
+  },
+  {
+    id: 15,
+    name: "Oncology Unscripted",
+    link: "https://oncologyunscripted.buzzsprout.com/2162983/13995528-immunotherapy-in-conversation-with-dr-breelyn-wilky-md",
+    description: "Immunotherapy: In Conversation with Dr. Breelyn Wilky, MD",
+    image: OncologyUnscripted,
+  },
+  {
+    id: 16,
+    name: "Oncology Unscripted",
+    link: "https://oncologyunscripted.buzzsprout.com/2162983/14436126-how-to-pick-your-doctor",
+    description: "How To Pick Your Doctor",
+    image: OncologyUnscripted,
+  },
+  {
+    id: 17,
+    name: "Patients Come First Podcast - Katie Coleman",
+    link: "https://podcasts.apple.com/us/podcast/patients-come-first-podcast-katie-coleman/id1478156124?i=1000630082015",
+    description: "VHHA’s Patients Come First",
+    image: PATIENTS,
+  },
+  {
+    id: 18,
+    name: "Manta Cares",
+    link: "https://mantacares.com/pages/facing-your-mortality",
+    description: "Patient from Hell - Facing Your Mortality",
+    image: PatientFromHell,
+  },
+];
 
 export const purchaseMemoir = [
   {

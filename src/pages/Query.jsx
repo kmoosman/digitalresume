@@ -7,12 +7,9 @@ import DashboardCard from "../partials/dashboard/DashboardCard";
 import Demographics from "../partials/dashboard/Demographics";
 import TopChannels from "../partials/dashboard/TopChannels";
 import Customers from "../partials/dashboard/Customers";
-import DashboardCard12 from "../partials/dashboard/DashboardCard12";
 import Banner from "../partials/Banner";
 import { Rates } from "../partials/dashboard/Rates";
-import {
-  faBullhorn,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBullhorn } from "@fortawesome/free-solid-svg-icons";
 import ReactGA from "react-ga4";
 
 import Docs from "../images/docs.png";
@@ -70,12 +67,15 @@ export const Query = ({ rates, demographics, type }) => {
             <div className="w-full">
               <div className="flex justify-center w-full mb-16">
                 <div className="justify-center">
-                <div className="w-48 h-48 rounded-full flex items-center justify-center mx-auto bg-indigo-300 p-2 shadow-md  shadow-slate-700">
-                      <FontAwesomeIcon icon={faBookOpen} className="w-32 h-32 text-gray-200"/>
-                </div>
+                  <div className="w-48 h-48 rounded-full flex items-center justify-center mx-auto bg-indigo-300 p-2 shadow-md  shadow-slate-700">
+                    <FontAwesomeIcon
+                      icon={faBookOpen}
+                      className="w-32 h-32 text-gray-200"
+                    />
+                  </div>
 
                   <div className="justify-center flex flex-row text-5xl font-bold text-slate-800 mt-5 w-full center-text w-full rounded">
-                    Life Refocused 
+                    Life Refocused
                   </div>
                   <p className="flex justify-center w-full text-2xl font-semibold">
                     Memoir of a life shaped by cancer
@@ -94,50 +94,67 @@ export const Query = ({ rates, demographics, type }) => {
                   {/*</div>*/}
                 </div>
               </div>
-              <a href={'https://youtu.be/wPZhLBkHhwY'} 
-              target="_blank"   
-              onClick={() => {
-                ReactGA.event({
-                  category: 'External Links',
-                  action: 'Sample Chapter Link Clicked',
-                  label: 'Too Young for Cancer - https://youtu.be/wPZhLBkHhwY'
-                });
-              }}>
-              <div className="font-md text-slate-800 mt-2 mb-7 p-4 bg-blue-100 rounded flex flex-row justify-between">   
-                <div>
-                <div className="font-semibold flex flex-row"> <FontAwesomeIcon icon={faBullhorn}  className="pt-1" /> <div className="pl-2">A sample chapter of my memoir has been released, listen here.</div>
-                </div>
-                <div className="text-xs font-md pl-6">My portion of the proceeds from this book will be donated to research.
-                </div>
-                </div>
-                
+              <a
+                href={"https://youtu.be/wPZhLBkHhwY"}
+                target="_blank"
+                onClick={() => {
+                  ReactGA.event({
+                    category: "External Links",
+                    action: "Sample Chapter Link Clicked",
+                    label:
+                      "Too Young for Cancer - https://youtu.be/wPZhLBkHhwY",
+                  });
+                }}
+              >
+                <div className="font-md text-slate-800 mt-2 mb-7 p-4 bg-blue-100 rounded flex flex-row justify-between">
+                  <div>
+                    <div className="font-semibold flex flex-row">
+                      {" "}
+                      <FontAwesomeIcon
+                        icon={faBullhorn}
+                        className="pt-1"
+                      />{" "}
+                      <div className="pl-2">
+                        A sample chapter of my memoir has been released, listen
+                        here.
+                      </div>
+                    </div>
+                    <div className="text-xs font-md pl-6">
+                      My portion of the proceeds from this book will be donated
+                      to research.
+                    </div>
+                  </div>
+
                   <div className="h-full self-center p-2 text-indigo-800">
                     <FontAwesomeIcon icon={faSquareArrowUpRight} />
-                    </div>
-              </div>
+                  </div>
+                </div>
               </a>
               <hr />
-             
+
               {/*About the book*/}
               <div>
-                
                 <div className="text-3xl font-bold text-slate-800 mt-5 mb-4">
                   Summary
                 </div>
                 <div className="text-sm p-4 flex flex-col col-span-full sm:col-span-12 xl:col-span-12 bg-white shadow-lg rounded-sm border border-slate-200">
                   <p className="block p-1">
-                New Year's Eve, 2020 was supposed to be a turning point to better days. 
-                Instead, Katie, a 29-year-old newlywed, found herself in the ER processing the earth-shattering news of a stage IV cancer diagnosis. 
-                One that'd come after years of being assured she was "too young for cancer". 
-                Over the next two years, this shy, timid, and frightened young woman would be 
-                forced to face her own mortality and learn to advocate for herself. The ultra 
-                rare cancer they'd find in her kidney and over 15 tumors in her liver, 
-                would render her inoperable and without much hope. 
-                But with the help of social media and a few serendipitous events, 
-                she'd find herself at the top institutions pleading her case for a 
-                radical and high-risk surgery that would change her life forever. 
-                A journey that would highlight the absolute best and worst in 
-                healthcare and uncover the silver linings and beauty of humanity filling the space in between.
+                    New Year's Eve, 2020 was supposed to be a turning point to
+                    better days. Instead, Katie, a 29-year-old newlywed, found
+                    herself in the ER processing the earth-shattering news of a
+                    stage IV cancer diagnosis. One that'd come after years of
+                    being assured she was "too young for cancer". Over the next
+                    two years, this shy, timid, and frightened young woman would
+                    be forced to face her own mortality and learn to advocate
+                    for herself. The ultra rare cancer they'd find in her kidney
+                    and over 15 tumors in her liver, would render her inoperable
+                    and without much hope. But with the help of social media and
+                    a few serendipitous events, she'd find herself at the top
+                    institutions pleading her case for a radical and high-risk
+                    surgery that would change her life forever. A journey that
+                    would highlight the absolute best and worst in healthcare
+                    and uncover the silver linings and beauty of humanity
+                    filling the space in between.
                   </p>
                 </div>
               </div>
@@ -153,8 +170,8 @@ export const Query = ({ rates, demographics, type }) => {
                   <ul className="list-disc text-sm ml-4 p-4">
                     <li className="p-1">
                       <b>Cancer survivors and their families:</b> My story is
-                      relatable for those who have gone through a
-                      similar experience.{" "}
+                      relatable for those who have gone through a similar
+                      experience.{" "}
                     </li>
                     <li className="p-1">
                       <b>Personal development readers:</b> My story of
@@ -165,8 +182,9 @@ export const Query = ({ rates, demographics, type }) => {
                     <li className="p-1">
                       <b>Health and wellness readers:</b> My book will appeal to
                       readers who are interested in health, wellness, and
-                      overcoming adversity. I have a large following of medical 
-                      professionals on Twitter who generously support and are interested in the cause.
+                      overcoming adversity. I have a large following of medical
+                      professionals on Twitter who generously support and are
+                      interested in the cause.
                     </li>
                     <li className="p-1">
                       <b>Social media followers:</b> I have a following on
@@ -200,41 +218,45 @@ export const Query = ({ rates, demographics, type }) => {
                       />
                     </div>
                     <div className="flex w-full">
-                        <div className="flex flex-col">
-                          <div className="text-xs font-semibold text-slate-400 uppercase mb-1">
-                            Katie Coleman •Stage IV Cancer Survivor • Software
-                            Engineer • Content Creator • Author (Memoir) •
-                            Non-Profit Founder •
-                            Podcaster
-                          </div>
-                          <div className="text-sm">
-                            <p className="p-1">
-                              {" "}
-                              A little about me – I'm a software engineer, non-profit founder,
-                                podcaster, wife, dog/cat mom, and cancer survivor LIVING in Austin,
-                                Texas. 
-                                I've been sharing and documenting my diagnosis for the past 2.5 years
-                                on social media in hopes others who found themselves in my shoes one day,
-                                they may feel a little less alone. Those efforts have led to a platform of over 70,000
-                                followers across channels that I continue to share with daily. 
-                            </p>
-
-                            <p className="p-1">
-                            I realize just how truly fortunate I am to still be here
-                            and I use that time to give back to others in any way I can.
-                            Which is what I spend most of my time doing these days. 
-                            Since my diagnosis, I've founded a non-profit, started a podcast,
-                            built a strong following in the medical community, been featured by 
-                            national outlets including NBC, Today and the CBS National Evening 
-                            News and I regularly use my voice and platform to give back. 
-                            Due to the reach of my story (last viral post seen by 11 million)
-                            has led to a beautiful community of support, that's enabled me to donate everything 
-                            I make from social media to research. They've also supported me in building an 
-                            email list awaiting my book's release with over 600 subscribers. 
-                            </p>
-                          </div>
+                      <div className="flex flex-col">
+                        <div className="text-xs font-semibold text-slate-400 uppercase mb-1">
+                          Katie Coleman •Stage IV Cancer Survivor • Software
+                          Engineer • Content Creator • Author (Memoir) •
+                          Non-Profit Founder • Podcaster
                         </div>
-                    
+                        <div className="text-sm">
+                          <p className="p-1">
+                            {" "}
+                            A little about me – I'm a software engineer,
+                            non-profit founder, podcaster, wife, dog/cat mom,
+                            and cancer survivor LIVING in Austin, Texas. I've
+                            been sharing and documenting my diagnosis for the
+                            past 2.5 years on social media in hopes others who
+                            found themselves in my shoes one day, they may feel
+                            a little less alone. Those efforts have led to a
+                            platform of over 70,000 followers across channels
+                            that I continue to share with daily.
+                          </p>
+
+                          <p className="p-1">
+                            I realize just how truly fortunate I am to still be
+                            here and I use that time to give back to others in
+                            any way I can. Which is what I spend most of my time
+                            doing these days. Since my diagnosis, I've founded a
+                            non-profit, started a podcast, built a strong
+                            following in the medical community, been featured by
+                            national outlets including NBC, Today and the CBS
+                            National Evening News and I regularly use my voice
+                            and platform to give back. Due to the reach of my
+                            story (last viral post seen by 11 million) has led
+                            to a beautiful community of support, that's enabled
+                            me to donate everything I make from social media to
+                            research. They've also supported me in building an
+                            email list awaiting my book's release with over 600
+                            subscribers.
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -265,9 +287,9 @@ export const Query = ({ rates, demographics, type }) => {
                           rel="noreferrer"
                           onClick={() => {
                             ReactGA.event({
-                              category: 'External Links',
-                              action: 'Blog Article Clicked',
-                              label: `Clicked blog`
+                              category: "External Links",
+                              action: "Blog Article Clicked",
+                              label: `Clicked blog`,
                             });
                           }}
                         >
@@ -300,9 +322,9 @@ export const Query = ({ rates, demographics, type }) => {
                         rel="noreferrer"
                         onClick={() => {
                           ReactGA.event({
-                            category: 'External Links',
-                            action: 'Blog Article Clicked',
-                            label: `Clicked blog`
+                            category: "External Links",
+                            action: "Blog Article Clicked",
+                            label: `Clicked blog`,
                           });
                         }}
                       >
@@ -406,7 +428,7 @@ export const Query = ({ rates, demographics, type }) => {
               <div className="px-5 pt-5">
                 <header className="flex xl:float-right lg:float-right mb-2">
                   {/* Icon */}
-                  {/* <div className="">
+            {/* <div className="">
                     <div className="flex items-start ">
                       <div className="text-3xl font-bold text-slate-800 mr-2">
                         {type === "query" ? "" : "Donate"}
@@ -489,16 +511,18 @@ export const StandOut = () => {
       <div className="text-sm p-4 flex flex-col col-span-full sm:col-span-12 xl:col-span-12 bg-white shadow-lg rounded-sm border border-slate-200">
         <ul className="list-disc text-sm ml-4 p-4">
           <li className="p-1">
-            Overcoming the odds, with a dramatic shift in prognosis (from terminal to no evidence of disease)
+            Overcoming the odds, with a dramatic shift in prognosis (from
+            terminal to no evidence of disease)
           </li>
           <li className="p-1">
-            The 1.5 years it took me to be diagnosis after having symptoms brushed off as anxiety
+            The 1.5 years it took me to be diagnosis after having symptoms
+            brushed off as anxiety
           </li>
-          
+
           <li className="p-1">Battling cancer through a pandemic</li>
           <li className="p-1">
-            Perspective from someone who has been afraid of everything their entire
-            life. A journey from the perspectice of, "if you can't beat
+            Perspective from someone who has been afraid of everything their
+            entire life. A journey from the perspectice of, "if you can't beat
             fear, do it scared"
           </li>
           <li className="p-1">

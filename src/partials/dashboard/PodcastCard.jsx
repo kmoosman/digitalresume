@@ -19,12 +19,12 @@ export const PodcastCard = ({ title, link, blurb, type, image }) => {
     <a
       href={link}
       target="_blank"
-      className="flex flex-col col-span-full sm:col-span-4 xl:col-span-4 bg-white shadow-lg rounded-sm border border-slate-200"
+      className="flex flex-col col-span-full sm:col-span-4 xl:col-span-4 bg-background-image bg-cover bg-center shadow-lg rounded-sm border border-slate-200"
       onClick={() => {
         ReactGA.event({
-          category: 'External Links',
+          category: "External Links",
           action: `Podcast ${title} Clicked}`,
-          label: `Clicked podcast ${title}}`
+          label: `Clicked podcast ${title}}`,
         });
       }}
     >
@@ -49,7 +49,7 @@ export const PodcastCard = ({ title, link, blurb, type, image }) => {
                 </div>
               </div>
             </div>
-            <a href={link} target="_blank" className="text-indigo-700">
+            <a href={link} target="_blank" className="text-slate-700">
               <FontAwesomeIcon icon={faSquareArrowUpRight} />
             </a>
           </header>

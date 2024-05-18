@@ -9,21 +9,20 @@ import "./charts/ChartjsConfig";
 import Dashboard from "./pages/Dashboard";
 import News from "./pages/News";
 import Podcasts from "./pages/Podcasts";
-import Query from "./pages/Query";
-import Advocacy from "./pages/Advocacy";
 import Privacy from "./pages/Privacy";
-import CookieConsent from "react-cookie-consent";
 import Memoir from "./pages/Memoir";
 
-
 function App() {
-
   const location = useLocation();
 
   useEffect(() => {
     // Send pageview with a custom path
-    ReactGA.initialize('G-R6CNTSBPN0');
-    ReactGA.send({ hitType: "pageview", page: location.pathname, title: location.pathname });
+    ReactGA.initialize("G-R6CNTSBPN0");
+    ReactGA.send({
+      hitType: "pageview",
+      page: location.pathname,
+      title: location.pathname,
+    });
   }, [location]);
 
   useEffect(() => {
@@ -40,43 +39,10 @@ function App() {
           path="/"
           element={<Dashboard rates={false} demographics={false} />}
         />
-        <Route
-          exact
-          path="/media-100z2c9kds9"
-          element={<Dashboard rates={true} demographics={true} type="media" />}
-        />
-        <Route
-          exact
-          path="/media-100z2c9kds9/news"
-          element={<News type="news" />}
-        />
-        <Route
-          exact
-          path="/media-100z2c9kds9/podcasts"
-          element={<Podcasts type="podcasts" />}
-        />
-        <Route
-          exact
-          path="/media-123120"
-          element={
-            <Dashboard rates={false} demographics={false} type="media" />
-          }
-        />
+
         <Route exact path="/podcasts" element={<Podcasts type="podcasts" />} />
         <Route exact path="/news" element={<News type="news" />} />
         <Route exact path="/memoir" element={<Memoir type="memior" />} />
-        <Route exact path="/query-123120/news" element={<News type="news" />} />
-        <Route
-          exact
-          path="/query-123120/podcasts"
-          element={<Podcasts type="podcasts" />}
-        />
-        <Route
-          exact
-          path="/query-123120"
-          element={<Query rates={false} demographics={false} type="query" />}
-        />
-        <Route exact path="/advocacy" element={<Advocacy />} />
         <Route exact path="/privacy" element={<Privacy />} />
       </Routes>
       {/* <CookieConsent

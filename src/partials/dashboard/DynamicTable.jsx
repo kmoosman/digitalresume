@@ -17,9 +17,9 @@ export const DynamicTable = ({ data, nameAlias, tableTitle, size }) => {
   };
   return (
     <div
-      className={`col-span-full ${cssSize()} bg-white shadow-lg rounded-sm border border-slate-200`}
+      className={`col-span-full ${cssSize()} bg-white shadow-lg rounded-sm border border-slate-200 bg-background-image bg-cover bg-center`}
     >
-      <header className="px-5 py-4 border-b border-slate-100 flex flex-row justify-between">
+      <header className="px-5 py-2 border-b border-slate-100 flex flex-row justify-between">
         <h2 className="font-semibold text-slate-800">{tableTitle}</h2>
         {/* {size === "large" ? (
           <div className=" w-8 font-bold text-white text-md text-center px-1.5 text-indigo-700 opacity-80 rounded-full">
@@ -32,9 +32,9 @@ export const DynamicTable = ({ data, nameAlias, tableTitle, size }) => {
         <div className="overflow-x-auto max-h-[400px]">
           <table className="table-auto w-full">
             {/* Table header */}
-            <thead className="text-xs font-semibold uppercase text-slate-400 bg-slate-50">
+            <thead className="text-sm font-semibold uppercase text-slate-800">
               <tr>
-                <th className="p-2 w-1/2   md:whitespace-nowrap">
+                <th className="p-2 w-1/2 md:whitespace-nowrap">
                   <div className="font-semibold text-left">
                     {nameAlias ? nameAlias : "Name"}
                   </div>
@@ -54,49 +54,51 @@ export const DynamicTable = ({ data, nameAlias, tableTitle, size }) => {
             </thead>
             {/* Table body */}
             <tbody className="text-sm divide-y divide-slate-100">
-              {data.sort((a, b) => b.id - a.id).map((data) => {
-                return (
-                  <tr key={data.id}>
-                    <td className="p-2 md:whitespace-nowrap">
-                      <div className="flex items-center">
-                        {data.image ? (
-                          <div className="w-6 h-5 shrink-0 mr-4 sm:mr-3 ">
-                            <img
-                              className="h-full w-full"
-                              src={data.image}
-                              width="40"
-                              height="40"
-                              alt={data.name}
-                            />
+              {data
+                .sort((a, b) => b.id - a.id)
+                .map((data) => {
+                  return (
+                    <tr key={data.id}>
+                      <td className="p-2 md:whitespace-nowrap">
+                        <div className="flex items-center">
+                          {data.image ? (
+                            <div className="w-6 h-5 shrink-0 mr-4 sm:mr-3 ">
+                              <img
+                                className="h-full w-full"
+                                src={data.image}
+                                width="40"
+                                height="40"
+                                alt={data.name}
+                              />
+                            </div>
+                          ) : null}
+                          <div className="font-medium text-slate-800 ml-2">
+                            {data.name}
                           </div>
-                        ) : null}
-                        <div className="font-medium text-slate-800 ml-2">
-                          {data.name}
                         </div>
-                      </div>
-                    </td>
-                    {data.link ? (
-                      <td className="p-2 ">
-                        <a
-                          className="font-medium text-xs text-blue-500 hover:text-blue-600"
-                          href={data.link}
-                          target="_blank"
-                          onClick={() => {
-                            ReactGA.event({
-                              category: 'External Links',
-                              action: 'Table Link Clicked',
-                              label: `Table link for ${data.link}}`
-                            });
-                          }}
-                        >
-                          {data.description ? data.description : "View"}
-                          <span className="hidden sm:inline"> -&gt;</span>
-                        </a>
                       </td>
-                    ) : null}
-                  </tr>
-                );
-              })}
+                      {data.link ? (
+                        <td className="p-2 ">
+                          <a
+                            className="font-medium text-xs text-blue-500 hover:text-blue-600"
+                            href={data.link}
+                            target="_blank"
+                            onClick={() => {
+                              ReactGA.event({
+                                category: "External Links",
+                                action: "Table Link Clicked",
+                                label: `Table link for ${data.link}}`,
+                              });
+                            }}
+                          >
+                            {data.description ? data.description : "View"}
+                            <span className="hidden sm:inline"> -&gt;</span>
+                          </a>
+                        </td>
+                      ) : null}
+                    </tr>
+                  );
+                })}
             </tbody>
           </table>
         </div>

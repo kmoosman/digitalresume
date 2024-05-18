@@ -4,31 +4,11 @@ import Sidebar from "../partials/Sidebar";
 import Header from "../partials/Header";
 import WelcomeBanner from "../partials/dashboard/WelcomeBanner";
 import DashboardCard from "../partials/dashboard/DashboardCard";
-import Demographics from "../partials/dashboard/Demographics";
-import TopChannels from "../partials/dashboard/TopChannels";
-import Customers from "../partials/dashboard/Customers";
-import DashboardCard12 from "../partials/dashboard/DashboardCard12";
-import Banner from "../partials/Banner";
-import { Rates } from "../partials/dashboard/Rates";
-import {
-  faSquareArrowUpRight,
-  faBullhorn,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import ReactGA from "react-ga4";
-
-import PhotoTitleLinkTable, {
-  DynamicTable,
-} from "../partials/dashboard/DynamicTable";
-import COA from "../partials/dashboard/COA";
-import { articles, podcasts, socialData } from "../utils/Data";
-import VideoCard from "../partials/dashboard/VideoCard";
-import Videos from "./Videos";
-import Subscribe from "../partials/Subscribe";
+import { youtubeVideos, podcasts, socialData, highlights } from "../utils/Data";
 import { NavLink } from "react-router-dom";
 import PreOrder from "../partials/Pre-Order";
-import Memoir from "../partials/dashboard/Memoir";
 import CarouselComponent from "../partials/dashboard/CarouselComponent";
+import { HighlightCards } from "../partials/dashboard/HighlightCard";
 
 export const Dashboard = ({ rates, demographics, type }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -51,12 +31,12 @@ export const Dashboard = ({ rates, demographics, type }) => {
                 {/* Welcome banner */}
                 <WelcomeBanner type={type} />
               </div>
-              <div className="w-full grid grid-cols-3 self-center justify-center">
+              <div className="w-full grid grid-cols-6 self-center justify-center">
                 {/* Cards */}
-                <div className="text-white text-left ml-20 text-4xl col-span-1">
+                <div className="text-white text-left ml-20 text-4xl col-span-4">
                   Social Media
                 </div>
-                <div className="flex justify-end w-full  col-span-2 pr-20">
+                <div className="flex justify-center w-full col-span-2">
                   {socialData(type).map((social) => (
                     <DashboardCard
                       key={social.id}
@@ -72,28 +52,33 @@ export const Dashboard = ({ rates, demographics, type }) => {
               </div>
               <div className="gap-6 bg-background-image bg-cover bg-center">
                 <h2 className="text-slate-800 font-medium pt-10 mt-10 text-left ml-20 text-4xl">
-                  Book / NonProfit
+                  Book / Nonprofit / Work
                 </h2>
                 <div className="ml-10 mr-10">
-                  <Memoir />
-                  <COA type={type} />
+                  {highlights
+                    .sort((a, b) => a.id - b.id)
+                    .map((highlight) => (
+                      <HighlightCards
+                        key={highlight.id}
+                        highlight={highlight}
+                      />
+                    ))}
                 </div>
                 <div className="w-full bg-slate-800 self-center justify-center mb-10">
                   <h2 className="text-white font-medium pt-10 mt-10 text-left ml-20 text-4xl mb-5">
                     Podcasts{" "}
                   </h2>
-                  <CarouselComponent />
+                  <CarouselComponent cards={podcasts} />
                 </div>
               </div>
-
+              {/* <Videos /> */}
               <div>
                 <div className="bg-background-image bg-cover bg-center">
                   <h2 className="text-slate-800 font-medium pt-10  text-left ml-20 text-4xl">
                     Videos
                   </h2>
-                  <CarouselComponent />
+                  <CarouselComponent cards={youtubeVideos} />
                 </div>
-                {/* <Videos /> */}
               </div>
             </div>
           </main>
