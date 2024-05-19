@@ -1,23 +1,8 @@
 import React, { useState } from "react";
-
-import Sidebar from "../partials/Sidebar";
 import Header from "../partials/Header";
-import WelcomeBanner from "../partials/dashboard/WelcomeBanner";
-
-import Banner from "../partials/Banner";
-import { Rates } from "../partials/dashboard/Rates";
-
-import CBS from "../images/cbs.png";
-import NBC from "../images/nbc.png";
-import TODAY from "../images/Today_logo.svg.png";
-import INSIDE_EDITION from "../images/inside-edition.png";
-import INSIDE from "../images/insider.png";
-import KAISER from "../images/kaiser.png";
-import SEVEN_NEWS from "../images/7news.png";
-import YAHOO from "../images/yahoo.jpeg";
-import NIH from "../images/NIH.png";
-import MSN from "../images/msn.png";
-import KCCURE from "../images/kccure.png";
+import { resources } from "../utils/Data";
+import TopBanner from "../partials/dashboard/TopBanner";
+import CarouselComponent from "../partials/dashboard/CarouselComponent";
 
 import PhotoTitleLinkTable, {
   DynamicTable,
@@ -25,9 +10,9 @@ import PhotoTitleLinkTable, {
 
 import { articles, podcasts, socialData } from "../utils/Data";
 import PodcastCard from "../partials/dashboard/PodcastCard";
-import TopBanner from "../partials/dashboard/TopBanner";
+import { faCalendarDay } from "@fortawesome/free-solid-svg-icons";
 
-export const Podcasts = ({ type }) => {
+export const Resources = ({ banner, list, header }) => {
   return (
     <div className="flex h-screen overflow-hidden bg-slate-800">
       {/* Content area */}
@@ -39,11 +24,16 @@ export const Podcasts = ({ type }) => {
           <TopBanner banner={banner} />
           <div className="my-10 md:px-20 p-4 md:p-0 mx-auto">
             <div className="text-3xl font-bold text-white mt-5 mb-7">
-              Podcast Episodes
+              Highlighted {header}
+            </div>
+            <CarouselComponent cards={list.slice(0, 5)} />
+
+            <div className="text-3xl font-bold text-white mt-12 mb-7 ">
+              All {banner.title}
             </div>
 
             <div className="grid grid-cols-12 gap-6 mb-6 ">
-              {podcasts
+              {list
                 .sort((a, b) => b.id - a.id)
                 .map((podcast) => (
                   <PodcastCard
@@ -63,4 +53,4 @@ export const Podcasts = ({ type }) => {
   );
 };
 
-export default Podcasts;
+export default Resources;

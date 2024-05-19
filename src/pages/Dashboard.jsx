@@ -25,15 +25,15 @@ export const Dashboard = ({ rates, demographics, type }) => {
           <Header />
           <PreOrder />
 
-          <main className="bg-slate-800">
-            <div className="w-full mx-auto">
-              <div className="h-[600px]">
+          <main className="">
+            <div className="w-full ">
+              <div className="h-3/4 bg-background-image bg-cover bg-center">
                 {/* Welcome banner */}
                 <WelcomeBanner type={type} />
               </div>
-              <div className="w-full grid grid-cols-6 self-center justify-center">
+              <div className="w-full grid grid-cols-6 self-center justify-center bg-slate-800 p-10">
                 {/* Cards */}
-                <div className="text-white text-left ml-20 text-4xl col-span-4">
+                <div className="text-white text-left pl-10 text-4xl col-span-4 ">
                   Social Media
                 </div>
                 <div className="flex justify-center w-full col-span-2">
@@ -64,7 +64,7 @@ export const Dashboard = ({ rates, demographics, type }) => {
                       />
                     ))}
                 </div>
-                <div className="w-full bg-slate-800 self-center justify-center mb-10">
+                <div className="w-full bg-slate-800 self-center justify-center pb-10">
                   <h2 className="text-white font-medium pt-10 mt-10 text-left ml-20 text-4xl mb-5">
                     Podcasts{" "}
                   </h2>

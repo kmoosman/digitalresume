@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import Sidebar from "../partials/Sidebar";
 import Header from "../partials/Header";
 import WelcomeBanner from "../partials/dashboard/WelcomeBanner";
+import TopBanner from "../partials/dashboard/TopBanner";
 
-import Banner from "../partials/Banner";
 import { Rates } from "../partials/dashboard/Rates";
 
 import CBS from "../images/cbs.png";
@@ -25,9 +25,19 @@ import PhotoTitleLinkTable, {
 
 import { articles, podcasts, socialData } from "../utils/Data";
 import PodcastCard from "../partials/dashboard/PodcastCard";
-import TopBanner from "../partials/dashboard/TopBanner";
+import { faCalendarDay } from "@fortawesome/free-solid-svg-icons";
 
-export const Podcasts = ({ type }) => {
+export const Speaking = () => {
+  const banner = {
+    title: "Speaking Engagements",
+    description:
+      "To request or book a speaking engagement, please contact me at katiekickscancer@gmail.com",
+    blurb: "A list of past speaking engagements.",
+    link: "https:www.amazon.com/Too-Young-Cancer-Diagnosis-Fighting-ebook/dp/B0CW1HKPWJ/ref=sr_1_1?crid=C1QQ3FZLJOZ2&dib=eyJ2IjoiMSJ9.86WEKCmVExWphXE6fnD2hA.C6tU4YMPD58Hyq95PwDK8iSixRxUMOgjL0tnheXL238&dib_tag=se&keywords=9781639109449&qid=1709230552&sprefix=9781639109449%2Caps%2C68&sr=8-1",
+    buttonText: "PRE-ORDER 📚",
+    icon: faCalendarDay,
+  };
+
   return (
     <div className="flex h-screen overflow-hidden bg-slate-800">
       {/* Content area */}
@@ -39,7 +49,7 @@ export const Podcasts = ({ type }) => {
           <TopBanner banner={banner} />
           <div className="my-10 md:px-20 p-4 md:p-0 mx-auto">
             <div className="text-3xl font-bold text-white mt-5 mb-7">
-              Podcast Episodes
+              Past Engagements
             </div>
 
             <div className="grid grid-cols-12 gap-6 mb-6 ">
@@ -63,4 +73,4 @@ export const Podcasts = ({ type }) => {
   );
 };
 
-export default Podcasts;
+export default Speaking;

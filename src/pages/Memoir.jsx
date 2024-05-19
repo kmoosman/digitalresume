@@ -13,6 +13,10 @@ import { purchaseMemoir } from "../utils/Data";
 import VideoPopup from "../partials/VideoPopup";
 import BarChart01 from "../charts/BarChart01";
 import { tailwindConfig } from "../utils/Utils";
+import TopBanner from "../partials/dashboard/TopBanner";
+import Book from "../images/book-cover.png";
+import MemoirBanner from "../partials/dashboard/MemoirBanner";
+import CarouselComponent from "../partials/dashboard/CarouselComponent";
 
 export const Memoir = ({ type }) => {
   const data = {
@@ -35,34 +39,45 @@ export const Memoir = ({ type }) => {
       },
     ],
   };
+
+  const banner = {
+    image: Book,
+    title: "Too Young For Cancer",
+    description:
+      "My portion of the proceeds from this book will be donated to support cancer research. Bulk buys, speaking engagements, and other inquiries for the book can be directed to katiekickscancer@gmail.com",
+    blurb: "One woman's battle for a diagnosis and a fighting chance.",
+    link: "https:www.amazon.com/Too-Young-Cancer-Diagnosis-Fighting-ebook/dp/B0CW1HKPWJ/ref=sr_1_1?crid=C1QQ3FZLJOZ2&dib=eyJ2IjoiMSJ9.86WEKCmVExWphXE6fnD2hA.C6tU4YMPD58Hyq95PwDK8iSixRxUMOgjL0tnheXL238&dib_tag=se&keywords=9781639109449&qid=1709230552&sprefix=9781639109449%2Caps%2C68&sr=8-1",
+    buttonText: "PRE-ORDER 📚",
+  };
+
   return (
-    <div className="flex h-screen overflow-hidden">
+    <div className="flex h-screen overflow-hidden bg-background-image bg-cover bg-center shadow-lg">
       {/* Content area */}
-      <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden bg-gray-100">
+      <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden ">
         {/*  Site header */}
         <Header />
 
         <main>
-          <WelcomeBanner type={type} />
-          <div className="w-full grid grid-cols-6 self-center p-5 justify-center bg-slate-800 ">
+          <MemoirBanner />
+          <div className="w-full grid grid-cols-7 self-center p-10 justify-center bg-slate-800 ">
             {/* Cards */}
-            <div className="text-white text-left ml-20 text-3xl col-span-4">
+            <div className="text-white text-left ml-16 font-medium text-3xl self-center col-span-4">
               Sample Chapter
             </div>
-            <div className="flex justify-center w-full col-span-2">
+            <div className="flex justify-center w-full col-span-3">
               <a
-                className="h-full self-center p-2 text-indigo-200"
+                className="h-full self-center p-2 text-purple-200"
                 href="https://youtu.be/wPZhLBkHhwY?si=gLmwE2NAlkv5RcUV"
                 target="_blank"
               >
-                YouTube Reading of First Chapter{" "}
+                Reading of First Chapter on YouTube{" "}
                 <span className="text-xs">(pre-edit)</span>
                 <FontAwesomeIcon icon={faSquareArrowUpRight} className="ml-3" />
               </a>
             </div>
           </div>
-          <div className="my-10 md:px-20 p-4 md:p-0 mx-auto">
-            <div className="text-3xl font-bold text-slate-800 mt-5">
+          <div className="my-10 md:px-20 p-4 md:p-0 mx-auto text-slate-800">
+            <div className="text-4xl font-bold mt-5">
               About <i>TOO YOUNG FOR CANCER </i>
             </div>
             <div className="mt-4">
@@ -97,18 +112,10 @@ export const Memoir = ({ type }) => {
             <div className="text-3xl font-bold text-slate-800 mt-10">
               Where to Pre-Order
             </div>
-            <div className="grid grid-cols-12 gap-6 mb-6 mt-4">
-              {purchaseMemoir.map((link) => (
-                <PodcastCard
-                  title={link.name}
-                  blurb={link.description}
-                  type="link"
-                  link={link.link}
-                  key={link.id}
-                  image={link.image}
-                />
-              ))}
+            <div className="mt-4">
+              <CarouselComponent cards={purchaseMemoir} color="slate-700" />
             </div>
+
             <div className="text-3xl font-bold text-slate-800 mt-10 bg">
               Why Pre-Order?
             </div>
@@ -129,7 +136,10 @@ export const Memoir = ({ type }) => {
                 </span>
               </p>
 
-              <VideoPopup />
+              <VideoPopup
+                videoType="tikTok"
+                videoSrc={"https://www.tiktok.com/embed/7341189876420840746"}
+              />
             </div>
             <div className="w-1/2">
               <BarChart01 data={data} />

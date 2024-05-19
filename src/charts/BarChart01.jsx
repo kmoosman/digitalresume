@@ -57,7 +57,7 @@ function BarChart01({ data, width, height }) {
             anchor: "end",
             align: "top",
             formatter: (value) => value,
-            color: "gray",
+            color: "",
             font: {
               weight: "bold",
             },

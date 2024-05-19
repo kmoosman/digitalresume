@@ -38,6 +38,17 @@ import ABLATION from "../images/ablations.png";
 import BOOK from "../images/book-cover.png";
 import COA_LOGO from "../images/Orange_COA.png";
 import RCRF from "../images/RCRF.png";
+import CANADA from "../images/kidneycanada.png";
+import IKCC from "../images/ikcc.jpeg";
+import SMART from "../images/smart.png";
+import DTC from "../images/dtc.png";
+import MRC from "../images/mrc.png";
+import HLRCC from "../images/hlrccFoundation.png";
+import CJ from "../images/cj.jpeg";
+import JOEY from "../images/joeys.jpeg";
+import VHL from "../images/vhl.jpeg";
+import KIDNEYCAN from "../images/kidneyCAN.png";
+import JNF from "../images/jnf.jpeg";
 
 export const socialData = (type) => {
   return [
@@ -117,6 +128,8 @@ export const tikTokVideos = () => {
 export const youtubeVideos = [
   {
     id: 1,
+    type: "video",
+    size: "youtube",
     description:
       "Tumor Tissue Donation and What Brought Me to the Rare Cancer Research Foundation",
     name: "CommonWealth Club California",
@@ -126,6 +139,8 @@ export const youtubeVideos = [
   },
   {
     id: 2,
+    type: "video",
+    size: "youtube",
     description: "Read of Chapter 1 of my memoir, Too Young For Cancer.",
     name: "Memoir: Chapter 1",
     image: BOOK,
@@ -134,6 +149,8 @@ export const youtubeVideos = [
   },
   {
     id: 3,
+    type: "video",
+    size: "youtube",
     description: "What an Open Nephrectomy and Liver Resection Was Like",
     name: "Open Nephrectomy and Liver Resection",
     image: LIVER,
@@ -142,15 +159,19 @@ export const youtubeVideos = [
   },
   {
     id: 4,
+    type: "video",
+    size: "youtube",
     description:
       "Walk through of my case with my oncologist, touching and highlighting on common questions I had early in my diagnosis.",
     name: "Speaking Candidly With My Oncologist",
     image: ONCOLOGIST,
     viewCount: "19,000",
-    link: "https://www.youtube.com/embed/Nddft_nc3Yc",
+    link: "https://www.youtube.com/embed/Nddft_nc3Yc?si=xPfDZJfxN6z",
   },
   {
     id: 5,
+    type: "video",
+    size: "youtube",
     description:
       "YouTuber Chubbyemu made a video on my story, with over 2.5M views it can be found here.",
     name: "Chubbyemu's Video On My Story",
@@ -160,18 +181,22 @@ export const youtubeVideos = [
   },
   {
     id: 6,
+    type: "video",
+    size: "youtube",
     name: "What a Kidney and Liver Biopsy Were Like?",
     description:
       "Walk through of my biopsy procedure, including a complication that arose.",
     image: BIOPSY,
-    link: "https://youtu.be/Iue_GsVen0U",
+    link: "https://www.youtube.com/embed/Iue_GsVen0U?si=LhexbFAaEMKiX1xO",
   },
   {
     id: 7,
+    type: "video",
+    size: "youtube",
     name: "What a Liver Ablation Was Like?",
     description: "Walk through of what my microwave liver ablations were like.",
     image: ABLATION,
-    link: "https://youtu.be/q6ewbtK_gMA",
+    link: "https://www.youtube.com/embed/q6ewbtK_gMA?si=EX8TlVhl58DVZUMS",
   },
 ];
 
@@ -635,3 +660,233 @@ export const advocacy2 = [
       "Know any businesses that'd like to get involved? Contact Katie at katiekickscancer@gmail.com",
   },
 ];
+
+export const speaking = [
+  {
+    id: 1,
+    title: "Patient Advocacy",
+    description: "Advocating for patients with rare diseases and cancers.",
+    link: "https://www.kidneycancer.org/stories/chrcc-coleman/",
+    date: "June 2023",
+    image: KCA,
+  },
+];
+
+export const resources = [
+  {
+    id: 1,
+    name: "Kidney Cancer Assocication",
+    link: "https://www.kidneycancer.org/just-diagnosed/",
+    description:
+      "The Kidney Cancer Assocication provides mamy resources for patients, including their newly diagnosed toolkit, which can be handy for those recently diagnosed and their podcast Kidney Cancer Unfiltered.",
+    image: KCA,
+  },
+  {
+    id: 2,
+    name: "Pattern.org",
+    link: "https://pattern.org/",
+    description:
+      "Pattern.org is a non-profit organization that allows patients to donate their fresh tumor tissue from surgery to research, which is a critical step for development models and treatments for rare cancers. Pattern.org is part of the Rare Cancer Research Foundation, where I currently work as well. More info about tissue donation can be found under the videos section and the CommonWealth Club talk, where I both share my story and the inititives we are working on at RCRF.",
+    image: RCRF,
+  },
+  {
+    id: 3,
+    name: "Judy Nicholson Kidney Cancer Foundation",
+    link: "https://jnfkidneycancer.org/",
+    image: JNF,
+    description:
+      "The Judy Nicholson Kidney Cancer Foundation is a non-profit organization that provides support and resources for patients with kidney cancer. They have a podcast and host a patient dinner each year.",
+  },
+  {
+    id: 4,
+    name: "Kidney Cancer Canada",
+    link: "https://www.kidneycancercanada.ca/",
+    description:
+      "Kidney Cancer Canada is a non-profit based in Canada that provides support and resources for patients with kidney cancer.",
+    image: CANADA,
+  },
+  {
+    id: 5,
+    name: "International Kidney Cancer Coalition",
+    link: "https://ikcc.org/",
+    description:
+      "The International Kidney Cancer Coalition is a global network of kidney cancer patient organizations. They provide resources and support for patients with kidney cancer.",
+    image: IKCC,
+  },
+  {
+    id: 6,
+    name: "Smart Patients",
+    link: "https://www.smartpatients.com/",
+    description:
+      "Smart Patients is an online community where patients and caregivers can share their experiences and learn from others who have been through similar experiences.",
+    image: SMART,
+  },
+  {
+    id: 7,
+    name: "KCCure",
+    link: "https://kccure.org/",
+    description:
+      "KCCure is a non-profit organization that provides support and resources for patients with kidney cancer.",
+  },
+  {
+    id: 8,
+    name: "Driven To Cure",
+    link: "https://www.driventocure.org/",
+    description:
+      "Driven to Cure is a non-profit organization that provides support and resources for patients with rare kidney cancers and specifically for patients with Hereditary Leiomyomatosis and Renal Cell Cancer (HLRCC).",
+    image: DTC,
+  },
+  {
+    id: 9,
+    name: "HLRCC Foundation",
+    link: "https://www.hlrccfoundation.org/",
+    image: HLRCC,
+    description:
+      "The HLRCC Foundation is a non-profit organization that provides support and resources for patients with Hereditary Leiomyomatosis and Renal Cell Cancer (HLRCC).",
+  },
+  {
+    id: 10,
+    name: "Chris CJ Johnson Foundation",
+    link: "https://www.cjcfoundation.org/",
+    image: CJ,
+    description:
+      "The Chris CJ Johnson Foundation is a non-profit organization that provides support for those affected by Renal Medullary Carcinoma (RMC). They hold an annual 5k run/walk to raise awareness for RMC and to raise funds for research in March each year.",
+  },
+  {
+    id: 11,
+    name: "(COA) Chromophobe and Oncocytic Tumor Alliance",
+    link: "https://kidneycoa.org/",
+    description:
+      "The Chromophobe and Oncocytic Tumor Alliance (COA) is a non-profit organization to raise awareness and support research for Chromophobe Renal Cell Carcinoma and other oncocytic tumors.",
+    image: COA_LOGO,
+  },
+  {
+    id: 12,
+    name: "RCRF Resource Hub - Chromophobe",
+    link: "https://medresourceconnect.com/chromophobe",
+    description:
+      "Consolidation of information and resources for Chromophobe Renal Cell Carcinoma.",
+    image: MRC,
+  },
+  {
+    id: 13,
+    name: "KidneyCAN",
+    link: "https://www.kidneycan.org/",
+    image: KIDNEYCAN,
+    description:
+      "KidneyCAN is a non-profit organization that provides support and resources for patients with kidney cancer.",
+  },
+  {
+    id: 14,
+    name: "Joey's Wings",
+    link: "https://www.joeyswings.org/",
+    image: JOEY,
+    description:
+      "Joey's Wings is a nonprofit with mission is to fund research that focuses on kidney cancers affecting children and young adults, raise awareness and provide support to families affected by childhood cancer.",
+  },
+  {
+    id: 15,
+    name: "The VHL Alliance",
+    link: "https://vhl.org/",
+    image: VHL,
+    description:
+      "The VHL Alliance is a non-profit with a mission to improving quality of life and health outcomes for VHL patients, families, and caregivers with inclusive community building, connections to excellent education and treatment options, and advancements in medical research.",
+  },
+  {
+    id: 16,
+    name: "NCCN Patient Guidelines",
+    link: "https://www.nccn.org/guidelines/guidelines-detail?category=patients&id=17",
+    description:
+      "The National Comprehensive Cancer Network (NCCN) provides guidelines for patients with kidney cancer which includes standard guidelines on diagnosis, treatment, and follow-up care. These are the same guidelines that providers can use to help guide treatment decisions.",
+  },
+  {
+    id: 17,
+    name: "Rare Kidney Cancers: RMC, Chromophobe",
+    image: "video",
+    link: "https://youtu.be/O2NEQPCYhT0?si=YslMtEW7nN7gbHAT",
+    description:
+      "A video on rare kidney cancers including Renal Medullary Carcinoma (RMC) and Chromophobe Renal Cell Carcinoma by Dr. Pavlos Msaouel (1/13/2021).",
+  },
+  {
+    id: 18,
+    name: "What is Clear Cell Renal Cell Carcinoma?",
+    image: "video",
+    link: "https://www.youtube.com/watch?v=lBtrie4KVvo",
+    description:
+      "A video on Clear Cell Renal Cell Carcinoma from the Kidney Cancer Association.",
+  },
+  {
+    id: 19,
+    name: "What is Papillary Renal Cell Carcinoma?",
+    image: "video",
+    link: "https://www.youtube.com/watch?v=oYXLhdzeA6Q",
+    description:
+      "A video on Papillary Renal Cell Carcinoma from the Kidney Cancer Association.",
+  },
+  {
+    id: 20,
+    name: "What is Chromophobe Renal Cell Carcinoma?",
+    image: "video",
+    link: "https://youtube.com/watch?v=aQJQVCUNW5c",
+    description:
+      "A video on Chromophobe Renal Cell Carcinoma from the Kidney Cancer Association.",
+  },
+  {
+    id: 21,
+    name: "What is Transolation Renal Cell Carcinoma?",
+    image: "video",
+    link: "https://youtube.com/watch?v=1TYKsbVqowc",
+    description:
+      "A video on Transolation Renal Cell Carcinoma from the Kidney Cancer Association.",
+  },
+  {
+    id: 22,
+    name: "What is Collecting Duct Carcinoma?",
+    image: "video",
+    link: "https://youtube.com/watch?v=A55EnwNQ1Fk",
+    description:
+      "A video on Collecting Duct Carcinoma from the Kidney Cancer Association.",
+  },
+  {
+    id: 23,
+    name: "What is Unclassified Renal Cell Carcinoma?",
+    image: "video",
+    link: "https://www.youtube.com/watch?v=21K-jhf2Ays",
+    description:
+      "A video on Unclassified Renal Cell Carcinoma from the Kidney Cancer Association.",
+  },
+  {
+    id: 24,
+    name: "What is Renal Medullary Carcinoma?",
+    image: "video",
+    link: "https://www.youtube.com/watch?v=QPnzJCx8GVM",
+    description:
+      "A video on Renal Medullary Carcinoma from the Kidney Cancer Association.",
+  },
+];
+
+export const resourcesBanner = {
+  title: "Resources",
+  description: "*Not an exhaustive list, an endorcement or medical advice.",
+  blurb: "A list of resources I've found helpful.",
+  link: "https:www.amazon.com/Too-Young-Cancer-Diagnosis-Fighting-ebook/dp/B0CW1HKPWJ/ref=sr_1_1?crid=C1QQ3FZLJOZ2&dib=eyJ2IjoiMSJ9.86WEKCmVExWphXE6fnD2hA.C6tU4YMPD58Hyq95PwDK8iSixRxUMOgjL0tnheXL238&dib_tag=se&keywords=9781639109449&qid=1709230552&sprefix=9781639109449%2Caps%2C68&sr=8-1",
+  buttonText: "PRE-ORDER 📚",
+};
+
+export const podcastBanner = {
+  title: "Podcasts",
+  description:
+    "Oncology Unscripted is a podcast I co-host with Julie Johnson and Dr. Matt Spraker.",
+  blurb: "A list of podcasts I've been featured on.",
+  link: "https://oncologyunscripted.buzzsprout.com/",
+  buttonText: "Listen Here 🎙️",
+};
+
+export const videoBanner = {
+  title: "Videos",
+  description: "For educational purposes only, not medical advice.",
+  blurb:
+    "Highlighted or top viewed videos from YouTube, TikTok or other platforms.",
+  link: "https:www.amazon.com/Too-Young-Cancer-Diagnosis-Fighting-ebook/dp/B0CW1HKPWJ/ref=sr_1_1?crid=C1QQ3FZLJOZ2&dib=eyJ2IjoiMSJ9.86WEKCmVExWphXE6fnD2hA.C6tU4YMPD58Hyq95PwDK8iSixRxUMOgjL0tnheXL238&dib_tag=se&keywords=9781639109449&qid=1709230552&sprefix=9781639109449%2Caps%2C68&sr=8-1",
+  buttonText: "PRE-ORDER 📚",
+};

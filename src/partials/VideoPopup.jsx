@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVideo } from "@fortawesome/free-solid-svg-icons";
 
-const VideoPopup = () => {
+const VideoPopup = ({ videoType = "tiktok", videoSrc }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openPopup = () => {
@@ -19,15 +19,21 @@ const VideoPopup = () => {
     }
   };
 
+  // Determine dimensions based on video type
+  const videoDimensions =
+    videoType === "youtube"
+      ? { height: "315px", width: "560px" }
+      : { height: "550px", width: "400px" };
+
   return (
     <div>
       <div
-        className="col-span-1 justify-end flex = bg-slate-100 cursor-pointer p-4"
+        className="col-span-1 justify-end flex cursor-pointer p-4"
         onClick={openPopup}
       >
         <FontAwesomeIcon
           icon={faVideo}
-          className="bg-slate-700 text-white text-2xl border p-4 rounded-lg"
+          className="bg-slate-700 text-slate-100 text-2xl border p-4 rounded-lg"
         />
       </div>
 
@@ -44,9 +50,14 @@ const VideoPopup = () => {
               &times;
             </button>
             <iframe
-              src="https://www.tiktok.com/embed/7341189876420840746"
-              className="h-[550px] w-[400px] rounded-lg"
+              src={videoSrc}
+              className="rounded-lg"
+              style={{
+                height: videoDimensions.height,
+                width: videoDimensions.width,
+              }}
               allow="encrypted-media"
+              title="Video"
             ></iframe>
           </div>
         </div>

@@ -11,6 +11,15 @@ import News from "./pages/News";
 import Podcasts from "./pages/Podcasts";
 import Privacy from "./pages/Privacy";
 import Memoir from "./pages/Memoir";
+import Speaking from "./pages/Speaking";
+import Resources from "./pages/Resources";
+import {
+  podcastBanner,
+  podcasts,
+  resources,
+  resourcesBanner,
+  videoBanner,
+} from "./utils/Data";
 
 function App() {
   const location = useLocation();
@@ -40,9 +49,42 @@ function App() {
           element={<Dashboard rates={false} demographics={false} />}
         />
 
-        <Route exact path="/podcasts" element={<Podcasts type="podcasts" />} />
+        <Route
+          exact
+          path="/podcasts"
+          element={
+            <Resources
+              banner={podcastBanner}
+              header={"Podcasts"}
+              list={podcasts}
+            />
+          }
+        />
         <Route exact path="/news" element={<News type="news" />} />
         <Route exact path="/memoir" element={<Memoir type="memior" />} />
+        <Route exact path="/speaking" element={<Speaking />} />
+        <Route
+          exact
+          path="/resources"
+          element={
+            <Resources
+              banner={resourcesBanner}
+              header={"Resources / Foundations"}
+              list={resources}
+            />
+          }
+        />
+        <Route
+          exact
+          path="/videos"
+          element={
+            <Resources
+              banner={videoBanner}
+              header={"Videos"}
+              list={resources}
+            />
+          }
+        />
         <Route exact path="/privacy" element={<Privacy />} />
       </Routes>
       {/* <CookieConsent

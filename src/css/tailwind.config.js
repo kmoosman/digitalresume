@@ -4,6 +4,10 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      colors: {
+        "slick-arrow": "#f59e0b", // Your desired color for the arrow
+        "slick-arrow-hover": "#d97706", // Your desired hover color for the arrow
+      },
       backgroundImage: {
         "background-image": "url('/src/images/Background.png')",
       },
@@ -52,6 +56,29 @@ module.exports = {
       },
       zIndex: {
         60: "60",
+      },
+      keyframes: {
+        "slick-arrow-color": {
+          "0%": { color: "#f59e0b" }, // Tailwind color equivalent of yellow-400
+          "100%": { color: "#d97706" }, // Tailwind color equivalent of yellow-500
+        },
+        "fade-in": {
+          "0%": { opacity: "0", transform: "translateY(10px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "fade-in-down": {
+          "0%": { opacity: "0", transform: "translateY(-10px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "scale-up": {
+          "0%": { opacity: "0", transform: "scale(0.9)" },
+          "100%": { opacity: "1", transform: "scale(1)" },
+        },
+      },
+      animation: {
+        "fade-in": "fade-in 1s ease-out forwards",
+        "fade-in-down": "fade-in-down 1s ease-out forwards",
+        "scale-up": "scale-up 1s ease-out forwards",
       },
     },
   },

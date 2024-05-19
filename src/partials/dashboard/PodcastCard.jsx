@@ -7,8 +7,8 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import colors from "tailwindcss/colors";
 import {
-  faCoffee,
   faSquareArrowUpRight,
+  faVideo,
 } from "@fortawesome/free-solid-svg-icons";
 import ReactGA from "react-ga4";
 
@@ -41,11 +41,19 @@ export const PodcastCard = ({ title, link, blurb, type, image }) => {
                       : "bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-blue-200 to-blue-700 opacity-50 shadow-md"
                   }`}
                 >
-                  <img
-                    src={image}
-                    alt="accelerators"
-                    className={`${image ? "rounded w-20" : "hidden"}`}
-                  />
+                  {" "}
+                  {image && image === "video" ? (
+                    <FontAwesomeIcon
+                      icon={faVideo}
+                      className="text-5xl text-slate-700"
+                    />
+                  ) : (
+                    <img
+                      src={image}
+                      alt="accelerators"
+                      className={`${image ? "rounded w-20" : "hidden"}`}
+                    />
+                  )}
                 </div>
               </div>
             </div>
