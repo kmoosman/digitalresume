@@ -870,6 +870,7 @@ export const resources = [
   },
   {
     id: 7,
+    image: KCCURE,
     name: "KCCure",
     link: "https://kccure.org/",
     description:
