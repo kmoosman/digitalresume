@@ -3478,6 +3478,27 @@ export const tikTokVideos = [
     created: "",
     videoid: "jiL1GeAVSmY",
   },
+  {
+    id: 125,
+    type: "video",
+    highlighted: true,
+    size: "youtube",
+    categories: ["diagnosis", "treatment", "advocacy"],
+    description:
+      "I had an ultra rare type of kidney cancer and a tumor that ended up being a metastatic oncocytoma (single digit case reports -- this is SUPER rare don't worry, oncocytomas in general are benign, mine just didn't catch the memo). Here I walk through the details about what that is and what it means.",
+    name: "What kind of kidney cancer did I have?",
+    image:
+      "https://res.cloudinary.com/dyrev28qc/image/upload/v1716840246/7363019493985258798_h14wif.png",
+    date: "11/22/22",
+    link: "https://www.youtube.com/embed/q3yUlZ016Yo",
+    views: 0,
+    comments: 0,
+    likes: 0,
+    shares: 0,
+    duration: 0,
+    created: "",
+    videoid: "q3yUlZ016Yo",
+  },
 ];
 
 export const applications = [
