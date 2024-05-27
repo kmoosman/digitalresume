@@ -23,6 +23,7 @@ import {
   faLaugh,
   faSun,
   faVideoSlash,
+  faFaceGrinTears,
 } from "@fortawesome/free-solid-svg-icons";
 
 export const Videos = ({ banner, header }) => {
@@ -47,7 +48,7 @@ export const Videos = ({ banner, header }) => {
       value: "treatment",
       icon: faHospital,
     },
-    { name: "Humor", id: 5, value: "humor", icon: faLaugh },
+    { name: "Humor", id: 5, value: "humor", icon: faFaceGrinTears },
     { name: "Mental Health", id: 6, value: "mental_health", icon: faHeart },
     { name: "Uplifting", id: 7, value: "uplifting", icon: faSun },
     { name: "Grief", id: 8, value: "grief", icon: faCloudSunRain },

@@ -46,8 +46,7 @@ function WelcomeBanner() {
             <p className="mt-2 text-sm">
               I know how fortuante I am to still be here and it's my mission to
               use the time I've been given to make an impact for others who may
-              come behind me one day. No one fights alone, let's make an impact
-              together.
+              come behind me one day. Let's make an impact together.
             </p>
           </div>
           <div className="w-full flex justify-center md:justify-start mt-4 md:mt-12 animate-fade-in">
