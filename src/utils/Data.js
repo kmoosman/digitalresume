@@ -3509,7 +3509,7 @@ export const tikTokVideos = [
       "When I was initially diagnosed, no one thought I could reach no evidence of disease. So I starting keeping my hospital bands and told myself if I ever managed to reach it one day, I would do something special with them. That day came and it was time to find these bands a home.",
     name: "Why did I keep my hospital bands after I was diagnosed with cancer?",
     image:
-      "https://res.cloudinary.com/dyrev28qc/image/upload/v1716841145/7363027113907211562_svwhfy.png",
+      "https://res.cloudinary.com/dyrev28qc/image/upload/v1716845331/7363027113907211562_pn4amp.png",
     date: "04/28/24",
     link: "https://www.youtube.com/embed/En9a3lQgwQ4",
     views: 0,
