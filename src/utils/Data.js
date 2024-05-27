@@ -3060,14 +3060,14 @@ export const tikTokVideos = [
     image:
       "https://res.cloudinary.com/dyrev28qc/image/upload/v1716773997/7111097391918501166_jp5xca.png",
     date: "6/19/2022",
-    link: "https://www.youtube.com/embed/RpQzp86WEO0",
+    link: "https://www.youtube.com/embed/TiX-s1wLIl8",
     views: 0,
     comments: 0,
     likes: 0,
     shares: 0,
     duration: 0,
     created: "",
-    videoid: "RpQzp86WEO0",
+    videoid: "TiX-s1wLIl8",
   },
   {
     id: 106,
