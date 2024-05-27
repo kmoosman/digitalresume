@@ -3,11 +3,17 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../css/additional-styles/custom-carousel.css";
+import { iconStyling } from "../../utils/Utils";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { faVideo } from "@fortawesome/free-solid-svg-icons";
 
 const CarouselComponent = ({ cards, autoscroll = true }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [videoUrl, setVideoUrl] = useState("");
   const [videoType, setVideoType] = useState("youtube");
+  library.add(fab);
 
   const settings = {
     infinite: true,
@@ -67,22 +73,38 @@ const CarouselComponent = ({ cards, autoscroll = true }) => {
               <div
                 className="bg-background-image bg-cover bg-center p-6 rounded-lg shadow-lg h-80 cursor-pointer"
                 onClick={() => {
-                  if (card.type === "video" && isDesktop()) {
+                  if (
+                    card.type === "video" &&
+                    card.size !== "tiktok" &&
+                    isDesktop()
+                  ) {
                     openPopup(card.link, card.size);
                   } else {
                     window.open(card.link, "_blank");
                   }
                 }}
               >
-                <img
-                  className="max-h-40 mx-auto rounded-lg mb-7"
-                  src={card.image}
-                  alt="cover"
-                />
+                {card.size === "tiktok" || card?.image === "video" ? (
+                  card?.image === "video" ? (
+                    <div className="flex items-center mb-5 text-white justify-center w-20 h-20 rounded-lg bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-indigo-400 to-violet-900 shadow-md">
+                      <FontAwesomeIcon icon={faVideo} />
+                    </div>
+                  ) : (
+                    <div className="flex items-center mb-5 text-white justify-center w-20 h-20 rounded-lg bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-indigo-400 to-violet-900 shadow-md">
+                      <FontAwesomeIcon icon={iconStyling["TikTok"]} />
+                    </div>
+                  )
+                ) : (
+                  <img
+                    className="max-h-40 mx-auto rounded-lg mb-7"
+                    src={card.image}
+                    alt="cover"
+                  />
+                )}
 
                 <h2 className="text-xl font-bold mb-2">{card.name}</h2>
-                <div className="h-30 overflow-scroll">
-                  <p className="text-gray-700">{card.description}</p>
+                <div className="max-h-[50px] overflow-y-auto">
+                  <p className=" text-gray-700">{card.description}</p>
                 </div>
               </div>
             </div>

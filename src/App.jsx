@@ -14,12 +14,16 @@ import Memoir from "./pages/Memoir";
 import Speaking from "./pages/Speaking";
 import Resources from "./pages/Resources";
 import {
+  developmentBanner,
   podcastBanner,
   podcasts,
   resources,
   resourcesBanner,
+  tikTokVideos,
   videoBanner,
 } from "./utils/Data";
+import Videos from "./pages/Videos";
+import Development from "./pages/Development";
 
 function App() {
   const location = useLocation();
@@ -77,11 +81,15 @@ function App() {
         <Route
           exact
           path="/videos"
+          element={<Videos banner={videoBanner} header={"Videos"} />}
+        />
+        <Route
+          exact
+          path="/development"
           element={
-            <Resources
-              banner={videoBanner}
-              header={"Videos"}
-              list={resources}
+            <Development
+              banner={developmentBanner}
+              header={"Currently Deployed"}
             />
           }
         />

@@ -32,16 +32,22 @@ function WelcomeBanner() {
 
           <div className="lg:mt-10 mt-5 w-full md:w-3/4 flex flex-col animate-fade-in">
             <p className="mt-2 text-slate-700 text-lg">
-              I'm a cancer survivor, advocate, podcaster, software developer and
-              author of{" "}
+              I am a cancer survivor, diagnosed with an ultra-rare stage IV
+              kidney cancer. Since my diagnosis, I have become a dedicated
+              advocate, podcaster, software developer, and the author of{" "}
               <a
                 href="https://www.amazon.com/Too-Young-Cancer-Diagnosis-Fighting-ebook/dp/B0CW1HKPWJ/ref=sr_1_1?crid=C1QQ3FZLJOZ2&dib=eyJ2IjoiMSJ9.86WEKCmVExWphXE6fnD2hA.C6tU4YMPD58Hyq95PwDK8iSixRxUMOgjL0tnheXL238&dib_tag=se&keywords=9781639109449&qid=1709230552&sprefix=9781639109449%2Caps%2C68&sr=8-1"
                 className="text-indigo-700 font-semibold"
               >
-                TOO YOUNG FOR CANCER.
+                TOO YOUNG FOR CANCER
               </a>{" "}
-              Here to share my story to hopefully make things a little easier
-              for those who may come behind me. 📚
+              📚.
+            </p>
+            <p className="mt-2 text-sm">
+              I know how fortuante I am to still be here and it's my mission to
+              use the time I've been given to make an impact for others who may
+              come behind me one day. No one fights alone, let's make an impact
+              together.
             </p>
           </div>
           <div className="w-full flex justify-center md:justify-start mt-4 md:mt-12 animate-fade-in">
@@ -61,15 +67,15 @@ function WelcomeBanner() {
             Inquiries, contact and collaborations{" "}
             <a className="text-slate-700">katiekickscancer@gmail.com</a>
           </p>
-          <p className="text-center md:text-left animate-fade-in">
+          {/* <p className="text-center md:text-left animate-fade-in">
             <a href="/" className="text-indigo-700">
               Subscribe to newsletter / book release updates
             </a>
-          </p>
+          </p> */}
         </div>
-        <div className="z-0 justify-center mr-0 col-span-2 mx-auto opacity-95 hidden lg:flex animate-fade-in">
+        <div className="z-0 justify-center col-span-2 mr-32 md:mr-20 xl:mr-40 mx-auto opacity-95 hidden lg:flex animate-fade-in">
           <img
-            className="aspect-fit w-1/2 p-5 rounded-lg shadow-md hover:shadow-xl transition duration-300"
+            className="aspect-fit w-72 p-5 rounded-lg shadow-md hover:shadow-xl transition duration-300"
             src={headshot}
             alt="User 01"
           />

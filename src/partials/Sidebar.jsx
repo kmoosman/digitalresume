@@ -3,11 +3,13 @@ import { NavLink, useLocation } from "react-router-dom";
 
 import SidebarLinkGroup from "./SidebarLinkGroup";
 import {
-  faBookmark, faBookOpen,
-  faBriefcase, faPenFancy,
+  faBookmark,
+  faBookOpen,
+  faBriefcase,
+  faPenFancy,
   faPeopleGroup,
   faSprayCanSparkles,
-  faSquareArrowUpRight
+  faSquareArrowUpRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -33,7 +35,6 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
         trigger.current.contains(target)
       )
         return;
-
     };
     document.addEventListener("click", clickHandler);
     return () => document.removeEventListener("click", clickHandler);
@@ -76,26 +77,25 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
           sidebarOpen ? "translate-x-0" : "-translate-x-24"
         }`}
       >
-
         {/*/!* Sidebar header *!/*/}
         <div className="flex justify-between mb-10 pr-3 sm:px-2">
-        {/*  /!* Close button *!/*/}
-        {/*  <button*/}
-        {/*    ref={trigger}*/}
-        {/*    className=" text-slate-500 hover:text-slate-400"*/}
-        {/*    onClick={() => setSidebarOpen(!sidebarOpen)}*/}
-        {/*    aria-controls="sidebar"*/}
-        {/*    aria-expanded={sidebarOpen}*/}
-        {/*  >*/}
-        {/*    <span className="sr-only">Close sidebar</span>*/}
-        {/*    <svg*/}
-        {/*      className="w-6 h-6 fill-current"*/}
-        {/*      viewBox="0 0 24 24"*/}
-        {/*      xmlns="http://www.w3.org/2000/svg"*/}
-        {/*    >*/}
-        {/*      <path d="M10.7 18.7l1.4-1.4L7.8 13H20v-2H7.8l4.3-4.3-1.4-1.4L4 12z" />*/}
-        {/*    </svg>*/}
-        {/*  </button>*/}
+          {/*  /!* Close button *!/*/}
+          {/*  <button*/}
+          {/*    ref={trigger}*/}
+          {/*    className=" text-slate-500 hover:text-slate-400"*/}
+          {/*    onClick={() => setSidebarOpen(!sidebarOpen)}*/}
+          {/*    aria-controls="sidebar"*/}
+          {/*    aria-expanded={sidebarOpen}*/}
+          {/*  >*/}
+          {/*    <span className="sr-only">Close sidebar</span>*/}
+          {/*    <svg*/}
+          {/*      className="w-6 h-6 fill-current"*/}
+          {/*      viewBox="0 0 24 24"*/}
+          {/*      xmlns="http://www.w3.org/2000/svg"*/}
+          {/*    >*/}
+          {/*      <path d="M10.7 18.7l1.4-1.4L7.8 13H20v-2H7.8l4.3-4.3-1.4-1.4L4 12z" />*/}
+          {/*    </svg>*/}
+          {/*  </button>*/}
         </div>
 
         {/* Links */}
@@ -136,17 +136,18 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                             : setSidebarExpanded(true);
                         }}
                       >
-
                         <div className="flex items-center justify-between">
                           <div className="flex items-center">
-                            <FontAwesomeIcon className="text-slate" icon={faPeopleGroup} />
+                            <FontAwesomeIcon
+                              className="text-slate"
+                              icon={faPeopleGroup}
+                            />
                             <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
                               Social
                             </span>
                           </div>
-
                         </div>
-                    </NavLink>
+                      </NavLink>
                     </React.Fragment>
                   );
                 }}
@@ -154,7 +155,8 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
 
               <SidebarLinkGroup
                 activecondition={
-                  pathname === "/media-100z2c9kds9" || pathname.includes("dashboard")
+                  pathname === "/media-100z2c9kds9" ||
+                  pathname.includes("dashboard")
                 }
               >
                 {(handleClick, open) => {
@@ -173,15 +175,16 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                             : setSidebarExpanded(true);
                         }}
                       >
-
                         <div className="flex items-center justify-between">
                           <div className="flex items-center">
-                            <FontAwesomeIcon className="text-slate" icon={faBriefcase} />
+                            <FontAwesomeIcon
+                              className="text-slate"
+                              icon={faBriefcase}
+                            />
                             <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
                               Media
                             </span>
                           </div>
-
                         </div>
                       </NavLink>
                     </React.Fragment>
@@ -191,7 +194,8 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
 
               <SidebarLinkGroup
                 activecondition={
-                  pathname === "/writing-123120" || pathname.includes("dashboard")
+                  pathname === "/writing-123120" ||
+                  pathname.includes("dashboard")
                 }
               >
                 {(handleClick, open) => {
@@ -210,15 +214,16 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                             : setSidebarExpanded(true);
                         }}
                       >
-
                         <div className="flex items-center justify-between">
                           <div className="flex items-center">
-                            <FontAwesomeIcon className="text-slate" icon={faBookOpen} />
+                            <FontAwesomeIcon
+                              className="text-slate"
+                              icon={faBookOpen}
+                            />
                             <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
                               Writing
                             </span>
                           </div>
-
                         </div>
                       </NavLink>
                     </React.Fragment>
@@ -226,11 +231,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                 }}
               </SidebarLinkGroup>
 
-              <SidebarLinkGroup
-                activecondition={
-                  pathname === "/news"
-                }
-              >
+              <SidebarLinkGroup activecondition={pathname === "/news"}>
                 {(handleClick, open) => {
                   return (
                     <React.Fragment>
@@ -247,24 +248,22 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                             : setSidebarExpanded(true);
                         }}
                       >
-
                         <div className="flex items-center justify-between">
                           <div className="flex items-center">
-                            <FontAwesomeIcon className="text-slate" icon={faBookOpen} />
+                            <FontAwesomeIcon
+                              className="text-slate"
+                              icon={faBookOpen}
+                            />
                             <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
                               News
                             </span>
                           </div>
-
                         </div>
                       </NavLink>
                     </React.Fragment>
                   );
                 }}
               </SidebarLinkGroup>
-
-
-
             </ul>
           </div>
         </div>

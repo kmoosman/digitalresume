@@ -28,11 +28,15 @@ export const Memoir = ({ type }) => {
       "Week 6",
       "Week 7",
       "Week 8",
+      "Week 9",
+      "Week 10",
+      "Week 11",
+      "Week 12",
     ],
     datasets: [
       {
         label: "Sales",
-        data: [65, 59, 80, 81, 56, 55, 40],
+        data: [40, 51, 84, 93, 97, 100, 106, 184, 187, 199, 202, 205],
         backgroundColor: tailwindConfig().theme.colors.blue[900],
         borderColor: tailwindConfig().theme.colors.blue[900],
         borderWidth: 1,
@@ -59,9 +63,9 @@ export const Memoir = ({ type }) => {
 
         <main>
           <MemoirBanner />
-          <div className="w-full grid grid-cols-7 self-center p-10 justify-center bg-slate-800 ">
+          <div className="w-full grid grid-cols-7 self-center p-7 justify-center bg-slate-800 ">
             {/* Cards */}
-            <div className="text-white text-left ml-16 font-medium text-3xl self-center col-span-4">
+            <div className="text-white text-left ml-2 md:ml-16 font-medium text-3xl self-center col-span-4">
               Sample Chapter
             </div>
             <div className="flex justify-center w-full col-span-3">
@@ -76,12 +80,12 @@ export const Memoir = ({ type }) => {
               </a>
             </div>
           </div>
-          <div className="my-10 md:px-20 p-4 md:p-0 mx-auto text-slate-800">
+          <div className="lg:my-10 md:px-20 p-4 md:p-0 mx-auto text-slate-800 animate-fade-in">
             <div className="text-4xl font-bold mt-5">
               About <i>TOO YOUNG FOR CANCER </i>
             </div>
             <div className="mt-4">
-              <p className="text-sm">
+              <p className="text-sm text-center md:text-left ">
                 The inspiring story of a stage IV cancer survivor’s journey
                 through a complex and biased medical system to get a diagnosis
                 and the treatment that would save her life, and how she found
@@ -116,13 +120,13 @@ export const Memoir = ({ type }) => {
               <CarouselComponent cards={purchaseMemoir} color="slate-700" />
             </div>
 
-            <div className="text-3xl font-bold text-slate-800 mt-10 bg">
+            <div className="text-3xl font-bold text-slate-800 mt-10 bg text-center md:text-left ">
               Why Pre-Order?
             </div>
 
-            <div className="grid grid-cols-4 mt-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 mt-4 ">
               <p className="text-sm col-span-3">
-                Pre-orders can be hugely impactful for new titles. They help to
+                Pre-orders can be very impactful for new titles. They help to
                 build buzz around the book and show publishers that there is
                 interest in the book so retailers and store can stock it. This
                 can help to increase the number of copies printed and can help
@@ -141,7 +145,18 @@ export const Memoir = ({ type }) => {
                 videoSrc={"https://www.tiktok.com/embed/7341189876420840746"}
               />
             </div>
-            <div className="w-1/2">
+            <div>
+              <h2 className="text-xl font-semibold mt-5">Pre-Orders by Week</h2>
+              <p className="text-sm">
+                Just like I did with my diagnosis, I'm sharing my pre-order
+                sales each week to make the info more accessable for others.
+                Let's make an impact together.
+              </p>
+            </div>
+            <h1 className="w-full text-center text-3xl mt-5 font-semibold">
+              Total Pre-Orders: 205
+            </h1>
+            <div className="w-3/4 mx-auto">
               <BarChart01 data={data} />
             </div>
           </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../partials/Header";
 import { resources } from "../utils/Data";
 import TopBanner from "../partials/dashboard/TopBanner";
@@ -13,6 +13,11 @@ import PodcastCard from "../partials/dashboard/PodcastCard";
 import { faCalendarDay } from "@fortawesome/free-solid-svg-icons";
 
 export const Resources = ({ banner, list, header }) => {
+  const [highlighted, setHighlighted] = useState([]);
+  useEffect(() => {
+    setHighlighted(list.filter((item) => item.highlighted));
+  }, [list]);
+
   return (
     <div className="flex h-screen overflow-hidden bg-slate-800">
       {/* Content area */}
@@ -22,11 +27,11 @@ export const Resources = ({ banner, list, header }) => {
 
         <main>
           <TopBanner banner={banner} />
-          <div className="my-10 md:px-20 p-4 md:p-0 mx-auto">
+          <div className="my-10 md:px-20 p-4 pl-6 pr-6 md:p-0 mx-auto">
             <div className="text-3xl font-bold text-white mt-5 mb-7">
               Highlighted {header}
             </div>
-            <CarouselComponent cards={list.slice(0, 5)} />
+            <CarouselComponent cards={highlighted} />
 
             <div className="text-3xl font-bold text-white mt-12 mb-7 ">
               All {banner.title}

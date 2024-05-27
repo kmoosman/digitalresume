@@ -14,13 +14,13 @@ function TopBanner({ banner }) {
 
       {/* Content */}
       <div
-        className={`grid grid-cols-5 md:grid-cols-6 self-center ${
+        className={`grid grid-cols-1 md:grid-cols-6 self-center ${
           banner.image ? "" : "mb-10"
         }`}
       >
-        <div className="h-full md:align-left w-full col-span-6 lg:col-span-4 p-5 lg:px-20 lg:mt-12">
+        <div className="h-full md:align-left text-center md:text-left w-full col-span-3 lg:col-span-4 p-5 lg:px-20 lg:mt-12">
           <div className="grid grid-cols-3">
-            <div className="col-span-2">
+            <div className="col-span-3 md:col-span-2">
               <h1 className="text-3xl md:text-3xl  font-bold animate-fade-in-down">
                 {banner.title}
               </h1>
@@ -32,16 +32,18 @@ function TopBanner({ banner }) {
                 {banner.description}
               </p>
             </div>
-            <div className="z-0 mr-0 justify-center flex col-span-1 opacity-95 lg:hidden">
-              <img
-                className="aspect-fit justify-center rounded-full shadow-lg animate-scale-up"
-                src={banner.image}
-                alt={banner.title}
-              />
-            </div>
+            {banner.image && (
+              <div className="z-0 mr-0 justify-center flex col-span-1 opacity-95 lg:hidden">
+                <img
+                  className="aspect-fit justify-center rounded-full shadow-lg animate-scale-up"
+                  src={banner.image}
+                  alt={banner.title}
+                />
+              </div>
+            )}
           </div>
         </div>
-        <div className="col-span-2 lg:mx-40 flex  justify-end items-center p-5">
+        <div className="col-span-1 md:col-span-2 lg:mx-40 flex justify-end items-center p-5">
           {banner.image ? (
             <div className="z-0 justify-center mr-0 col-span-2 mx-auto opacity-95 hidden lg:flex">
               <img
@@ -65,7 +67,7 @@ function TopBanner({ banner }) {
                   "_blank"
                 );
               }}
-              className="bg-slate-800 text-white h-12 md:text-lg font-semibold rounded p-2 mt-10 text-sm animate-fade-in"
+              className="bg-slate-800 mx-auto text-white h-12 whitespace-nowrap md:text-lg font-semibold rounded p-2 mt-2 md:mt-10 text-sm animate-fade-in"
             >
               {banner.buttonText}
             </button>

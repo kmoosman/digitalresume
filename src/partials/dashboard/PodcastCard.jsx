@@ -24,7 +24,7 @@ export const PodcastCard = ({ title, link, blurb, type, image }) => {
         ReactGA.event({
           category: "External Links",
           action: `Podcast ${title} Clicked}`,
-          label: `Clicked podcast ${title}}`,
+          label: `Clicked ${title}}`,
         });
       }}
     >

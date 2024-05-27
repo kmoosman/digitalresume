@@ -53,13 +53,20 @@ export const HighlightCards = ({ highlight }) => {
                 <a
                   href={highlight.link}
                   target="_blank"
-                  className="bg-slate-700 text-white w-32 p-2 rounded font-medium text-center ml-4"
+                  className="bg-slate-700 hidden sm:block text-white w-32 p-2 rounded font-medium text-center ml-4"
                 >
                   {highlight.buttonText}
                 </a>
               </div>
             </div>
           </div>
+          <a
+            href={highlight.link}
+            target="_blank"
+            className="bg-slate-700 w-full sm:hidden text-white p-2 rounded font-medium text-center"
+          >
+            {highlight.buttonText}
+          </a>
         </div>
       </div>
     </div>

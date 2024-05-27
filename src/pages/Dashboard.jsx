@@ -11,13 +11,10 @@ import CarouselComponent from "../partials/dashboard/CarouselComponent";
 import { HighlightCards } from "../partials/dashboard/HighlightCard";
 
 export const Dashboard = ({ rates, demographics, type }) => {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-
   return (
     <>
       <div className="flex h-screen overflow-hidden">
         {/* Sidebar */}
-        {/*<Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />*/}
 
         {/* Content area */}
         <div className="relative flex flex-col  overflow-y-auto overflow-x-hidden w-full">
@@ -33,10 +30,10 @@ export const Dashboard = ({ rates, demographics, type }) => {
               </div>
               <div className="w-full grid grid-cols-6 self-center justify-center bg-slate-800 p-10">
                 {/* Cards */}
-                <div className="text-white text-left pl-10 text-4xl col-span-4 ">
+                <div className="text-white text-left pl-10 text-4xl col-span-2 lg:col-span-4 hidden lg:block">
                   Social Media
                 </div>
-                <div className="flex justify-center w-full col-span-2">
+                <div className="grid grid-cols-5 lg:grid-cols-5 gap-10 justify-center lg:col-span-2 col-span-5">
                   {socialData(type).map((social) => (
                     <DashboardCard
                       key={social.id}

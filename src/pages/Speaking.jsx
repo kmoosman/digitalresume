@@ -23,7 +23,7 @@ import PhotoTitleLinkTable, {
   DynamicTable,
 } from "../partials/dashboard/DynamicTable";
 
-import { articles, podcasts, socialData } from "../utils/Data";
+import { articles, podcasts, socialData, speaking } from "../utils/Data";
 import PodcastCard from "../partials/dashboard/PodcastCard";
 import { faCalendarDay } from "@fortawesome/free-solid-svg-icons";
 
@@ -49,17 +49,17 @@ export const Speaking = () => {
           <TopBanner banner={banner} />
           <div className="my-10 md:px-20 p-4 md:p-0 mx-auto">
             <div className="text-3xl font-bold text-white mt-5 mb-7">
-              Past Engagements
+              Past and Upcoming
             </div>
 
             <div className="grid grid-cols-12 gap-6 mb-6 ">
-              {podcasts
+              {speaking
                 .sort((a, b) => b.id - a.id)
                 .map((podcast) => (
                   <PodcastCard
                     title={podcast.name}
                     blurb={podcast.description}
-                    type="podcast"
+                    type="speaking"
                     link={podcast.link}
                     key={podcast.id}
                     image={podcast.image}
