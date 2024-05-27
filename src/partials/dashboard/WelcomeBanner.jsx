@@ -23,7 +23,7 @@ function WelcomeBanner() {
             </div>
             <div className="z-0 mr-0 justify-center flex col-span-1 opacity-95 lg:hidden">
               <img
-                className="aspect-fit justify-center rounded-full shadow-lg animate-scale-up"
+                className="aspect-fit justify-center rounded-md shadow-lg animate-scale-up"
                 src={headshot}
                 alt="User 01"
               />
@@ -72,9 +72,9 @@ function WelcomeBanner() {
             </a>
           </p> */}
         </div>
-        <div className="z-0 justify-center col-span-2 mr-32 md:mr-20 xl:mr-40 mx-auto opacity-95 hidden lg:flex animate-fade-in">
+        <div className="z-0 justify-center col-span-2 mr-32 mx-auto opacity-95 hidden lg:flex animate-fade-in">
           <img
-            className="aspect-fit w-72 p-5 rounded-lg shadow-md hover:shadow-xl transition duration-300"
+            className="h-[550px] rounded-lg shadow-md hover:shadow-xl transition duration-300"
             src={headshot}
             alt="User 01"
           />
