@@ -50,7 +50,7 @@ import VHL from "../images/vhl.jpeg";
 import KIDNEYCAN from "../images/kidneyCAN.png";
 import JNF from "../images/jnf.jpeg";
 import PatientQ from "../images/PatientQ.png";
-import MyDrs from "../images/MyDrs.png";
+import MyDrs from "../images/mydrs.png";
 import Calculator from "../images/calculator.png";
 import QR from "../images/QR.png";
 import Battle from "../images/battle.png";
