@@ -2877,7 +2877,7 @@ export const tikTokVideos = [
     id: 93,
     type: "video",
     size: "tiktok",
-    categories: ["scans", "encouragement", "uplifting", "writing"],
+    categories: ["scans", "uplifting", "writing"],
     description:
       "TikTok Video from 12/31/2023: It's been a wild ride, one I couldn't be more grateful to still be here for ",
     name: "3 Years Since Being Diagnosed with Stage IV Cancer",
