@@ -32,9 +32,16 @@ function WelcomeBanner() {
 
           <div className="lg:mt-10 mt-5 w-full md:w-3/4 flex flex-col animate-fade-in">
             <p className="mt-2 text-slate-700 text-lg">
-              I am a cancer survivor, diagnosed with an ultra-rare stage IV
-              kidney cancer. Since my diagnosis, I have become a dedicated
-              advocate, podcaster, software developer, and the author of{" "}
+              I am a cancer survivor, diagnosed with an{" "}
+              <a
+                href="https://www.youtube.com/embed/q3yUlZ016Yo"
+                target="_blank"
+                className="text-indigo-700 font-semibold"
+              >
+                ultra-rare stage IV kidney cancer
+              </a>
+              . Since my diagnosis, I have become a dedicated advocate,
+              podcaster, software developer, and the author of{" "}
               <a
                 href="https://www.amazon.com/Too-Young-Cancer-Diagnosis-Fighting-ebook/dp/B0CW1HKPWJ/ref=sr_1_1?crid=C1QQ3FZLJOZ2&dib=eyJ2IjoiMSJ9.86WEKCmVExWphXE6fnD2hA.C6tU4YMPD58Hyq95PwDK8iSixRxUMOgjL0tnheXL238&dib_tag=se&keywords=9781639109449&qid=1709230552&sprefix=9781639109449%2Caps%2C68&sr=8-1"
                 className="text-indigo-700 font-semibold"
