@@ -3489,7 +3489,7 @@ export const tikTokVideos = [
     name: "What kind of kidney cancer did I have?",
     image:
       "https://res.cloudinary.com/dyrev28qc/image/upload/v1716840246/7363019493985258798_h14wif.png",
-    date: "11/22/22",
+    date: "04/28/24",
     link: "https://www.youtube.com/embed/q3yUlZ016Yo",
     views: 0,
     comments: 0,
@@ -3498,6 +3498,27 @@ export const tikTokVideos = [
     duration: 0,
     created: "",
     videoid: "q3yUlZ016Yo",
+  },
+  {
+    id: 125,
+    type: "video",
+
+    size: "youtube",
+    categories: ["encouragement", "uplifting", "treatment"],
+    description:
+      "When I was initially diagnosed, no one thought I could reach no evidence of disease. So I starting keeping my hospital bands and told myself if I ever managed to reach it one day, I would do something special with them. That day came and it was time to find these bands a home.",
+    name: "Why did I keep my hospital bands after I was diagnosed with cancer?",
+    image:
+      "https://res.cloudinary.com/dyrev28qc/image/upload/v1716841145/7363027113907211562_svwhfy.png",
+    date: "04/28/24",
+    link: "https://www.youtube.com/embed/En9a3lQgwQ4",
+    views: 0,
+    comments: 0,
+    likes: 0,
+    shares: 0,
+    duration: 0,
+    created: "",
+    videoid: "En9a3lQgwQ4",
   },
 ];
 
