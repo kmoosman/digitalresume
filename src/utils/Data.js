@@ -369,7 +369,7 @@ export const highlights = [
   {
     id: 2,
     color: "orange-400",
-    category: "Noprofit",
+    category: "Nonprofit",
     title: "Chromophobe and Oncocytic Tumor Alliance",
     description:
       "The Chromophobe and Oncocytic Tumor Alliance (COA) is a non-profit I founded with a mission to bring together and support a community of patients, organizations and researchers dedicated to advancing the understanding, research and treatment of Chromophobe Renal Cell Carcinoma and other oncocytic tumors. We aim to foster collaboration, promote education and awareness, and to fund research to further these efforts.",
