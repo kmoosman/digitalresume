@@ -57,7 +57,7 @@ export const Speaking = () => {
                 .sort((a, b) => b.id - a.id)
                 .map((podcast) => (
                   <PodcastCard
-                    title={podcast.name}
+                    title={podcast.title}
                     blurb={podcast.description}
                     type="speaking"
                     link={podcast.link}

@@ -719,7 +719,7 @@ export const speaking = [
     organization: "R^2 Lab (Dr. Kimryn and Jeff Rathmell)",
     topic: "The Patient Beyond the Petri Dish",
     description:
-      "Guest keynote at Vanderbilt's R^2 lab treat with Dr. Kimryn and Jeff Rathmell's labs. Through my talk, I highlighted and walked through my diagnosis, showing both the medical details of my case, pathology reports, sequencing, scans etc as well as the very human side of what was happening behind the scenes for each of those moments.",
+      "Guest keynote at Vanderbilt's R^2 lab treat with Dr. Kimryn and Jeff Rathmell's labs. Through my talk I highlighted and walked through my diagnosis, showing both the medical details of my case, pathology reports, sequencing, scans as well as the very human side of what was happening behind the scenes for each of those moments.",
     image: RATHMELL,
     link: "https://x.com/jeffrathmell/status/1719446854356586600?s=12&t=Rz7cCFyHPBYT9_l_XmdM3Q",
   },
@@ -729,7 +729,7 @@ export const speaking = [
     organization: "Kidney Cancer Association",
     topic: "Kidney Cancer Assocication Affiliates",
     description:
-      "Introducing COA, the Chromophobe and Oncocytic Tumor Alliance as an affiliate of the KCA",
+      "Introducing COA, the Chromophobe and Oncocytic Tumor Alliance as an affiliate of the KCA.",
     link: "https://drive.google.com/file/d/1xqDHvQzAaiEQlNI6kqyswH91hhZQv9Uz/view",
     image: KCA,
   },
@@ -739,7 +739,7 @@ export const speaking = [
     topic: "Clincial Trials Participation",
     organization: "Conquer Cancer - ASCO",
     description:
-      "Sharing my story and how as a patient I evaulated particpating in clincial trials, and specifically the reasons why I chose not to particpate in one.",
+      "Presenting my story and how as a patient I evaulated particpating in clincial trials, and specifically the reasons why I chose not to particpate in one.",
     link: "https://x.com/ConquerCancerFd/status/1722374717020033358",
     image: CONQUER,
   },
@@ -749,7 +749,7 @@ export const speaking = [
     topic: "Moving research forward for rare cancers",
     organization: "CommoneWealth Club / RCRF",
     description:
-      "Through my story, we highlight the need to move research forward for rare cancers and the infrastructure the Rare Cancer Research Foundation is building to enable patients to be part of the process",
+      "Through my story, Mark's story, and the commonalities that so many with rare cancers face, we highlight the need to build an infrastructure to support and move research forward for those affected by rare cancers.",
     link: "https://youtu.be/K97HebR7JPI?si=dnFlG1Wl_a46-JM4",
     image: COMMON_WEALTH,
   },
@@ -759,7 +759,7 @@ export const speaking = [
     topic: "Living with Kidney Cancer",
     organization: "Kidney Cancer Association",
     description:
-      "Shared my story along with a panel of other patients an caregivers to talk about living with kidney cancer",
+      "Presented my story along with a panel of other patients and caregivers to talk about living with kidney cancer.",
     link: "https://youtu.be/hSMsLpPuiOY",
     image: KCA,
   },
@@ -770,7 +770,7 @@ export const speaking = [
     topic:
       "Highlighting the power of community and how the kidney cancer community had changed, empowered and saved my life",
     description:
-      "At Ready or Not 2.0 and empowering event for over 200 Texas Women, I shared my story and highlighted the important role the kidney cancer community played in my life, my outcome and my life's purpose.",
+      "Ready or Not 2.0 is an empowering event with over 200 Texas Women in attendance. I was invited to share and highlighted the important role the kidney cancer community played in my life, my outcome and my life's purpose.",
     link: "https://x.com/kaydaustin/status/1754211747169182047?s=12&t=Rz7cCFyHPBYT9_l_XmdM3Q",
     image: YouJustDontKnow,
   },
@@ -780,7 +780,7 @@ export const speaking = [
     organization: "International Kidney Cancer Collilition",
     topic: "How to use social media for your organization",
     description:
-      "Presented on how social media has impacted my life and how I used social media to raise awareness for kidney cancer on platforms such as TikTok.",
+      "Presented on how social media has impacted my life and how I use it to raise awareness for kidney cancer on platforms such as TikTok.",
     link: "https://x.com/pointonsupport/status/1779677100506861725?s=12&t=Rz7cCFyHPBYT9_l_XmdM3Q",
     image: IKCC,
   },
@@ -791,7 +791,7 @@ export const speaking = [
     topic:
       "Patient perspectives session sharing about empathy in the face of uncertainty and the power of social media",
     description:
-      "Highlighting what it's like being a patient with a rare cancers without many answers and the profound impact that empathy through moments of uncertainty can have",
+      "Highlighting what it's like to be diagnosed with a rare cancer, the lack of answers and the profound impact that empathy through moments of uncertainty can have.",
     link: "https://drive.google.com/file/d/1dtPHQPF71FcosWFwlkXSZYxfjwC0d6OT/view",
     image: AUA,
   },
@@ -802,15 +802,16 @@ export const speaking = [
     topic:
       "What should doctors to know when dealing with patients with rare presentations",
     description:
-      "Shared my story with a gruop of medical students to highlight and discuss where new physicans can have the most impact on patient care",
+      "Presented my story to a group of medical students to highlight and discuss where new physicans can have the most impact on patient care.",
   },
   {
     id: 9,
     title: "Patient/Caregiver Symposium",
     organization: "MD Anderson / Kidney Cancer Association",
-    topic: "Sharing my story and ___ at the Patient/Caregiver Symposium",
+    topic:
+      "Presenting on my story and the power of patient connections at the Patient/Caregiver Symposium",
     description:
-      "Sharing my story with a group of patients/caregivers at a sympiums put on by MD Anderson Cancer Center and the KCA.",
+      "Presenting my story with a group of patients/caregivers at a symposium put on by MD Anderson Cancer Center and the KCA.",
     link: "https://www.kidneycancer.org/",
     image: KCA,
   },
@@ -946,7 +947,7 @@ export const resources = [
     highlighted: true,
     link: "https://www.nccn.org/guidelines/guidelines-detail?category=patients&id=17",
     description:
-      "The National Comprehensive Cancer Network (NCCN) provides guidelines for patients with kidney cancer which includes standard guidelines on diagnosis, treatment, and follow-up care. These are the same guidelines that providers can use to help guide treatment decisions.",
+      "The National Comprehensive Cancer Network (NCCN) provides guidelines for patients with kidney cancer which includes standard guidelines on diagnosis, treatment, and follow-up care. This is the patient version for the guidelines that providers can use to help guide treatment decisions.",
   },
   {
     id: 17,
@@ -1096,7 +1097,7 @@ export const tikTokVideos = [
     id: 3,
     type: "video",
     size: "tiktok",
-    categories: ["treatment", "scans", "encouragement", "uplifting"],
+    categories: ["treatment", "scans", "uplifting"],
     description:
       "TikTok Video from: 11/17/2021 show a quick recovery after microwave ablations of my liver. ",
     name: "Quick Recovery from Liver Ablations",
@@ -1819,7 +1820,7 @@ export const tikTokVideos = [
       "TikTok Video from 10/6/21: Talking about how fear, pain and anxiety are relative to what we have experienced ",
     name: "You Pain is Valid",
     image:
-      "https://res.cloudinary.com/dyrev28qc/image/upload/v1716774030/7161238018118962474_fpe64t.png",
+      "https://res.cloudinary.com/dyrev28qc/image/upload/v1716774028/7016062431134862598_xg88rh.png",
     date: "10/6/2021",
     link: "https://www.youtube.com/embed/pMOELtHYCLQ",
     views: 0,
@@ -2577,7 +2578,7 @@ export const tikTokVideos = [
     id: 78,
     type: "video",
     size: "tiktok",
-    categories: ["encouragement"],
+    categories: ["uplifting"],
     description: "TikTok Video from 9/24/2022: Recap of Dec 2020 - 2022",
     name: "Live For Today",
     image:
@@ -3240,14 +3241,14 @@ export const tikTokVideos = [
     image:
       "https://res.cloudinary.com/dyrev28qc/image/upload/v1716773995/7082455937604144430_gbcon1.png",
     date: "4/3/2022",
-    link: "https://www.youtube.com/embed/n9MIXYL6qyY",
+    link: "https://www.youtube.com/embed/NYEu3Ihu34w",
     views: 0,
     comments: 0,
     likes: 0,
     shares: 0,
     duration: 0,
     created: "",
-    videoid: "n9MIXYL6qyY",
+    videoid: "NYEu3Ihu34w",
   },
   {
     id: 115,
