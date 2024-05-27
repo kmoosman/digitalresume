@@ -54,7 +54,7 @@ import MyDrs from "../images/mydrs.png";
 import Calculator from "../images/calculator.png";
 import QR from "../images/QR.png";
 import Battle from "../images/battle.png";
-import NCCN from "../images/nccn.jpeg";
+import NCCN from "../images/NCCN.jpeg";
 import AUA from "../images/aua.jpeg";
 import CONQUER from "../images/conquer.png";
 import RATHMELL from "../images/rathmell.jpg";
