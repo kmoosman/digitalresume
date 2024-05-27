@@ -102,9 +102,11 @@ const CarouselComponent = ({ cards, autoscroll = true }) => {
                   />
                 )}
 
-                <h2 className="text-xl font-bold mb-2">{card.name}</h2>
+                <h2 className="text-xl font-bold mb-2 line-clamp-1">
+                  {card.name}
+                </h2>
                 <div className="max-h-[50px] overflow-y-auto">
-                  <p className=" text-gray-700">{card.description}</p>
+                  <p className="text-gray-700">{card.description}</p>
                 </div>
               </div>
             </div>
