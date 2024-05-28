@@ -1522,7 +1522,7 @@ export const tikTokVideos = [
       "TikTok Video from 11/12/21: Video after ablation for tumors in my liver ",
     name: "Ablations Update Video at the National Cancer Institute",
     image:
-      "https://res.cloudinary.com/dyrev28qc/image/upload/v1716774029/6966756763043482885_i57mrc.png",
+      "https://res.cloudinary.com/dyrev28qc/image/upload/v1716774029/7029752898384874758_vw7nch.png",
     date: "11/12/2021",
     link: "https://www.youtube.com/embed/6Ii_U-Io5Nc",
     views: 0,
