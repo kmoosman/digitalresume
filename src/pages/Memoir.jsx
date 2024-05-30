@@ -24,6 +24,7 @@ export const Memoir = ({ type }) => {
       "Week 1",
       "Week 2",
       "Week 3",
+      "Week 4",
       "Week 5",
       "Week 6",
       "Week 7",
@@ -32,6 +33,7 @@ export const Memoir = ({ type }) => {
       "Week 10",
       "Week 11",
       "Week 12",
+      "Week 13",
     ],
     datasets: [
       {
