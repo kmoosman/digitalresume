@@ -96,7 +96,7 @@ const VideoCard = ({ card, autoscroll = true }) => {
             <iframe
               src={videoUrl}
               className={`rounded-lg ${
-                videoType === "tiktok"
+                videoType === "tiktoks"
                   ? "lg:h-[515px] lg:w-[760px"
                   : "lg:h-[515px] lg:w-[760px]"
               }`}
