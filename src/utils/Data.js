@@ -1502,7 +1502,7 @@ export const tikTokVideos = [
       "TikTok Video from 10/8/21: Grateful to have my husband through this all, he is my why",
     name: "My Reason",
     image:
-      "https://res.cloudinary.com/dyrev28qc/image/upload/v1716774029/6966756763043482885_i57mrc.png",
+      "https://res.cloudinary.com/dyrev28qc/image/upload/v1716774030/7016891507508579590_edxhbd.png",
     date: "10/8/2021",
     link: "https://www.youtube.com/embed/fCPZ-CQVSOk",
     views: 0,
