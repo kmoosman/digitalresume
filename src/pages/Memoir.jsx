@@ -36,7 +36,7 @@ export const Memoir = ({ type }) => {
     datasets: [
       {
         label: "Sales",
-        data: [40, 51, 84, 93, 97, 100, 106, 184, 187, 199, 202, 205],
+        data: [40, 51, 84, 93, 97, 100, 106, 184, 187, 199, 202, 205, 208],
         backgroundColor: tailwindConfig().theme.colors.blue[900],
         borderColor: tailwindConfig().theme.colors.blue[900],
         borderWidth: 1,
@@ -154,7 +154,7 @@ export const Memoir = ({ type }) => {
               </p>
             </div>
             <h1 className="w-full text-center text-3xl mt-5 font-semibold">
-              Total Pre-Orders: 205
+              Total Pre-Orders: 208
             </h1>
             <div className="w-3/4 mx-auto">
               <BarChart01 data={data} />
