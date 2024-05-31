@@ -23,7 +23,7 @@ function WelcomeBanner() {
             </div>
             <div className="z-0 mr-0 justify-center flex col-span-1 opacity-95 lg:hidden">
               <img
-                className="aspect-fit justify-center rounded-md shadow-lg animate-scale-up"
+                className="aspect-fit justify-center rounded-md md:shadow-lg animate-fade-in h-50"
                 src={headshot}
                 alt="User 01"
               />

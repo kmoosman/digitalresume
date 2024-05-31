@@ -11,9 +11,9 @@ export const HighlightCards = ({ highlight }) => {
     <div className="flex flex-col col-span-full ml-2 mr-2 md:ml-10 md:mr-10 sm:col-span-12 xl:col-span-12  bg-center shadow-lg rounded-sm">
       <div className="px-5 pt-20 pb-20 ">
         <div className="flex flex-col lg:flex-row xl:flex-row gap-10">
-          <div className="w-52 h-52 rounded-lg mr-5 mb-5 sm:ml-0 ml-14">
+          <div className="w-52 h-52 rounded-lg mr-5 mb-5 sm:ml-0 lg:ml-8 mx-auto">
             <img
-              className="h-full w-full rounded"
+              className="h-full w-full rounded "
               src={highlight.image}
               alt={highlight.title}
             />
