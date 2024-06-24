@@ -31,30 +31,38 @@ function WelcomeBanner() {
           </div>
 
           <div className="lg:mt-10 mt-5 w-full md:w-3/4 flex flex-col animate-fade-in">
-            <p className="mt-2 text-slate-700 text-lg">
-              I am a cancer survivor, diagnosed with an{" "}
+            <p className="mt-2 text-slate-700 md:text-lg text-md">
+              I was diagnosed with an{" "}
               <a
                 href="https://www.youtube.com/embed/q3yUlZ016Yo"
                 target="_blank"
                 className="text-indigo-700 font-semibold"
               >
-                ultra-rare stage IV kidney cancer
+                ultra-rare stage IV kidney cancer in 2020.{" "}
               </a>
-              . Since my diagnosis, I have become a dedicated advocate,
-              podcaster, software developer, and the author of{" "}
+              About six months in, when my prognosis had a chance to
+              significantly change, I promised myself I'd dedicate the time I
+              was given to making things better for other patients who may come
+              behind me one day. Which is what I have dedicated my life to ever
+              since. I founded a non-profit, became a dedicated advocate,
+              podcaster, and the author of{" "}
               <a
                 href="https://www.amazon.com/Too-Young-Cancer-Diagnosis-Fighting-ebook/dp/B0CW1HKPWJ/ref=sr_1_1?crid=C1QQ3FZLJOZ2&dib=eyJ2IjoiMSJ9.86WEKCmVExWphXE6fnD2hA.C6tU4YMPD58Hyq95PwDK8iSixRxUMOgjL0tnheXL238&dib_tag=se&keywords=9781639109449&qid=1709230552&sprefix=9781639109449%2Caps%2C68&sr=8-1"
                 className="text-indigo-700 font-semibold"
               >
                 TOO YOUNG FOR CANCER
-              </a>{" "}
-              📚.
+              </a>
+              .{" "}
+              <span className="hidden lg:inline">
+                {" "}
+                I even shifted industries from a fifteen-year career in
+                motorsports and building software used at racetracks to joining
+                the Rare Cancer Research Foundation.
+              </span>{" "}
+              I donate everything from my book, social media and speaking
+              engagements back to research.
             </p>
-            <p className="mt-2 text-sm">
-              I know how fortuante I am to still be here and it's my mission to
-              use the time I've been given to make an impact for others who may
-              come behind me one day. Let's make an impact together.
-            </p>
+            <p className="mt-2 text-sm">Let's make an impact together.</p>
           </div>
           <div className="w-full flex justify-center md:justify-start mt-4 md:mt-12 animate-fade-in">
             <button
