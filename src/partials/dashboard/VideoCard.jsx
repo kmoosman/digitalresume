@@ -32,7 +32,10 @@ const VideoCard = ({ card, autoscroll = true }) => {
     }
   };
 
-  const getTitle = (description) => {
+  const getTitle = (description, name) => {
+    if (name) {
+      return name;
+    }
     if (!description.includes("#")) {
       return description;
     }
@@ -71,7 +74,7 @@ const VideoCard = ({ card, autoscroll = true }) => {
             />
           )}
           <h2 className="text-xl font-bold mb-2 line-clamp-2">
-            {getTitle(card?.description) ?? card.name}
+            {getTitle(card?.description, card.name) ?? card.name}
           </h2>
           <div className="overflow-y-auto overflow-scroll h-12">
             <p className="text-gray-700 h-20 overflow-scroll">
