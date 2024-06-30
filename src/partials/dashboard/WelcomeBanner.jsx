@@ -44,23 +44,8 @@ function WelcomeBanner() {
               significantly change, I promised myself I'd dedicate the time I
               was given to making things better for other patients who may come
               behind me one day. Which is what I have dedicated my life to ever
-              since. I founded a non-profit, became a dedicated advocate,
-              podcaster, and the author of{" "}
-              <a
-                href="https://www.amazon.com/Too-Young-Cancer-Diagnosis-Fighting-ebook/dp/B0CW1HKPWJ/ref=sr_1_1?crid=C1QQ3FZLJOZ2&dib=eyJ2IjoiMSJ9.86WEKCmVExWphXE6fnD2hA.C6tU4YMPD58Hyq95PwDK8iSixRxUMOgjL0tnheXL238&dib_tag=se&keywords=9781639109449&qid=1709230552&sprefix=9781639109449%2Caps%2C68&sr=8-1"
-                className="text-indigo-700 font-semibold"
-              >
-                TOO YOUNG FOR CANCER
-              </a>
-              .{" "}
-              <span className="hidden lg:inline">
-                {" "}
-                I even shifted industries from a fifteen-year career in
-                motorsports and building software used at racetracks to joining
-                the Rare Cancer Research Foundation.
-              </span>{" "}
-              I donate everything from my book, social media and speaking
-              engagements back to research.
+              since. I also donate everything from my book, social media and
+              speaking engagements back to research.
             </p>
             <p className="mt-2 text-sm">Let's make an impact together.</p>
           </div>
@@ -74,7 +59,7 @@ function WelcomeBanner() {
               }}
               className="bg-indigo-700 text-white md:text-lg font-semibold rounded py-2 px-6 shadow-lg hover:bg-indigo-600 transition duration-300"
             >
-              PRE-ORDER 📚
+              PRE-ORDER TOO YOUNG FOR CANCER
             </button>
           </div>
           <p className="text-center italic mt-4 text-sm md:text-left text-slate-700 animate-fade-in">
