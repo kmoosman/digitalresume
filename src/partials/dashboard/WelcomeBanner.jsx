@@ -44,8 +44,8 @@ function WelcomeBanner() {
               significantly change, I promised myself I'd dedicate the time I
               was given to making things better for other patients who may come
               behind me one day. Which is what I have dedicated my life to ever
-              since. I also donate everything from my book, social media and
-              speaking engagements back to research.
+              since. I donate everything from my book, social media and speaking
+              engagements back to research.
             </p>
             <p className="mt-2 text-sm">Let's make an impact together.</p>
           </div>
